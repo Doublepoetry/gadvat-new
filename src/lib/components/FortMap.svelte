@@ -4,12 +4,63 @@
 	import 'leaflet/dist/leaflet.css';
 	import type { Fort } from '../types';
 
-	let { forts }: { forts: Fort[] } = $props();
+	let {
+		forts,
+		selectedDistrict = null,
+		selectedType = null,
+		searchQuery = ''
+	}: {
+		forts: Fort[];
+		selectedDistrict: string | null;
+		selectedType: string | null;
+		searchQuery: string;
+	} = $props();
 	let mapContainer: HTMLDivElement;
 	let map: L.Map;
 
 	// eslint-disable-next-line svelte/prefer-svelte-reactivity
 	const mapMarkers = new Map<string, L.Marker>();
+
+	function shouldShowMarker(fort: Fort): boolean {
+		if (selectedDistrict && fort.district !== selectedDistrict) {
+			return false;
+		}
+		if (selectedType && fort.type !== selectedType) {
+			return false;
+		}
+		if (searchQuery) {
+			const query = searchQuery.toLowerCase();
+			const matches =
+				fort.name.toLowerCase().includes(query) ||
+				fort.nameMarathi.includes(searchQuery) ||
+				fort.district.toLowerCase().includes(query);
+			return matches;
+		}
+		return true;
+	}
+
+	function updateMarkerVisibility() {
+		mapMarkers.forEach((marker, fortId) => {
+			const fort = forts.find((f) => f.id === fortId);
+			if (fort) {
+				const shouldShow = shouldShowMarker(fort);
+				if (shouldShow) {
+					marker.setOpacity(1);
+				} else {
+					marker.setOpacity(0.2);
+				}
+			}
+		});
+	}
+
+	$effect(() => {
+		// Update markers when filters change
+		// eslint-disable-next-line @typescript-eslint/no-unused-expressions
+		(selectedDistrict, selectedType, searchQuery);
+		if (map && mapMarkers.size > 0) {
+			updateMarkerVisibility();
+		}
+	});
 
 	function navigateToFort(fortId: string) {
 		window.location.href = `/${fortId}`;

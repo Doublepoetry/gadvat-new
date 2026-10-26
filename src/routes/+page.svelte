@@ -1,7 +1,7 @@
 <script lang="ts">
 	import FortCard from '#lib/components/FortCard.svelte';
 	import FortMap from '#lib/components/FortMap.svelte';
-	import { sortForts, getUniqueDistricts } from '#lib/data';
+	import { sortForts, getUniqueDistricts, getUniqueFortTypes } from '#lib/data';
 	import { language } from '#lib/stores/language';
 	import type { Fort } from '#lib/types';
 	import type { PageData } from './$types';
@@ -9,13 +9,19 @@
 	let { data }: { data: PageData } = $props();
 
 	let selectedDistrict = $state<string | null>(null);
+	let selectedType = $state<string | null>(null);
 	let searchQuery = $state('');
 
 	const districts = $derived(getUniqueDistricts(data.forts));
+	const fortTypes = $derived(getUniqueFortTypes(data.forts));
 
 	const filteredForts = $derived.by(() => {
 		return data.forts.filter((fort: Fort) => {
 			if (selectedDistrict && fort.district !== selectedDistrict) {
+				return false;
+			}
+
+			if (selectedType && fort.type !== selectedType) {
 				return false;
 			}
 
@@ -50,7 +56,7 @@
 	</section>
 
 	<section class="map-section">
-		<FortMap forts={data.forts} />
+		<FortMap forts={data.forts} {selectedDistrict} {selectedType} {searchQuery} />
 	</section>
 
 	<section class="filters">
@@ -63,18 +69,34 @@
 			/>
 		</div>
 
-		<div class="district-filter">
-			<label for="district-select">
-				{$language === 'en' ? 'Filter by District' : 'जिल्ह्यानुसार फिल्टर करा'}
-			</label>
-			<select id="district-select" bind:value={selectedDistrict} class="district-select">
-				<option value={null}>
-					{$language === 'en' ? 'All Districts' : 'सर्व जिल्हे'}
-				</option>
-				{#each districts as district (district)}
-					<option value={district}>{district}</option>
-				{/each}
-			</select>
+		<div class="filter-row">
+			<div class="district-filter">
+				<label for="district-select">
+					{$language === 'en' ? 'Filter by District' : 'जिल्ह्यानुसार फिल्टर करा'}
+				</label>
+				<select id="district-select" bind:value={selectedDistrict} class="district-select">
+					<option value={null}>
+						{$language === 'en' ? 'All Districts' : 'सर्व जिल्हे'}
+					</option>
+					{#each districts as district (district)}
+						<option value={district}>{district}</option>
+					{/each}
+				</select>
+			</div>
+
+			<div class="type-filter">
+				<label for="type-select">
+					{$language === 'en' ? 'Filter by Type' : 'प्रकारानुसार फिल्टर करा'}
+				</label>
+				<select id="type-select" bind:value={selectedType} class="type-select">
+					<option value={null}>
+						{$language === 'en' ? 'All Types' : 'सर्व प्रकार'}
+					</option>
+					{#each fortTypes as type (type)}
+						<option value={type}>{type}</option>
+					{/each}
+				</select>
+			</div>
 		</div>
 	</section>
 
@@ -140,6 +162,12 @@
 		flex: 1;
 	}
 
+	.filter-row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
+
 	.search-input {
 		width: 100%;
 		padding: 0.75rem;
@@ -155,20 +183,23 @@
 		box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 	}
 
-	.district-filter {
+	.district-filter,
+	.type-filter {
 		display: flex;
-		align-items: center;
-		gap: 1rem;
+		flex-direction: column;
+		gap: 0.5rem;
 	}
 
-	.district-filter label {
+	.district-filter label,
+	.type-filter label {
 		font-weight: 500;
 		color: #374151;
-		white-space: nowrap;
+		font-size: 0.875rem;
 	}
 
-	.district-select {
-		flex: 1;
+	.district-select,
+	.type-select {
+		width: 100%;
 		padding: 0.75rem;
 		border: 1px solid #d1d5db;
 		border-radius: 0.375rem;
@@ -178,7 +209,8 @@
 		transition: border-color 0.2s ease;
 	}
 
-	.district-select:focus {
+	.district-select:focus,
+	.type-select:focus {
 		outline: none;
 		border-color: #4f46e5;
 		box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
@@ -216,13 +248,8 @@
 			font-size: 1.875rem;
 		}
 
-		.district-filter {
-			flex-direction: column;
-			align-items: stretch;
-		}
-
-		.district-filter label {
-			white-space: normal;
+		.filter-row {
+			grid-template-columns: 1fr;
 		}
 
 		.forts-grid {
@@ -238,6 +265,10 @@
 
 		.hero h1 {
 			font-size: 1.5rem;
+		}
+
+		.filter-row {
+			grid-template-columns: 1fr;
 		}
 
 		.forts-grid {
