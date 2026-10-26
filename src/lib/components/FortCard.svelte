@@ -16,9 +16,15 @@
     e.stopPropagation();
     window.open(mapsUrl, '_blank');
   }
+
+  function handleKeydown(e: KeyboardEvent) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      navigateToFort();
+    }
+  }
 </script>
 
-<div class="fort-card" onclick={navigateToFort} role="link" tabindex="0">
+<div class="fort-card" onclick={navigateToFort} onkeydown={handleKeydown} role="link" tabindex="0">
   <div class="card-content">
     <h2 class="fort-name">{display.name}</h2>
     <p class="fort-type">{display.type}</p>
