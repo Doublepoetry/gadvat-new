@@ -3,7 +3,7 @@ import type { Fort, FortData, Language, FortDisplay } from './types';
 let fortsData: FortData | null = null;
 
 export async function loadForts(): Promise<FortData> {
-  if (fortsData) {
+  if (fortsData !== null) {
     return fortsData;
   }
 
@@ -12,7 +12,7 @@ export async function loadForts(): Promise<FortData> {
     if (!response.ok) {
       throw new Error(`Failed to load forts: ${response.statusText}`);
     }
-    fortsData = await response.json();
+    fortsData = await response.json() as FortData;
     return fortsData;
   } catch (error) {
     console.error('Error loading forts:', error);

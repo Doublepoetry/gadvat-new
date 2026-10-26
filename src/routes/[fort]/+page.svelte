@@ -3,10 +3,10 @@
   import { language, translations } from '#lib/stores/language';
   import type { PageData } from './$types';
 
-  let { data }: { data: PageData } = $props();
+  const { data }: { data: PageData } = $props();
 
-  $: display = getFortDisplay(data.fort, $language);
-  $: mapsUrl = getMapsUrl(data.fort.coordinates);
+  const display = $derived(getFortDisplay(data.fort, $language));
+  const mapsUrl = $derived(getMapsUrl(data.fort.coordinates));
 </script>
 
 <div class="fort-detail">

@@ -8,7 +8,7 @@
 </script>
 
 <button
-  on:click={toggleLanguage}
+  onclick={toggleLanguage}
   class="language-toggle"
   title={$language === 'en' ? 'मराठीमध्ये बदला' : 'Switch to English'}
 >

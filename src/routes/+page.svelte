@@ -1,7 +1,8 @@
 <script lang="ts">
   import FortCard from '#lib/components/FortCard.svelte';
-  import { sortForts, getUniqueDistricts, filterFortsByDistrict } from '#lib/data';
+  import { sortForts, getUniqueDistricts } from '#lib/data';
   import { language } from '#lib/stores/language';
+  import type { Fort } from '#lib/types';
   import type { PageData } from './$types';
 
   let { data }: { data: PageData } = $props();
@@ -9,10 +10,10 @@
   let selectedDistrict = $state<string | null>(null);
   let searchQuery = $state('');
 
-  $: districts = getUniqueDistricts(data.forts);
+  const districts = $derived(getUniqueDistricts(data.forts));
 
-  $: filteredForts = data.forts
-    .filter(fort => {
+  const filteredForts = $derived.by(() => {
+    return data.forts.filter((fort: Fort) => {
       if (selectedDistrict && fort.district !== selectedDistrict) {
         return false;
       }
@@ -28,8 +29,9 @@
 
       return true;
     });
+  });
 
-  $: sortedForts = sortForts(filteredForts, $language);
+  const sortedForts = $derived(sortForts(filteredForts, $language));
 </script>
 
 <div class="page-content">

@@ -3,13 +3,22 @@
   import { getFortDisplay, getMapsUrl } from '../data';
   import type { Fort } from '../types';
 
-  export let fort: Fort;
+  const { fort }: { fort: Fort } = $props();
 
-  $: display = getFortDisplay(fort, $language);
-  $: mapsUrl = getMapsUrl(fort.coordinates);
+  const display = $derived(getFortDisplay(fort, $language));
+  const mapsUrl = $derived(getMapsUrl(fort.coordinates));
+
+  function navigateToFort() {
+    window.location.href = `/${fort.id}`;
+  }
+
+  function openMap(e: MouseEvent) {
+    e.stopPropagation();
+    window.open(mapsUrl, '_blank');
+  }
 </script>
 
-<a href="/{fort.id}" class="fort-card">
+<div class="fort-card" onclick={navigateToFort} role="link" tabindex="0">
   <div class="card-content">
     <h2 class="fort-name">{display.name}</h2>
     <p class="fort-type">{display.type}</p>
@@ -26,12 +35,12 @@
     {/if}
 
     <div class="fort-actions">
-      <a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="link-button">
+      <button onclick={openMap} class="link-button">
         📍 {$language === 'en' ? 'View on Map' : 'नकाशावर पहा'}
-      </a>
+      </button>
     </div>
   </div>
-</a>
+</div>
 
 <style>
   .fort-card {
