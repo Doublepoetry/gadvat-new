@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { language, translations } from '../stores/language';
-	import type { Language } from '../types';
 
 	function toggleLanguage() {
 		language.update((lang) => (lang === 'en' ? 'mr' : 'en'));

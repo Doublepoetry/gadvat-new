@@ -80,12 +80,14 @@
 				<h2>{$language === 'en' ? 'About' : 'विषयी'}</h2>
 				<div class="detail-text">
 					{#if $language === 'en' && data.fort.content}
+						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 						{@html data.fort.content}
 					{:else if $language === 'mr' && data.fort.descriptionMarathi}
 						<p>{data.fort.descriptionMarathi}</p>
 					{:else if $language === 'en' && data.fort.description}
 						<p>{data.fort.description}</p>
 					{:else if $language === 'mr' && data.fort.content}
+						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 						{@html data.fort.content}
 					{:else}
 						<p>{translations[$language]['noDescription']}</p>
@@ -119,7 +121,7 @@
 			<section class="detail-section">
 				<h2>Tags</h2>
 				<div class="tags">
-					{#each data.fort.tags as tag}
+					{#each data.fort.tags as tag (tag)}
 						<span class="tag">{tag}</span>
 					{/each}
 				</div>

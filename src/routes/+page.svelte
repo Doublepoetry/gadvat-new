@@ -66,7 +66,7 @@
 				<option value={null}>
 					{$language === 'en' ? 'All Districts' : 'सर्व जिल्हे'}
 				</option>
-				{#each districts as district}
+				{#each districts as district (district)}
 					<option value={district}>{district}</option>
 				{/each}
 			</select>
