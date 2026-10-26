@@ -626,6 +626,56 @@
       "filename": "025-bhairavgad-kothale.md"
     },
     {
+      "id": "026",
+      "name": "Bhairavgad (Mandave)",
+      "nameMarathi": "भैरवगड (मांडवे)",
+      "coordinates": [
+        20.02,
+        74.15
+      ],
+      "type": "Hill Fort",
+      "district": "Dhule",
+      "region": "North Maharashtra",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Bhairavgad (Mandave) in Dhule",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": null,
+      "wikipediaLink": null,
+      "content": "## Location\n\nFort in Dhule.",
+      "filename": "026-bhairavgad-mandave.md"
+    },
+    {
+      "id": "027",
+      "name": "Bhamer",
+      "nameMarathi": "भामेर",
+      "coordinates": [
+        21.05,
+        74.1
+      ],
+      "type": "Hill Fort",
+      "district": "Dhule",
+      "region": "North Maharashtra",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Rock-cut caves",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": "https://www.google.com/maps/search/?api=1&query=21.05,74.10",
+      "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Bhamer",
+      "content": "## Details\n\nRock-cut caves",
+      "filename": "027-bhamer.md"
+    },
+    {
       "id": "028",
       "name": "Bharatgad",
       "nameMarathi": "भरतगड",
@@ -774,6 +824,31 @@
       "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Bhudargad",
       "content": "## Details\n\nBhairavnath temple; lake on top",
       "filename": "033-bhudargad.md"
+    },
+    {
+      "id": "034",
+      "name": "Bhupatgad Fort",
+      "nameMarathi": "भुपतगड किल्ला",
+      "coordinates": [
+        20.95,
+        75.45
+      ],
+      "type": "Hill Fort",
+      "district": "Nashik",
+      "region": "Northern Ghats",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Bhupatgad Fort in Nashik",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": null,
+      "wikipediaLink": null,
+      "content": "## Location\n\nFort in Nashik.",
+      "filename": "034-bhupatgad-fort.md"
     },
     {
       "id": "035",
@@ -1126,6 +1201,31 @@
       "filename": "048-daulatabad-fort.md"
     },
     {
+      "id": "049",
+      "name": "Dermal Fort",
+      "nameMarathi": "डर्मल किल्ला",
+      "coordinates": [
+        19.65,
+        74.8
+      ],
+      "type": "Hill Fort",
+      "district": "Ratnagiri",
+      "region": "Konkan",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Dermal Fort in Ratnagiri",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": null,
+      "wikipediaLink": null,
+      "content": "## Location\n\nFort in Ratnagiri.",
+      "filename": "049-dermal-fort.md"
+    },
+    {
       "id": "050",
       "name": "Devgad fort",
       "nameMarathi": "देवगड किल्ला",
@@ -1224,6 +1324,31 @@
       "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Dhodap",
       "content": "## Details\n\nSatmala range, Kalwan; one of the highest in Nashik",
       "filename": "053-dhodap.md"
+    },
+    {
+      "id": "054",
+      "name": "Dhunda fort",
+      "nameMarathi": "धुंडा किल्ला",
+      "coordinates": [
+        20.78,
+        74.88
+      ],
+      "type": "Hill Fort",
+      "district": "Dhule",
+      "region": "North Maharashtra",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Dhunda fort in Dhule",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": null,
+      "wikipediaLink": null,
+      "content": "## Location\n\nFort in Dhule.",
+      "filename": "054-dhunda-fort.md"
     },
     {
       "id": "055",
@@ -2026,6 +2151,31 @@
       "filename": "086-jamgaon-fort.md"
     },
     {
+      "id": "087",
+      "name": "Jamner Fort",
+      "nameMarathi": "जामनेर किल्ला",
+      "coordinates": [
+        20.81,
+        75.78
+      ],
+      "type": "Plain Fort",
+      "district": "Jalgaon",
+      "region": "North Maharashtra",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": null,
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": "https://www.google.com/maps/search/?api=1&query=20.81,75.78",
+      "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Jamner%20Fort",
+      "content": null,
+      "filename": "087-jamner-fort.md"
+    },
+    {
       "id": "088",
       "name": "Jangali Jayagad",
       "nameMarathi": "जंगली जयगड",
@@ -2301,6 +2451,31 @@
       "filename": "098-kamandurg-fort.md"
     },
     {
+      "id": "099",
+      "name": "Kandhar Fort",
+      "nameMarathi": "कंधार किल्ला",
+      "coordinates": [
+        18.883,
+        77.196
+      ],
+      "type": "Plain Fort",
+      "district": "Nanded",
+      "region": "Marathwada",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Large land fort with moat",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": "https://www.google.com/maps/search/?api=1&query=18.883,77.196",
+      "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Kandhar%20Fort",
+      "content": "## Details\n\nLarge land fort with moat",
+      "filename": "099-kandhar-fort.md"
+    },
+    {
       "id": "100",
       "name": "Kanchana Fort",
       "nameMarathi": "कांचना",
@@ -2324,6 +2499,56 @@
       "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Kanchana%20Fort",
       "content": null,
       "filename": "100-kanchana-fort.md"
+    },
+    {
+      "id": "101",
+      "name": "Kanhera Fort (Chalisgaon, Jalgaon)",
+      "nameMarathi": "कन्हेरगड",
+      "coordinates": [
+        20.45,
+        74.95
+      ],
+      "type": "Hill Fort",
+      "district": "Jalgaon",
+      "region": "North Maharashtra",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Near Patnadevi, Chalisgaon",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": "https://www.google.com/maps/search/?api=1&query=20.45,74.95",
+      "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Kanhera%20Fort%20%28Chalisgaon%2C%20Jalgaon%29",
+      "content": "## Details\n\nNear Patnadevi, Chalisgaon",
+      "filename": "101-kanhera-fort-chalisgaon-jalgaon.md"
+    },
+    {
+      "id": "102",
+      "name": "Kankrala",
+      "nameMarathi": "कंक्रला",
+      "coordinates": [
+        20.48,
+        74.92
+      ],
+      "type": "Hill Fort",
+      "district": "Jalgaon",
+      "region": "Northern Maharashtra",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Kankrala in Jalgaon",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": null,
+      "wikipediaLink": null,
+      "content": "## Location\n\nFort in Jalgaon.",
+      "filename": "102-kankrala.md"
     },
     {
       "id": "103",
@@ -2526,6 +2751,31 @@
       "filename": "110-kolaba-fort.md"
     },
     {
+      "id": "111",
+      "name": "Koldher Fort",
+      "nameMarathi": "कोल्धेर किल्ला",
+      "coordinates": [
+        19.95,
+        73.75
+      ],
+      "type": "Hill Fort",
+      "district": "Nashik",
+      "region": "Western Ghats",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Koldher Fort in Nashik",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": null,
+      "wikipediaLink": null,
+      "content": "## Location\n\nFort in Nashik.",
+      "filename": "111-koldher-fort.md"
+    },
+    {
       "id": "112",
       "name": "Konkan Diva Fort",
       "nameMarathi": "कोकणदिवा",
@@ -2699,6 +2949,31 @@
       "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Kurdugad",
       "content": null,
       "filename": "118-kurdugad.md"
+    },
+    {
+      "id": "119",
+      "name": "Laling fort",
+      "nameMarathi": "लळिंग",
+      "coordinates": [
+        20.84,
+        74.73
+      ],
+      "type": "Hill Fort",
+      "district": "Dhule",
+      "region": "North Maharashtra",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Near Dhule city",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": "https://www.google.com/maps/search/?api=1&query=20.84,74.73",
+      "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Laling%20fort",
+      "content": "## Details\n\nNear Dhule city",
+      "filename": "119-laling-fort.md"
     },
     {
       "id": "120",
@@ -2901,6 +3176,31 @@
       "filename": "127-mahimangad.md"
     },
     {
+      "id": "128",
+      "name": "Mahipalgad",
+      "nameMarathi": "महिपालगड",
+      "coordinates": [
+        19.12,
+        73.45
+      ],
+      "type": "Hill Fort",
+      "district": "Satara",
+      "region": "Western Ghats",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Mahipalgad in Satara",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": null,
+      "wikipediaLink": null,
+      "content": "## Location\n\nFort in Satara.",
+      "filename": "128-mahipalgad.md"
+    },
+    {
       "id": "129",
       "name": "Mahipatgad",
       "nameMarathi": "महिपतगड",
@@ -2949,6 +3249,31 @@
       "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Mahuli",
       "content": "## Details\n\nShahapur; highest point in Thane district",
       "filename": "130-mahuli.md"
+    },
+    {
+      "id": "131",
+      "name": "Mahur Fort",
+      "nameMarathi": "माहूर किल्ला",
+      "coordinates": [
+        19.83,
+        77.93
+      ],
+      "type": "Hill Fort",
+      "district": "Nanded",
+      "region": "Marathwada",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Near the Renuka Devi temple",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": "https://www.google.com/maps/search/?api=1&query=19.83,77.93",
+      "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Mahur%20Fort",
+      "content": "## Details\n\nNear the Renuka Devi temple",
+      "filename": "131-mahur-fort.md"
     },
     {
       "id": "132",
@@ -3276,6 +3601,31 @@
       "filename": "144-manjarsubha-fort.md"
     },
     {
+      "id": "145",
+      "name": "Mankigad fort",
+      "nameMarathi": "मांकीगड किल्ला",
+      "coordinates": [
+        18.48,
+        74.22
+      ],
+      "type": "Hill Fort",
+      "district": "Kolhapur",
+      "region": "Western Ghats",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Mankigad fort in Kolhapur",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": null,
+      "wikipediaLink": null,
+      "content": "## Location\n\nFort in Kolhapur.",
+      "filename": "145-mankigad-fort.md"
+    },
+    {
       "id": "146",
       "name": "Manohargad",
       "nameMarathi": "मनोहरगड",
@@ -3551,6 +3901,81 @@
       "filename": "156-mulher.md"
     },
     {
+      "id": "157",
+      "name": "Naldurg Fort",
+      "nameMarathi": "नळदुर्ग",
+      "coordinates": [
+        17.816,
+        76.294
+      ],
+      "type": "Plain Fort",
+      "district": "Dharashiv",
+      "region": "Marathwada",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Pani Mahal water palace on a dam across the Bori river",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": "https://www.google.com/maps/search/?api=1&query=17.816,76.294",
+      "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Naldurg%20Fort",
+      "content": "## History\n\nBijapur (Adil Shahi) rebuilding\n\n## Details\n\nPani Mahal water palace on a dam across the Bori river",
+      "filename": "157-naldurg-fort.md"
+    },
+    {
+      "id": "158",
+      "name": "Nanded fort",
+      "nameMarathi": "नांदेड किल्ला",
+      "coordinates": [
+        19.155,
+        77.3
+      ],
+      "type": "Plain Fort",
+      "district": "Nanded",
+      "region": "Marathwada",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "On the Godavari",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": "https://www.google.com/maps/search/?api=1&query=19.155,77.30",
+      "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Nanded%20fort",
+      "content": "## Details\n\nOn the Godavari",
+      "filename": "158-nanded-fort.md"
+    },
+    {
+      "id": "159",
+      "name": "Nandoshi fort",
+      "nameMarathi": "नंदोशी किल्ला",
+      "coordinates": [
+        19.28,
+        77.15
+      ],
+      "type": "Hill Fort",
+      "district": "Nanded",
+      "region": "Eastern Plateau",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Nandoshi fort in Nanded",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": null,
+      "wikipediaLink": null,
+      "content": "## Location\n\nFort in Nanded.",
+      "filename": "159-nandoshi-fort.md"
+    },
+    {
       "id": "160",
       "name": "Narayangad",
       "nameMarathi": "नारायणगड",
@@ -3599,6 +4024,31 @@
       "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Narnala",
       "content": "## History\n\nGond; Bahmani\n\n## Details\n\nMelghat; many gateways",
       "filename": "161-narnala.md"
+    },
+    {
+      "id": "162",
+      "name": "Narsimhagad",
+      "nameMarathi": "नरसिंहगड",
+      "coordinates": [
+        19.45,
+        77.28
+      ],
+      "type": "Hill Fort",
+      "district": "Nanded",
+      "region": "Eastern Plateau",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Narsimhagad in Nanded",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": null,
+      "wikipediaLink": null,
+      "content": "## Location\n\nFort in Nanded.",
+      "filename": "162-narsimhagad.md"
     },
     {
       "id": "163",
@@ -3751,6 +4201,31 @@
       "filename": "168-padmadurg.md"
     },
     {
+      "id": "169",
+      "name": "Padmdurang fort",
+      "nameMarathi": "पद्मदुरंग किल्ला",
+      "coordinates": [
+        17.95,
+        73.62
+      ],
+      "type": "Hill Fort",
+      "district": "Satara",
+      "region": "Western Ghats",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Padmdurang fort in Satara",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": null,
+      "wikipediaLink": null,
+      "content": "## Location\n\nFort in Satara.",
+      "filename": "169-padmdurang-fort.md"
+    },
+    {
       "id": "170",
       "name": "Palashi Fort",
       "nameMarathi": "पळशी किल्ला",
@@ -3851,6 +4326,31 @@
       "filename": "173-panhala-fort.md"
     },
     {
+      "id": "174",
+      "name": "Paranda Fort",
+      "nameMarathi": "परांडा किल्ला",
+      "coordinates": [
+        18.266,
+        75.453
+      ],
+      "type": "Plain Fort",
+      "district": "Dharashiv",
+      "region": "Marathwada",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Moat and old cannons",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": "https://www.google.com/maps/search/?api=1&query=18.266,75.453",
+      "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Paranda%20Fort",
+      "content": "## History\n\nBahmani\n\n## Details\n\nMoat and old cannons",
+      "filename": "174-paranda-fort.md"
+    },
+    {
       "id": "175",
       "name": "Pargadh",
       "nameMarathi": "पारगड",
@@ -3874,6 +4374,31 @@
       "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Pargadh",
       "content": "## Details\n\nChandgad; often called the southernmost fort of Maharashtra",
       "filename": "175-pargadh.md"
+    },
+    {
+      "id": "176",
+      "name": "Parola Fort",
+      "nameMarathi": "पारोळा किल्ला",
+      "coordinates": [
+        20.882,
+        75.118
+      ],
+      "type": "Plain Fort",
+      "district": "Jalgaon",
+      "region": "North Maharashtra",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Land fort with moat",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": "https://www.google.com/maps/search/?api=1&query=20.882,75.118",
+      "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Parola%20Fort",
+      "content": "## History\n\n18th century\n\n## Details\n\nLand fort with moat",
+      "filename": "176-parola-fort.md"
     },
     {
       "id": "177",
@@ -4601,6 +5126,31 @@
       "filename": "205-sakharkherda-fort-buldhana.md"
     },
     {
+      "id": "206",
+      "name": "Sakshigad",
+      "nameMarathi": "साक्षीगड",
+      "coordinates": [
+        17.75,
+        73.4
+      ],
+      "type": "Hill Fort",
+      "district": "Satara",
+      "region": "Western Ghats",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Sakshigad in Satara",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": null,
+      "wikipediaLink": null,
+      "content": "## Location\n\nFort in Satara.",
+      "filename": "206-sakshigad.md"
+    },
+    {
       "id": "207",
       "name": "Salher",
       "nameMarathi": "साल्हेर",
@@ -4976,6 +5526,31 @@
       "filename": "221-sindhudurg-fort.md"
     },
     {
+      "id": "222",
+      "name": "Saurabh Fort",
+      "nameMarathi": "सौरभ किल्ला",
+      "coordinates": [
+        20.25,
+        75.65
+      ],
+      "type": "Hill Fort",
+      "district": "Jalgaon",
+      "region": "Northern Maharashtra",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Saurabh Fort in Jalgaon",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": null,
+      "wikipediaLink": null,
+      "content": "## Location\n\nFort in Jalgaon.",
+      "filename": "222-saurabh-fort.md"
+    },
+    {
       "id": "223",
       "name": "Sinhagad",
       "nameMarathi": "सिंहगड",
@@ -5099,6 +5674,31 @@
       "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Sondai%20fort",
       "content": "## Details\n\nKarjat",
       "filename": "227-sondai-fort.md"
+    },
+    {
+      "id": "228",
+      "name": "Songir",
+      "nameMarathi": "सोनगीर",
+      "coordinates": [
+        21.07,
+        74.78
+      ],
+      "type": "Hill Fort",
+      "district": "Dhule",
+      "region": "North Maharashtra",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": null,
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": "https://www.google.com/maps/search/?api=1&query=21.07,74.78",
+      "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Songir",
+      "content": null,
+      "filename": "228-songir.md"
     },
     {
       "id": "229",
@@ -5374,6 +5974,56 @@
       "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Tarapur%20fort",
       "content": "## History\n\nPortuguese",
       "filename": "239-tarapur-fort.md"
+    },
+    {
+      "id": "240",
+      "name": "Terekhol Fort",
+      "nameMarathi": "तेरेखोल किल्ला",
+      "coordinates": [
+        15.72,
+        73.69
+      ],
+      "type": "Sea Fort",
+      "district": "Goa",
+      "region": "Outside Maharashtra",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Lies in Goa state, just across the border",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": "https://www.google.com/maps/search/?api=1&query=15.72,73.69",
+      "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Terekhol%20Fort",
+      "content": "## History\n\nSawant Bhonsle of Sawantwadi; later Portuguese\n\n## Details\n\nLies in Goa state, just across the border",
+      "filename": "240-terekhol-fort.md"
+    },
+    {
+      "id": "241",
+      "name": "Thalner",
+      "nameMarathi": "थाळनेर",
+      "coordinates": [
+        21.25,
+        74.97
+      ],
+      "type": "Plain Fort",
+      "district": "Dhule",
+      "region": "North Maharashtra",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "On the Tapi; Faruqi tombs",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": "https://www.google.com/maps/search/?api=1&query=21.25,74.97",
+      "wikipediaLink": "https://en.wikipedia.org/w/index.php?search=Thalner",
+      "content": "## History\n\nFaruqi dynasty\n\n## Details\n\nOn the Tapi; Faruqi tombs",
+      "filename": "241-thalner.md"
     },
     {
       "id": "242",
@@ -5901,6 +6551,31 @@
       "filename": "262-vikatgad.md"
     },
     {
+      "id": "263",
+      "name": "Virathan Fort",
+      "nameMarathi": "विराथन किल्ला",
+      "coordinates": [
+        19.35,
+        73.85
+      ],
+      "type": "Hill Fort",
+      "district": "Ratnagiri",
+      "region": "Konkan",
+      "altitude": null,
+      "area": null,
+      "foundedYear": null,
+      "notable": false,
+      "shortDescription": "Virathan Fort in Ratnagiri",
+      "shortDescriptionMarathi": null,
+      "description": null,
+      "descriptionMarathi": null,
+      "tags": [],
+      "mapsLink": null,
+      "wikipediaLink": null,
+      "content": "## Location\n\nFort in Ratnagiri.",
+      "filename": "263-virathan-fort.md"
+    },
+    {
       "id": "264",
       "name": "Visapur Fort",
       "nameMarathi": "विसापूर",
@@ -6002,8 +6677,8 @@
     }
   ],
   "meta": {
-    "total": 240,
-    "updated": "2026-10-26T11:59:26.448Z",
+    "total": 267,
+    "updated": "2026-10-26T12:15:32.127Z",
     "version": "1.0"
   }
 }

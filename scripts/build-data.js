@@ -20,7 +20,11 @@ const VALID_DISTRICTS = [
   'Buldhana', 'Akola', 'Washim', 'Yavatmal', 'Amravati',
   'Nagpur', 'Wardha', 'Chandrapur', 'Gondia', 'Bhandara',
   'Ratnagiri', 'Sindhudurg', 'Kolhapur', 'Sangli', 'Satara',
-  'Visakhapatnam', 'Bangalore', 'Belgaum'
+  'Visakhapatnam', 'Bangalore', 'Belgaum',
+  'Gadchiroli', 'Palghar', 'Latur', 'Mumbai', 'Raigad',
+  'Thane', 'Jalna', 'Hingoli', 'Chhatrapati Sambhajinagar',
+  'Haridwar', 'Jaisalmer', 'Dhule', 'Goa', 'Jalgaon',
+  'Dharashiv', 'Nanded'
 ];
 
 function validateCoordinates(coords) {
