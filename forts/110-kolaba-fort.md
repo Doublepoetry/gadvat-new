@@ -1,5 +1,5 @@
 ---
-id: "110"
+id: '110'
 name: Kolaba Fort
 nameMarathi: कुलाबा किल्ला
 coordinates: [18.634, 72.864]

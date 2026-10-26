@@ -1,5 +1,5 @@
 ---
-id: "196"
+id: '196'
 name: Ratandurg fort
 nameMarathi: रत्नदुर्ग
 coordinates: [16.996, 73.276]

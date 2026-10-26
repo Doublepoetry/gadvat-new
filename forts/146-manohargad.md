@@ -1,5 +1,5 @@
 ---
-id: "146"
+id: '146'
 name: Manohargad
 nameMarathi: मनोहरगड
 coordinates: [16.05, 73.95]

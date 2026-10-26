@@ -1,5 +1,5 @@
 ---
-id: "059"
+id: '059'
 name: Durgadi Fort
 nameMarathi: दुर्गाडी किल्ला
 coordinates: [19.247, 73.129]

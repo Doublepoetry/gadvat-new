@@ -1,5 +1,5 @@
 ---
-id: "136"
+id: '136'
 name: Malhargad/Sonori Fort
 nameMarathi: मल्हारगड (सोनोरी)
 coordinates: [18.38, 74.03]

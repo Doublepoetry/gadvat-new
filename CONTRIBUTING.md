@@ -57,6 +57,7 @@ Detailed history of the fort, architectural features, and cultural significance.
 ## Route Information
 
 ### From Pune
+
 - Distance: 50 km
 - Duration: 2 hours by road
 - Best season: October-May

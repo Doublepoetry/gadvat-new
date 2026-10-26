@@ -1,5 +1,5 @@
 ---
-id: "080"
+id: '080'
 name: Hatgadh Fort
 nameMarathi: हातगड
 coordinates: [20.55, 73.8]

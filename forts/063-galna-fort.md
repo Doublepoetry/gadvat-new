@@ -1,5 +1,5 @@
 ---
-id: "063"
+id: '063'
 name: Galna Fort
 nameMarathi: गाळणा
 coordinates: [20.73, 74.53]

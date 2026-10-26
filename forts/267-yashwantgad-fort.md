@@ -1,5 +1,5 @@
 ---
-id: "267"
+id: '267'
 name: Yashwantgad Fort
 nameMarathi: यशवंतगड
 coordinates: [15.75, 73.68]

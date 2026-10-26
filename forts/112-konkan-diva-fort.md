@@ -1,5 +1,5 @@
 ---
-id: "112"
+id: '112'
 name: Konkan Diva Fort
 nameMarathi: कोकणदिवा
 coordinates: [18.15, 73.5]

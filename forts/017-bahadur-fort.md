@@ -1,5 +1,5 @@
 ---
-id: "017"
+id: '017'
 name: Bahadur Fort
 nameMarathi: बहादूरगड (पेडगाव)
 coordinates: [18.53, 74.7]

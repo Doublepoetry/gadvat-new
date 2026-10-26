@@ -1,5 +1,5 @@
 ---
-id: "093"
+id: '093'
 name: Kalanandigad
 nameMarathi: कलानंदीगड
 coordinates: [15.93, 74.1]

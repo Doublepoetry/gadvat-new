@@ -1,5 +1,5 @@
 ---
-id: "115"
+id: '115'
 name: Kothaligad/Bhairavgad (Kothali)
 nameMarathi: कोथळीगड
 coordinates: [18.99, 73.38]

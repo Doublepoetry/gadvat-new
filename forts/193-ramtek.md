@@ -1,5 +1,5 @@
 ---
-id: "193"
+id: '193'
 name: Ramtek
 nameMarathi: रामटेक
 coordinates: [21.4, 79.33]

@@ -1,5 +1,5 @@
 ---
-id: "129"
+id: '129'
 name: Mahipatgad
 nameMarathi: महिपतगड
 coordinates: [17.87, 73.55]

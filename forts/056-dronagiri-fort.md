@@ -1,5 +1,5 @@
 ---
-id: "056"
+id: '056'
 name: Dronagiri Fort
 nameMarathi: द्रोणागिरी
 coordinates: [18.85, 72.95]

@@ -1,5 +1,5 @@
 ---
-id: "104"
+id: '104'
 name: Kavnai fort
 nameMarathi: कावनई
 coordinates: [19.75, 73.6]

@@ -1,5 +1,5 @@
 ---
-id: "006"
+id: '006'
 name: Alang Fort
 nameMarathi: अलंग
 coordinates: [19.586, 73.665]

@@ -1,5 +1,5 @@
 ---
-id: "200"
+id: '200'
 name: Revdanda fort
 nameMarathi: रेवदंडा किल्ला
 coordinates: [18.55, 72.93]

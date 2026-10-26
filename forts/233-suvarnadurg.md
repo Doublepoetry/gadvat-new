@@ -1,5 +1,5 @@
 ---
-id: "233"
+id: '233'
 name: Suvarnadurg
 nameMarathi: सुवर्णदुर्ग
 coordinates: [17.819, 73.087]

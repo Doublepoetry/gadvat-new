@@ -1,5 +1,5 @@
 ---
-id: "032"
+id: '032'
 name: Bhorgiri fort
 nameMarathi: भोरगिरी
 coordinates: [18.98, 73.62]

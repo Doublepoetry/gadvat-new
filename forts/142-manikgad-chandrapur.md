@@ -1,5 +1,5 @@
 ---
-id: "142"
+id: '142'
 name: Manikgad (Chandrapur)
 nameMarathi: माणिकगड (चंद्रपूर)
 coordinates: [19.6, 79.05]

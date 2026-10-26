@@ -1,5 +1,5 @@
 ---
-id: "060"
+id: '060'
 name: Fattegad
 nameMarathi: फत्तेगड
 coordinates: [17.81, 73.09]

@@ -1,5 +1,5 @@
 ---
-id: "221"
+id: '221'
 name: Sindhudurg Fort
 nameMarathi: सिंधुदुर्ग
 coordinates: [16.042, 73.46]

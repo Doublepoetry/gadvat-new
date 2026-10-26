@@ -1,5 +1,5 @@
 ---
-id: "005"
+id: '005'
 name: Akola Fort
 nameMarathi: अकोला किल्ला
 coordinates: [20.7, 77]

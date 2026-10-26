@@ -1,5 +1,5 @@
 ---
-id: "061"
+id: '061'
 name: Fort George
 nameMarathi: फोर्ट जॉर्ज
 coordinates: [18.94, 72.835]

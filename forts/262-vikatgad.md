@@ -1,5 +1,5 @@
 ---
-id: "262"
+id: '262'
 name: Vikatgad
 nameMarathi: विकटगड (पेब)
 coordinates: [18.98, 73.27]

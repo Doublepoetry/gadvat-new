@@ -1,5 +1,5 @@
 ---
-id: "072"
+id: '072'
 name: Gopalgad
 nameMarathi: गोपाळगड
 coordinates: [17.52, 73.17]

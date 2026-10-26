@@ -1,5 +1,5 @@
 ---
-id: "094"
+id: '094'
 name: Kalavantin Durg
 nameMarathi: कलावंतीण दुर्ग
 coordinates: [18.98, 73.18]

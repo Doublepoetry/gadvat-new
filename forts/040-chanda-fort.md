@@ -1,5 +1,5 @@
 ---
-id: "040"
+id: '040'
 name: Chanda Fort
 nameMarathi: चांदा किल्ला
 coordinates: [19.95, 79.3]

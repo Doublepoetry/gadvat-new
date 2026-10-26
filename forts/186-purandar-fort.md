@@ -1,5 +1,5 @@
 ---
-id: "186"
+id: '186'
 name: Purandar fort
 nameMarathi: पुरंदर
 coordinates: [18.281, 73.978]

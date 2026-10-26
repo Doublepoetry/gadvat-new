@@ -1,5 +1,5 @@
 ---
-id: "078"
+id: '078'
 name: Harihar fort
 nameMarathi: हरिहर
 coordinates: [19.905, 73.471]

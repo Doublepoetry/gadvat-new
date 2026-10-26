@@ -1,5 +1,5 @@
 ---
-id: "155"
+id: '155'
 name: Mrugagad
 nameMarathi: मृगगड
 coordinates: [18.53, 73.27]

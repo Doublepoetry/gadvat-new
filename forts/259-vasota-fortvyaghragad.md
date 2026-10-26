@@ -1,5 +1,5 @@
 ---
-id: "259"
+id: '259'
 name: Vasota Fort/Vyaghragad
 nameMarathi: वासोटा (व्याघ्रगड)
 coordinates: [17.64, 73.73]

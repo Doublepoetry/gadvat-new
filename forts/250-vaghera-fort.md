@@ -1,5 +1,5 @@
 ---
-id: "250"
+id: '250'
 name: Vaghera Fort
 nameMarathi: वाघेरा
 coordinates: [20.05, 73.55]

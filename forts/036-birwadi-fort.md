@@ -1,5 +1,5 @@
 ---
-id: "036"
+id: '036'
 name: Birwadi fort
 nameMarathi: बिरवाडी किल्ला
 coordinates: [18.13, 73.48]

@@ -1,5 +1,5 @@
 ---
-id: "076"
+id: '076'
 name: Hadsar
 nameMarathi: हडसर
 coordinates: [19.27, 73.8]

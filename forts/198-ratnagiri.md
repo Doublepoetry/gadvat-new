@@ -1,5 +1,5 @@
 ---
-id: "198"
+id: '198'
 name: Ratnagiri
 nameMarathi: रत्नागिरी किल्ला
 coordinates: [16.996, 73.276]

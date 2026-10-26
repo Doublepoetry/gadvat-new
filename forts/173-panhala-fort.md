@@ -1,5 +1,5 @@
 ---
-id: "173"
+id: '173'
 name: Panhala Fort
 nameMarathi: पन्हाळा
 coordinates: [16.811, 74.11]

@@ -1,5 +1,5 @@
 ---
-id: "004"
+id: '004'
 name: Akluj Fort
 nameMarathi: अकलूज किल्ला
 coordinates: [17.88, 75.02]

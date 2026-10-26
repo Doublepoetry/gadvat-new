@@ -1,5 +1,5 @@
 ---
-id: "210"
+id: '210'
 name: Sangram Durg
 nameMarathi: संग्रामदुर्ग (चाकण)
 coordinates: [18.76, 73.86]

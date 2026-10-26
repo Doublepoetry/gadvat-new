@@ -1,5 +1,5 @@
 ---
-id: "242"
+id: '242'
 name: Tikona
 nameMarathi: तिकोना (वितंडगड)
 coordinates: [18.631, 73.513]

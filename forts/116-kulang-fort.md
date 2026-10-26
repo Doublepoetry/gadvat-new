@@ -1,5 +1,5 @@
 ---
-id: "116"
+id: '116'
 name: Kulang Fort
 nameMarathi: कुळंग
 coordinates: [19.6, 73.66]

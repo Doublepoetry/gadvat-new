@@ -1,5 +1,5 @@
 ---
-id: "254"
+id: '254'
 name: Vandan Fort (Satara)
 nameMarathi: वंदनगड
 coordinates: [17.8, 74.08]

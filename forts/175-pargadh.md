@@ -1,5 +1,5 @@
 ---
-id: "175"
+id: '175'
 name: Pargadh
 nameMarathi: पारगड
 coordinates: [15.86, 74.12]

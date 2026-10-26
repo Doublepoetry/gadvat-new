@@ -1,5 +1,5 @@
 ---
-id: "128"
+id: '128'
 name: Mahipalgad
 nameMarathi: महिपालगड
 coordinates: [19.12, 73.45]

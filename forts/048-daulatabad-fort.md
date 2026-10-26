@@ -1,5 +1,5 @@
 ---
-id: "048"
+id: '048'
 name: Daulatabad Fort
 nameMarathi: दौलताबाद (देवगिरी)
 coordinates: [19.943, 75.213]

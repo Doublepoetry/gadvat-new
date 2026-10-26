@@ -1,5 +1,5 @@
 ---
-id: "194"
+id: '194'
 name: Rangana Fort
 nameMarathi: रांगणा
 coordinates: [16.05, 73.97]

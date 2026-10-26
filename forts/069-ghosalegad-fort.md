@@ -1,5 +1,5 @@
 ---
-id: "069"
+id: '069'
 name: Ghosalegad Fort
 nameMarathi: घोसाळगड
 coordinates: [18.4, 73.1]

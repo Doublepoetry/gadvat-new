@@ -1,5 +1,5 @@
 ---
-id: "176"
+id: '176'
 name: Parola Fort
 nameMarathi: पारोळा किल्ला
 coordinates: [20.882, 75.118]

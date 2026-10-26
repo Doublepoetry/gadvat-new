@@ -1,5 +1,5 @@
 ---
-id: "158"
+id: '158'
 name: Nanded fort
 nameMarathi: नांदेड किल्ला
 coordinates: [19.155, 77.3]

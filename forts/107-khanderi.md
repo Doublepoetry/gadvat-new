@@ -1,5 +1,5 @@
 ---
-id: "107"
+id: '107'
 name: Khanderi
 nameMarathi: खांदेरी
 coordinates: [18.703, 72.816]

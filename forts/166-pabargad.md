@@ -1,5 +1,5 @@
 ---
-id: "166"
+id: '166'
 name: Pabargad
 nameMarathi: पाबरगड
 coordinates: [19.48, 73.8]

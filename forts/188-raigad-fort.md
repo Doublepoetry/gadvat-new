@@ -1,5 +1,5 @@
 ---
-id: "188"
+id: '188'
 name: Raigad Fort
 nameMarathi: रायगड
 coordinates: [18.235, 73.441]

@@ -1,5 +1,5 @@
 ---
-id: "252"
+id: '252'
 name: Vairatgad Fort
 nameMarathi: वैराटगड
 coordinates: [17.85, 73.95]

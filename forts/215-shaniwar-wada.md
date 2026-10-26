@@ -1,5 +1,5 @@
 ---
-id: "215"
+id: '215'
 name: Shaniwar Wada
 nameMarathi: शनिवारवाडा
 coordinates: [18.52, 73.855]

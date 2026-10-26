@@ -1,5 +1,5 @@
 ---
-id: "131"
+id: '131'
 name: Mahur Fort
 nameMarathi: माहूर किल्ला
 coordinates: [19.83, 77.93]

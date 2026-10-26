@@ -1,5 +1,5 @@
 ---
-id: "243"
+id: '243'
 name: Tipagad (Gadchiroli)
 nameMarathi: टिपागड
 coordinates: [20.35, 80.3]

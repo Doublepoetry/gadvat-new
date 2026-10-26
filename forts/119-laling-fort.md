@@ -1,5 +1,5 @@
 ---
-id: "119"
+id: '119'
 name: Laling fort
 nameMarathi: लळिंग
 coordinates: [20.84, 74.73]

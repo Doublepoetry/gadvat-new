@@ -1,5 +1,5 @@
 ---
-id: "108"
+id: '108'
 name: Kharda/Shivpattan Fort
 nameMarathi: खर्डा (शिवपट्टण)
 coordinates: [18.64, 75.48]

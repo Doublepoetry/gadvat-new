@@ -1,5 +1,5 @@
 ---
-id: "046"
+id: '046'
 name: Dategad
 nameMarathi: दातेगड
 coordinates: [17.4, 73.85]

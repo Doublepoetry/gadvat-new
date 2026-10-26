@@ -1,5 +1,5 @@
 ---
-id: "162"
+id: '162'
 name: Narsimhagad
 nameMarathi: नरसिंहगड
 coordinates: [19.45, 77.28]

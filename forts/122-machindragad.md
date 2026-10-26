@@ -1,5 +1,5 @@
 ---
-id: "122"
+id: '122'
 name: Machindragad
 nameMarathi: मच्छिंद्रगड
 coordinates: [17.07, 74.25]

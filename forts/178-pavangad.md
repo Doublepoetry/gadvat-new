@@ -1,5 +1,5 @@
 ---
-id: "178"
+id: '178'
 name: Pavangad
 nameMarathi: पावनगड
 coordinates: [16.82, 74.13]

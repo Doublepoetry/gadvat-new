@@ -1,5 +1,5 @@
 ---
-id: "195"
+id: '195'
 name: Rasalgad
 nameMarathi: रसाळगड
 coordinates: [17.78, 73.45]

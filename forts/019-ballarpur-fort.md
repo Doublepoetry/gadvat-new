@@ -1,5 +1,5 @@
 ---
-id: "019"
+id: '019'
 name: Ballarpur Fort
 nameMarathi: बल्लारपूर किल्ला
 coordinates: [19.844, 79.348]

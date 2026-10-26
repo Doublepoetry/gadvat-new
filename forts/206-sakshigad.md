@@ -1,5 +1,5 @@
 ---
-id: "206"
+id: '206'
 name: Sakshigad
 nameMarathi: साक्षीगड
 coordinates: [17.75, 73.4]

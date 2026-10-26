@@ -1,5 +1,5 @@
 ---
-id: "020"
+id: '020'
 name: Bankot fort
 nameMarathi: बाणकोट (हिम्मतगड)
 coordinates: [17.98, 73.05]

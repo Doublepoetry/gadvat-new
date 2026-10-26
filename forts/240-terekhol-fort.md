@@ -1,5 +1,5 @@
 ---
-id: "240"
+id: '240'
 name: Terekhol Fort
 nameMarathi: तेरेखोल किल्ला
 coordinates: [15.72, 73.69]

@@ -1,5 +1,5 @@
 ---
-id: "081"
+id: '081'
 name: Indori fort
 nameMarathi: इंदोरी किल्ला
 coordinates: [18.73, 73.72]

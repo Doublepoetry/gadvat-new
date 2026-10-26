@@ -1,5 +1,5 @@
 ---
-id: "263"
+id: '263'
 name: Virathan Fort
 nameMarathi: विराथन किल्ला
 coordinates: [19.35, 73.85]

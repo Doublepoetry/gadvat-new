@@ -1,5 +1,5 @@
 ---
-id: "261"
+id: '261'
 name: Vijaygad Fort
 nameMarathi: विजयगड
 coordinates: [17.3, 73.25]

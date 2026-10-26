@@ -1,5 +1,5 @@
 ---
-id: "225"
+id: '225'
 name: Sitabuldi Fort
 nameMarathi: सीताबर्डी किल्ला
 coordinates: [21.15, 79.08]

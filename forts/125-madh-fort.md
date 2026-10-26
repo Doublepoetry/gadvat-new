@@ -1,5 +1,5 @@
 ---
-id: "125"
+id: '125'
 name: Madh Fort
 nameMarathi: मढ किल्ला
 coordinates: [19.14, 72.79]

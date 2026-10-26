@@ -1,5 +1,5 @@
 ---
-id: "023"
+id: '023'
 name: Bhairavgad (Moroshi)
 nameMarathi: भैरवगड (मोरोशी)
 coordinates: [19.28, 73.7]

@@ -1,5 +1,5 @@
 ---
-id: "245"
+id: '245'
 name: Tringalwadi
 nameMarathi: त्रिंगलवाडी
 coordinates: [19.73, 73.57]

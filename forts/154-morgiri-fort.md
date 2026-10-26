@@ -1,5 +1,5 @@
 ---
-id: "154"
+id: '154'
 name: Morgiri Fort
 nameMarathi: मोरगिरी
 coordinates: [18.62, 73.48]

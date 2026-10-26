@@ -1,5 +1,5 @@
 ---
-id: "077"
+id: '077'
 name: Hargad Fort
 nameMarathi: हरगड
 coordinates: [20.62, 74]

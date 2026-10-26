@@ -1,5 +1,5 @@
 ---
-id: "226"
+id: '226'
 name: Solapur Fort (Solapur)
 nameMarathi: सोलापूर भुईकोट
 coordinates: [17.67, 75.907]

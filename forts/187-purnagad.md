@@ -1,5 +1,5 @@
 ---
-id: "187"
+id: '187'
 name: Purnagad
 nameMarathi: पूर्णगड
 coordinates: [16.83, 73.3]

@@ -1,5 +1,5 @@
 ---
-id: "135"
+id: '135'
 name: Malegaon fort
 nameMarathi: मालेगाव किल्ला
 coordinates: [20.55, 74.53]

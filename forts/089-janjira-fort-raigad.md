@@ -1,5 +1,5 @@
 ---
-id: "089"
+id: '089'
 name: Janjira fort (Raigad)
 nameMarathi: मुरुड-जंजिरा
 coordinates: [18.3, 72.964]

@@ -1,5 +1,5 @@
 ---
-id: "106"
+id: '106'
 name: Kenjalgad
 nameMarathi: केंजळगड
 coordinates: [18.02, 73.8]

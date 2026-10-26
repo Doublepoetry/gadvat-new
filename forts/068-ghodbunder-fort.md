@@ -1,5 +1,5 @@
 ---
-id: "068"
+id: '068'
 name: Ghodbunder Fort
 nameMarathi: घोडबंदर किल्ला
 coordinates: [19.296, 72.889]

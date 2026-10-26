@@ -1,5 +1,5 @@
 ---
-id: "147"
+id: '147'
 name: Mansantoshgad
 nameMarathi: मनसंतोषगड
 coordinates: [16.05, 73.95]

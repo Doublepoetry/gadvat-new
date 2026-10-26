@@ -1,5 +1,5 @@
 ---
-id: "099"
+id: '099'
 name: Kandhar Fort
 nameMarathi: कंधार किल्ला
 coordinates: [18.883, 77.196]

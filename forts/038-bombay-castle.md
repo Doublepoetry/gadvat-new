@@ -1,5 +1,5 @@
 ---
-id: "038"
+id: '038'
 name: Bombay Castle
 nameMarathi: मुंबई किल्ला
 coordinates: [18.932, 72.836]

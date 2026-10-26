@@ -1,5 +1,5 @@
 ---
-id: "189"
+id: '189'
 name: Raireshwar
 nameMarathi: रायरेश्वर
 coordinates: [18.05, 73.77]

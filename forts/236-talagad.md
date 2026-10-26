@@ -1,5 +1,5 @@
 ---
-id: "236"
+id: '236'
 name: Talagad
 nameMarathi: तळागड
 coordinates: [18.38, 73.13]

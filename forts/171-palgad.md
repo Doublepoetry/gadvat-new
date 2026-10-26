@@ -1,5 +1,5 @@
 ---
-id: "171"
+id: '171'
 name: Palgad
 nameMarathi: पालगड
 coordinates: [17.77, 73.25]

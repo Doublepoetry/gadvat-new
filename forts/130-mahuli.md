@@ -1,5 +1,5 @@
 ---
-id: "130"
+id: '130'
 name: Mahuli
 nameMarathi: माहुली
 coordinates: [19.48, 73.27]

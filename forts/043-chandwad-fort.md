@@ -1,5 +1,5 @@
 ---
-id: "043"
+id: '043'
 name: Chandwad fort
 nameMarathi: चांदवड किल्ला
 coordinates: [20.33, 74.25]

@@ -1,5 +1,5 @@
 ---
-id: "034"
+id: '034'
 name: Bhupatgad Fort
 nameMarathi: भुपतगड किल्ला
 coordinates: [20.95, 75.45]

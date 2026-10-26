@@ -1,5 +1,5 @@
 ---
-id: "241"
+id: '241'
 name: Thalner
 nameMarathi: थाळनेर
 coordinates: [21.25, 74.97]

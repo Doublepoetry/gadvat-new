@@ -1,5 +1,5 @@
 ---
-id: "114"
+id: '114'
 name: Korlai Fort
 nameMarathi: कोर्लई किल्ला
 coordinates: [18.52, 72.92]

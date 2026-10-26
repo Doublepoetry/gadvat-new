@@ -1,5 +1,5 @@
 ---
-id: "086"
+id: '086'
 name: Jamgaon Fort
 nameMarathi: जामगाव किल्ला
 coordinates: [19, 74.5]

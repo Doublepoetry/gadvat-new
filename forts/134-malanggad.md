@@ -1,5 +1,5 @@
 ---
-id: "134"
+id: '134'
 name: Malanggad
 nameMarathi: मलंगगड
 coordinates: [19.17, 73.22]

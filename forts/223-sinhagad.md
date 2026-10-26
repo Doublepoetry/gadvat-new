@@ -1,5 +1,5 @@
 ---
-id: "223"
+id: '223'
 name: Sinhagad
 nameMarathi: सिंहगड
 coordinates: [18.366, 73.756]

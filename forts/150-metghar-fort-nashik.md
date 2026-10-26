@@ -1,5 +1,5 @@
 ---
-id: "150"
+id: '150'
 name: Metghar Fort (Nashik)
 nameMarathi: मेटघर किल्ला
 coordinates: [19.93, 73.53]

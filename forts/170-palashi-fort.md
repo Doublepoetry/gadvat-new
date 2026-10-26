@@ -1,5 +1,5 @@
 ---
-id: "170"
+id: '170'
 name: Palashi Fort
 nameMarathi: पळशी किल्ला
 coordinates: [19.05, 74.4]

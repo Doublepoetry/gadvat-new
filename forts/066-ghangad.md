@@ -1,5 +1,5 @@
 ---
-id: "066"
+id: '066'
 name: Ghangad
 nameMarathi: घनगड
 coordinates: [18.52, 73.38]

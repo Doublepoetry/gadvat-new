@@ -1,5 +1,5 @@
 ---
-id: "230"
+id: '230'
 name: Sudhagad
 nameMarathi: सुधागड
 coordinates: [18.54, 73.32]

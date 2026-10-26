@@ -1,5 +1,5 @@
 ---
-id: "035"
+id: '035'
 name: Bhushangad
 nameMarathi: भूषणगड
 coordinates: [17.48, 74.4]

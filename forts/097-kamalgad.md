@@ -1,5 +1,5 @@
 ---
-id: "097"
+id: '097'
 name: Kamalgad
 nameMarathi: कमळगड
 coordinates: [17.9, 73.8]

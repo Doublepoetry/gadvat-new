@@ -1,5 +1,5 @@
 ---
-id: "102"
+id: '102'
 name: Kankrala
 nameMarathi: कंक्रला
 coordinates: [20.48, 74.92]

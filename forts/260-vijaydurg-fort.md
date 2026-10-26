@@ -1,5 +1,5 @@
 ---
-id: "260"
+id: '260'
 name: Vijaydurg Fort
 nameMarathi: विजयदुर्ग
 coordinates: [16.562, 73.333]

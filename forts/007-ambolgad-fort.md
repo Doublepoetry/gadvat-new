@@ -1,5 +1,5 @@
 ---
-id: "007"
+id: '007'
 name: Ambolgad Fort
 nameMarathi: आंबोळगड
 coordinates: [16.48, 73.33]

@@ -1,5 +1,5 @@
 ---
-id: "083"
+id: '083'
 name: Irshalgad
 nameMarathi: इर्शाळगड
 coordinates: [18.94, 73.25]

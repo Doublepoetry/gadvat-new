@@ -1,5 +1,5 @@
 ---
-id: "096"
+id: '096'
 name: Kalyangad/Nandgiri
 nameMarathi: कल्याणगड (नांदगिरी)
 coordinates: [17.75, 74.12]

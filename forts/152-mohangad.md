@@ -1,5 +1,5 @@
 ---
-id: "152"
+id: '152'
 name: Mohangad
 nameMarathi: मोहनगड
 coordinates: [18.1, 73.7]

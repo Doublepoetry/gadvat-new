@@ -1,5 +1,5 @@
 ---
-id: "255"
+id: '255'
 name: Vardhangad Fort
 nameMarathi: वर्धनगड
 coordinates: [17.72, 74.2]

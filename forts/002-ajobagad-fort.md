@@ -1,5 +1,5 @@
 ---
-id: "002"
+id: '002'
 name: Ajobagad Fort
 nameMarathi: आजोबागड
 coordinates: [19.43, 73.62]

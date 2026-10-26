@@ -1,5 +1,5 @@
 ---
-id: "103"
+id: '103'
 name: Karnala Fort
 nameMarathi: कर्नाळा
 coordinates: [18.887, 73.117]

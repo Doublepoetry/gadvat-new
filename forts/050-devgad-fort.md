@@ -1,5 +1,5 @@
 ---
-id: "050"
+id: '050'
 name: Devgad fort
 nameMarathi: देवगड किल्ला
 coordinates: [16.38, 73.37]

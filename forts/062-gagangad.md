@@ -1,5 +1,5 @@
 ---
-id: "062"
+id: '062'
 name: Gagangad
 nameMarathi: गगनगड
 coordinates: [16.53, 73.84]

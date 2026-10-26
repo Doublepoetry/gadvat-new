@@ -1,5 +1,5 @@
 ---
-id: "137"
+id: '137'
 name: Manaranjan Fort
 nameMarathi: मनरंजन
 coordinates: [18.83, 73.4]

@@ -1,5 +1,5 @@
 ---
-id: "101"
+id: '101'
 name: Kanhera Fort (Chalisgaon, Jalgaon)
 nameMarathi: कन्हेरगड
 coordinates: [20.45, 74.95]

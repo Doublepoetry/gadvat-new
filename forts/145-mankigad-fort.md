@@ -1,5 +1,5 @@
 ---
-id: "145"
+id: '145'
 name: Mankigad fort
 nameMarathi: मांकीगड किल्ला
 coordinates: [18.48, 74.22]

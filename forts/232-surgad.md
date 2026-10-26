@@ -1,5 +1,5 @@
 ---
-id: "232"
+id: '232'
 name: Surgad
 nameMarathi: सुरगड
 coordinates: [18.45, 73.15]

@@ -1,5 +1,5 @@
 ---
-id: "231"
+id: '231'
 name: Sumargad
 nameMarathi: सुमारगड
 coordinates: [17.85, 73.55]

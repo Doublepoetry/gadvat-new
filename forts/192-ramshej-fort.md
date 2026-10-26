@@ -1,5 +1,5 @@
 ---
-id: "192"
+id: '192'
 name: Ramshej fort
 nameMarathi: रामशेज
 coordinates: [20.07, 73.78]

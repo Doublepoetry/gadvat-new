@@ -1,5 +1,5 @@
 ---
-id: "075"
+id: '075'
 name: Gumtara Fort
 nameMarathi: गुमतारा
 coordinates: [19.35, 73.15]

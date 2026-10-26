@@ -1,5 +1,5 @@
 ---
-id: "183"
+id: '183'
 name: Prabalgad
 nameMarathi: प्रबळगड
 coordinates: [18.98, 73.19]

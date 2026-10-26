@@ -67,6 +67,7 @@ Interactive map + fort detail pages
 ### 1. Data Sources (`forts/`)
 
 Fort data is stored as **Markdown files with YAML frontmatter**. This approach:
+
 - Enables non-technical contributors (markdown is familiar)
 - Provides version control history
 - Allows rich content (History, Routes, Tips, etc.)
@@ -85,12 +86,14 @@ district: Pune
 ---
 
 ## History
+
 ...content...
 ```
 
 ### 2. Build Script (`scripts/build-data.js`)
 
 Runs during build or deployment:
+
 - Reads all markdown files from `forts/`
 - Parses YAML frontmatter with `gray-matter`
 - **Validates** against schema (required fields, coordinate format, etc.)
@@ -104,6 +107,7 @@ npm run build-data
 ### 3. Validation
 
 **CI Pipeline** (`validate.yml`) ensures:
+
 - ✅ YAML frontmatter is valid
 - ✅ All required fields present
 - ✅ Coordinates are valid (lat/lon ranges)
@@ -118,11 +122,13 @@ Runs on every PR → catches issues before merge.
 ### 4. Frontend (`src/routes/`)
 
 **Home page** (`+page.svelte`):
+
 - Loads `forts.json` server-side
 - Renders interactive map (Leaflet + Svelte)
 - Displays fort list/search
 
 **Detail page** (`[fort]/+page.svelte`):
+
 - Dynamic route parameter (fort ID)
 - Renders fort details + content
 - Bilingual UI (English + Marathi)
@@ -130,6 +136,7 @@ Runs on every PR → catches issues before merge.
 ### 5. Components (`src/lib/components/`)
 
 Reusable Svelte components:
+
 - `FortMap.svelte` — Interactive map
 - `FortCard.svelte` — Fort summary card
 - `FortDetail.svelte` — Full fort page
@@ -174,6 +181,7 @@ npm run format
 **Triggers**: Push to `main` or `rewrite` branch, or any PR
 
 **Steps**:
+
 1. Node.js setup (18.x, 20.x matrix)
 2. Install dependencies
 3. Lint code
@@ -188,18 +196,21 @@ npm run format
 ## Philosophy
 
 ### Privacy First
+
 - No analytics, telemetry, or user tracking
 - No external API calls (except optional Wikipedia links)
 - Self-hosted, works offline
 - No cookies or sessions
 
 ### Minimal
+
 - Minimal dependencies (gray-matter, SvelteKit, Tailwind)
 - No heavy libraries (no Redux, no Apollo)
 - Server-side rendering for performance
 - Static export capability (future)
 
 ### Collaborative
+
 - Markdown data = easy contributions
 - CI validation = safe merges
 - Clear documentation = low barrier to entry
@@ -210,6 +221,7 @@ npm run format
 (Coming in Phase 2)
 
 Options:
+
 - Static hosting (Netlify, Vercel, GitHub Pages)
 - Docker container (self-hosted)
 - Node.js server (production)
@@ -217,6 +229,7 @@ Options:
 ## Testing Strategy
 
 ### Unit Tests (`tests/data-validation.test.ts`)
+
 - Validate fort markdown files
 - Check required fields
 - Validate coordinates
@@ -224,11 +237,13 @@ Options:
 - Test build script
 
 ### Component Tests (TBD)
+
 - Render components in isolation
 - Test user interactions
 - Verify accessibility
 
 ### E2E Tests (TBD)
+
 - Full user journey
 - Map interactions
 - Search functionality

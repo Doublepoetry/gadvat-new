@@ -1,5 +1,5 @@
 ---
-id: "123"
+id: '123'
 name: Machnur Fort
 nameMarathi: मचनूर किल्ला
 coordinates: [17.53, 75.67]

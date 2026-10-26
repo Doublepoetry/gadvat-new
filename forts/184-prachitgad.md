@@ -1,5 +1,5 @@
 ---
-id: "184"
+id: '184'
 name: Prachitgad
 nameMarathi: प्रचितगड
 coordinates: [17.12, 73.7]

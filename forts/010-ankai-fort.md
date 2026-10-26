@@ -1,5 +1,5 @@
 ---
-id: "010"
+id: '010'
 name: Ankai Fort
 nameMarathi: अंकाई
 coordinates: [20.18, 74.44]

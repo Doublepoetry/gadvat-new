@@ -1,5 +1,5 @@
 ---
-id: "197"
+id: '197'
 name: Ratangad
 nameMarathi: रतनगड
 coordinates: [19.5, 73.71]

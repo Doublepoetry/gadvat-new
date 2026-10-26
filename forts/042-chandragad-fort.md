@@ -1,5 +1,5 @@
 ---
-id: "042"
+id: '042'
 name: Chandragad Fort
 nameMarathi: चंद्रगड
 coordinates: [17.9, 73.62]

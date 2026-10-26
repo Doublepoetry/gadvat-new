@@ -1,5 +1,5 @@
 ---
-id: "244"
+id: '244'
 name: Torna Fort
 nameMarathi: तोरणा (प्रचंडगड)
 coordinates: [18.276, 73.623]

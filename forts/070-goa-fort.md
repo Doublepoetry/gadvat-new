@@ -1,5 +1,5 @@
 ---
-id: "070"
+id: '070'
 name: Goa Fort
 nameMarathi: गोवा किल्ला (हर्णै)
 coordinates: [17.81, 73.09]

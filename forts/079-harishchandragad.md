@@ -1,5 +1,5 @@
 ---
-id: "079"
+id: '079'
 name: Harishchandragad
 nameMarathi: हरिश्चंद्रगड
 coordinates: [19.387, 73.779]

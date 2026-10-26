@@ -1,5 +1,5 @@
 ---
-id: "098"
+id: '098'
 name: Kamandurg Fort
 nameMarathi: कामणदुर्ग
 coordinates: [19.4, 72.95]

@@ -1,5 +1,5 @@
 ---
-id: "082"
+id: '082'
 name: Indrai fort
 nameMarathi: इंद्राई
 coordinates: [20.33, 74.15]

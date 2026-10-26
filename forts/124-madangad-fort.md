@@ -1,5 +1,5 @@
 ---
-id: "124"
+id: '124'
 name: Madangad Fort
 nameMarathi: मदनगड
 coordinates: [19.585, 73.66]

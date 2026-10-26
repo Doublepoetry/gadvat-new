@@ -1,5 +1,5 @@
 ---
-id: "012"
+id: '012'
 name: Arnala fort
 nameMarathi: अर्नाळा
 coordinates: [19.466, 72.733]

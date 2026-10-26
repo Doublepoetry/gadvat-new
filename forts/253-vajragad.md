@@ -1,5 +1,5 @@
 ---
-id: "253"
+id: '253'
 name: Vajragad
 nameMarathi: वज्रगड (रुद्रमाळ)
 coordinates: [18.28, 73.99]

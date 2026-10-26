@@ -1,5 +1,5 @@
 ---
-id: "257"
+id: '257'
 name: Vasai Fort/Bassein Fort
 nameMarathi: वसई किल्ला
 coordinates: [19.331, 72.815]

@@ -1,5 +1,5 @@
 ---
-id: "001"
+id: '001'
 name: Ahmednagar Fort
 nameMarathi: अहमदनगर किल्ला
 coordinates: [19.1003, 74.7486]

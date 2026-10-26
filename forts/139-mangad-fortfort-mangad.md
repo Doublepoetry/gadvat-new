@@ -1,5 +1,5 @@
 ---
-id: "139"
+id: '139'
 name: Mangad Fort/Fort Mangad
 nameMarathi: मानगड
 coordinates: [18.25, 73.37]

@@ -1,5 +1,5 @@
 ---
-id: "065"
+id: '065'
 name: Gawilghur
 nameMarathi: गाविलगड
 coordinates: [21.37, 77.34]

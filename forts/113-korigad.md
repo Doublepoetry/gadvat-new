@@ -1,5 +1,5 @@
 ---
-id: "113"
+id: '113'
 name: Korigad
 nameMarathi: कोरीगड
 coordinates: [18.62, 73.385]

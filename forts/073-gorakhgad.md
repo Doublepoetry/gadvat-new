@@ -1,5 +1,5 @@
 ---
-id: "073"
+id: '073'
 name: Gorakhgad
 nameMarathi: गोरखगड
 coordinates: [19.23, 73.62]

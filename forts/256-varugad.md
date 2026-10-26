@@ -1,5 +1,5 @@
 ---
-id: "256"
+id: '256'
 name: Varugad
 nameMarathi: वारुगड
 coordinates: [17.85, 74.4]

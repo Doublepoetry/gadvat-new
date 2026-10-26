@@ -1,5 +1,5 @@
 ---
-id: "174"
+id: '174'
 name: Paranda Fort
 nameMarathi: परांडा किल्ला
 coordinates: [18.266, 75.453]

@@ -1,5 +1,5 @@
 ---
-id: "179"
+id: '179'
 name: Pemgiri Fort/Shahagad
 nameMarathi: पेमगिरी (शहागड)
 coordinates: [19.55, 74.1]

@@ -1,5 +1,5 @@
 ---
-id: "246"
+id: '246'
 name: Trymbakgad
 nameMarathi: त्र्यंबकगड (ब्रह्मगिरी)
 coordinates: [19.93, 73.52]

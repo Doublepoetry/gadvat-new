@@ -1,5 +1,5 @@
 ---
-id: "185"
+id: '185'
 name: Pratapgad
 nameMarathi: प्रतापगड
 coordinates: [17.936, 73.577]

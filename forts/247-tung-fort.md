@@ -1,5 +1,5 @@
 ---
-id: "247"
+id: '247'
 name: Tung Fort
 nameMarathi: तुंग (कठीणगड)
 coordinates: [18.66, 73.47]

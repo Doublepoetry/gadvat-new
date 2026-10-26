@@ -1,5 +1,5 @@
 ---
-id: "148"
+id: '148'
 name: Markanda Fort
 nameMarathi: मार्कंडा
 coordinates: [20.42, 73.98]

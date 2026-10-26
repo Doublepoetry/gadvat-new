@@ -1,5 +1,5 @@
 ---
-id: "074"
+id: '074'
 name: Gowalkot
 nameMarathi: गोवळकोट (गोविंदगड)
 coordinates: [17.53, 73.52]

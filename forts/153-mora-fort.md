@@ -1,5 +1,5 @@
 ---
-id: "153"
+id: '153'
 name: Mora fort
 nameMarathi: मोरा किल्ला
 coordinates: [18.88, 72.93]

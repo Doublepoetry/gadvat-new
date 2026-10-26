@@ -1,5 +1,5 @@
 ---
-id: "140"
+id: '140'
 name: Mangalgad/Kangori fort
 nameMarathi: मंगळगड (कांगोरी)
 coordinates: [18.05, 73.55]

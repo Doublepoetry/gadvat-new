@@ -1,5 +1,5 @@
 ---
-id: "071"
+id: '071'
 name: Gondhanapur
 nameMarathi: गोंधनापूर
 coordinates: [20.73, 76.57]

@@ -1,5 +1,5 @@
 ---
-id: "160"
+id: '160'
 name: Narayangad
 nameMarathi: नारायणगड
 coordinates: [19.1, 74]

@@ -1,5 +1,5 @@
 ---
-id: "190"
+id: '190'
 name: Rajgad Fort
 nameMarathi: राजगड
 coordinates: [18.246, 73.682]

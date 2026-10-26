@@ -1,5 +1,5 @@
 ---
-id: "018"
+id: '018'
 name: Balapur Fort
 nameMarathi: बाळापूर किल्ला
 coordinates: [20.67, 76.77]

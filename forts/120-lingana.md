@@ -1,5 +1,5 @@
 ---
-id: "120"
+id: '120'
 name: Lingana
 nameMarathi: लिंगाणा
 coordinates: [18.17, 73.58]

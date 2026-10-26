@@ -1,5 +1,5 @@
 ---
-id: "220"
+id: '220'
 name: Siddhagad
 nameMarathi: सिद्धगड
 coordinates: [19.2, 73.6]

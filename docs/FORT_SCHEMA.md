@@ -29,31 +29,31 @@ district: District Name
 
 ### Required Fields
 
-| Field | Type | Format | Example |
-|-------|------|--------|---------|
-| `id` | String | 3 digits, zero-padded | `"001"`, `"042"`, `"267"` |
-| `name` | String | English name | `"Raigad Fort"` |
-| `nameMarathi` | String | Marathi (Devanagari) | `"राइगड किल्ला"` |
-| `coordinates` | Array | `[latitude, longitude]` | `[18.3545, 73.3433]` |
-| `type` | String | See valid types below | `"Hill Fort"` |
-| `district` | String | Maharashtra district | `"Pune"` |
+| Field         | Type   | Format                  | Example                   |
+| ------------- | ------ | ----------------------- | ------------------------- |
+| `id`          | String | 3 digits, zero-padded   | `"001"`, `"042"`, `"267"` |
+| `name`        | String | English name            | `"Raigad Fort"`           |
+| `nameMarathi` | String | Marathi (Devanagari)    | `"राइगड किल्ला"`          |
+| `coordinates` | Array  | `[latitude, longitude]` | `[18.3545, 73.3433]`      |
+| `type`        | String | See valid types below   | `"Hill Fort"`             |
+| `district`    | String | Maharashtra district    | `"Pune"`                  |
 
 ### Optional Fields
 
-| Field | Type | Format | Example |
-|-------|------|--------|---------|
-| `region` | String | Geographic region | `"Western Ghats"` |
-| `altitude` | Number | Meters above sea level | `2700` |
-| `area` | Number | Square kilometers | `270` |
-| `foundedYear` | Number | Historical year | `1656` |
-| `notable` | Boolean | Featured fort | `true` |
-| `shortDescription` | String | One-line summary | `"Historic hill fort"` |
-| `shortDescriptionMarathi` | String | One-line Marathi | `"ऐतिहासिक पहाड किल्ला"` |
-| `description` | String | 2-3 sentences | `"Raigad Fort is..."` |
-| `descriptionMarathi` | String | 2-3 sentences Marathi | `"राइगड किल्ला एक..."` |
-| `tags` | Array | Keyword tags | `["trekking", "photography"]` |
-| `mapsLink` | String | Google Maps URL | `"https://maps.google.com/..."` |
-| `wikipediaLink` | String | Wikipedia URL | `"https://en.wikipedia.org/..."` |
+| Field                     | Type    | Format                 | Example                          |
+| ------------------------- | ------- | ---------------------- | -------------------------------- |
+| `region`                  | String  | Geographic region      | `"Western Ghats"`                |
+| `altitude`                | Number  | Meters above sea level | `2700`                           |
+| `area`                    | Number  | Square kilometers      | `270`                            |
+| `foundedYear`             | Number  | Historical year        | `1656`                           |
+| `notable`                 | Boolean | Featured fort          | `true`                           |
+| `shortDescription`        | String  | One-line summary       | `"Historic hill fort"`           |
+| `shortDescriptionMarathi` | String  | One-line Marathi       | `"ऐतिहासिक पहाड किल्ला"`         |
+| `description`             | String  | 2-3 sentences          | `"Raigad Fort is..."`            |
+| `descriptionMarathi`      | String  | 2-3 sentences Marathi  | `"राइगड किल्ला एक..."`           |
+| `tags`                    | Array   | Keyword tags           | `["trekking", "photography"]`    |
+| `mapsLink`                | String  | Google Maps URL        | `"https://maps.google.com/..."`  |
+| `wikipediaLink`           | String  | Wikipedia URL          | `"https://en.wikipedia.org/..."` |
 
 ## Field Specifications
 
@@ -72,6 +72,7 @@ English and Marathi names of the fort.
 ❌ Invalid: `""`, `null`, `"Raigad"` (incomplete)
 
 **Marathi Notes**:
+
 - Must use Devanagari script (not transliteration)
 - Include fort designation if appropriate (किल्ला = fort, दुर्ग = fort, किला = fort)
 
@@ -83,6 +84,7 @@ Geographic location as `[latitude, longitude]` in decimal format (WGS84).
 ❌ Invalid: `"18.3545, 73.3433"`, `[18.3545]`, `[190, 735]`
 
 **Ranges**:
+
 - Latitude: -90 to 90
 - Longitude: -180 to 180
 
@@ -104,6 +106,7 @@ Classification of the fort. Must be one of:
 Maharashtra district name. Must match the official district list.
 
 Valid Maharashtra districts:
+
 ```
 Pune, Nashik, Aurangabad, Ahmednagar, Solapur,
 Buldhana, Akola, Washim, Yavatmal, Amravati,
@@ -129,6 +132,7 @@ Array of keyword tags for filtering and discovery.
 ❌ Invalid: `"trekking"` (must be array), `["Trekking"]` (use lowercase)
 
 Suggested tags:
+
 ```
 trekking, photography, history, architecture,
 monsoon, scenic, accessible, difficult,
@@ -167,25 +171,32 @@ Content below the frontmatter uses standard Markdown.
 
 ```markdown
 ## History
+
 Historical background and significance.
 
 ## Architecture
+
 Structural features and design.
 
 ## Route Information
+
 ### From City
+
 - Distance
 - Duration
 - Best season
 
 ## Things to See
+
 - Feature 1
 - Feature 2
 
 ## Photography Tips
+
 Suggestions for visiting photographers.
 
 ## References & Sources
+
 - [Wikipedia](...)
 - [Source](...)
 ```

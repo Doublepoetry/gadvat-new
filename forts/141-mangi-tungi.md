@@ -1,5 +1,5 @@
 ---
-id: "141"
+id: '141'
 name: Mangi-Tungi
 nameMarathi: मांगी-तुंगी
 coordinates: [20.82, 74.06]

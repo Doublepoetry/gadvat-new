@@ -1,5 +1,5 @@
 ---
-id: "157"
+id: '157'
 name: Naldurg Fort
 nameMarathi: नळदुर्ग
 coordinates: [17.816, 76.294]

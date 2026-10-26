@@ -1,5 +1,5 @@
 ---
-id: "121"
+id: '121'
 name: Lohagad
 nameMarathi: लोहगड
 coordinates: [18.71, 73.476]

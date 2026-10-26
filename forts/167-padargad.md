@@ -1,5 +1,5 @@
 ---
-id: "167"
+id: '167'
 name: Padargad
 nameMarathi: पदरगड
 coordinates: [19.03, 73.52]

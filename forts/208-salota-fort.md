@@ -1,5 +1,5 @@
 ---
-id: "208"
+id: '208'
 name: Salota fort
 nameMarathi: सालोटा
 coordinates: [20.73, 73.96]

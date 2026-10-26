@@ -1,5 +1,5 @@
 ---
-id: "164"
+id: '164'
 name: Nimgiri-Hanumantgad fort
 nameMarathi: निमगिरी-हनुमंतगड
 coordinates: [19.23, 73.78]

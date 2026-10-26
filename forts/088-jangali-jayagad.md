@@ -1,5 +1,5 @@
 ---
-id: "088"
+id: '088'
 name: Jangali Jayagad
 nameMarathi: जंगली जयगड
 coordinates: [17.43, 73.75]

@@ -1,5 +1,5 @@
 ---
-id: "003"
+id: '003'
 name: Ajinkyatara
 nameMarathi: अजिंक्यतारा
 coordinates: [17.672, 73.997]
