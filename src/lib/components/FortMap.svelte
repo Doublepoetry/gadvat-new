@@ -54,7 +54,7 @@
 
 		// Fit bounds to show all markers
 		if (mapMarkers.size > 0) {
-			const group = new L.featureGroup(Array.from(mapMarkers.values()));
+			const group = L.featureGroup(Array.from(mapMarkers.values()));
 			map.fitBounds(group.getBounds(), { padding: [50, 50] });
 		}
 
