@@ -55,8 +55,8 @@
 
 	$effect(() => {
 		// Update markers when filters change
-		// eslint-disable-next-line @typescript-eslint/no-unused-expressions
-		(selectedDistrict, selectedType, searchQuery);
+		// Dependency tracking for reactive updates
+		void `${selectedDistrict}${selectedType}${searchQuery}`;
 		if (map && mapMarkers.size > 0) {
 			updateMarkerVisibility();
 		}
