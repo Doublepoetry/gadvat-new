@@ -1,5 +1,6 @@
 <script lang="ts">
 	import FortCard from '#lib/components/FortCard.svelte';
+	import FortMap from '#lib/components/FortMap.svelte';
 	import { sortForts, getUniqueDistricts } from '#lib/data';
 	import { language } from '#lib/stores/language';
 	import type { Fort } from '#lib/types';
@@ -46,6 +47,10 @@
 				? `Discover ${data.forts.length} historic forts across Maharashtra`
 				: `महाराष्ट्र भरात ${data.forts.length} ऐतिहासिक किल्ले शोधा`}
 		</p>
+	</section>
+
+	<section class="map-section">
+		<FortMap forts={data.forts} />
 	</section>
 
 	<section class="filters">
@@ -119,6 +124,10 @@
 		margin: 0;
 		font-size: 1.125rem;
 		color: #6b7280;
+	}
+
+	.map-section {
+		width: 100%;
 	}
 
 	.filters {
