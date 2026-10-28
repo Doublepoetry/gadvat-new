@@ -41,7 +41,12 @@ export const translations = {
 		readMore: 'Read More',
 		backToList: 'Back to List',
 		noDescription: 'No description available',
-		totalForts: 'Total Forts'
+		totalForts: 'Total Forts',
+		photos: 'Photos',
+		addPhoto: 'Add a photo',
+		previousPhoto: 'Previous photo',
+		nextPhoto: 'Next photo',
+		photo: 'Photo'
 	},
 	mr: {
 		home: 'मुख्यपृष्ठ',
@@ -62,7 +67,12 @@ export const translations = {
 		readMore: 'अधिक वाचा',
 		backToList: 'सूचीकडे परत जा',
 		noDescription: 'वर्णन उपलब्ध नाही',
-		totalForts: 'एकूण किल्ले'
+		totalForts: 'एकूण किल्ले',
+		photos: 'छायाचित्रे',
+		addPhoto: 'छायाचित्र जोडा',
+		previousPhoto: 'मागील छायाचित्र',
+		nextPhoto: 'पुढील छायाचित्र',
+		photo: 'छायाचित्र'
 	}
 };
 
