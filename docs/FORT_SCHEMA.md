@@ -61,6 +61,7 @@ district: District Name
 | `tags`                    | Array   | Keyword tags           | `["trekking", "photography"]`                   |
 | `mapsLink`                | String  | Google Maps URL        | `"https://maps.google.com/..."`                 |
 | `wikipediaLink`           | String  | Wikipedia URL          | `"https://en.wikipedia.org/..."`                |
+| `images`                  | Array   | Commons photos         | See [`images`](#images-optional)                |
 
 ## Field Specifications
 
@@ -166,6 +167,50 @@ Full URLs to external resources.
 ✅ Valid: `"https://maps.google.com/?q=18.3545,73.3433"`
 ❌ Invalid: `"maps.google.com"` (no protocol), `"https://google.com"` (not specific)
 
+### `images` (Optional)
+
+Photos for the fort's gallery. Each entry points to a file on [Wikimedia Commons](https://commons.wikimedia.org); no image files are stored in this repository.
+
+```yaml
+images:
+  - file: Battlements of torna fort.jpg
+    alt: Stone bastion on the walls of Torna Fort
+    caption: One of the bastions on the fort walls
+    captionMarathi: किल्ल्याच्या तटबंदीवरील एक बुरूज
+```
+
+| Key              | Required | Type   | Format                                   |
+| ---------------- | -------- | ------ | ---------------------------------------- |
+| `file`           | Yes      | String | Commons filename, without `File:` prefix |
+| `alt`            | Yes      | String | One sentence describing the photo        |
+| `caption`        | No       | String | Context shown under the photo            |
+| `captionMarathi` | No       | String | Marathi caption (Devanagari)             |
+
+Entries are shown in the order listed.
+
+✅ Valid: `file: Battlements of torna fort.jpg`
+❌ Invalid: `file: File:Battlements of torna fort.jpg` (prefix), `file: https://upload.wikimedia.org/...` (URL), a file under a non-free licence
+
+**Licence**: the file must be under a Creative Commons licence or in the public domain. CI rejects anything else, and any filename that does not exist on Commons.
+
+**Generated fields**: `npm run commons:sync` reads every `images` entry from the Commons API and writes a committed data file, so builds never call Commons. At build time each entry becomes a `GalleryImage`:
+
+| Field            | Source      | Description                             |
+| ---------------- | ----------- | --------------------------------------- |
+| `file`           | Frontmatter | Commons filename                        |
+| `alt`            | Frontmatter | Alt text                                |
+| `caption`        | Frontmatter | Optional caption                        |
+| `captionMarathi` | Frontmatter | Optional Marathi caption                |
+| `src`            | Commons     | `upload.wikimedia.org` thumbnail URL    |
+| `width`          | Commons     | Thumbnail width in pixels               |
+| `height`         | Commons     | Thumbnail height in pixels              |
+| `credit`         | Commons     | Author, shown on the photo              |
+| `license`        | Commons     | Licence short name, e.g. `CC BY-SA 4.0` |
+| `licenseUrl`     | Commons     | Link to the licence text                |
+| `sourceUrl`      | Commons     | Link to the file's Commons page         |
+
+Never write `credit` or `license` in frontmatter; they always come from Commons. How to upload and write alt text: see `CONTRIBUTING.md`, "Adding a Photo".
+
 ## Markdown Content
 
 Content below the frontmatter uses standard Markdown.
@@ -185,7 +230,7 @@ Content below the frontmatter uses standard Markdown.
 
 - HTML tags (sanitized on display)
 - Level 1 headings (`#`) — reserved for app layout
-- Images in markdown — refer to them via description and links
+- Images in markdown — add photos through the [`images`](#images-optional) field instead
 
 ### Content Structure (Recommended)
 
@@ -323,6 +368,7 @@ Before submitting a fort file, verify:
 - [ ] Content sections use level 2-3 headings only
 - [ ] No duplicate fort IDs
 - [ ] Links are valid URLs
+- [ ] Every `images` entry has `file` and `alt`, and `npm run commons:sync` has been run
 - [ ] No HTML tags in markdown
 
 ## Questions?
