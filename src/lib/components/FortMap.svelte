@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
 	import { onMount } from 'svelte';
 	import { select } from 'd3-selection';
 	import 'd3-transition';
@@ -38,6 +37,12 @@
 	const FLIGHT_MS = 1100;
 	const SELECTED_ZOOM = 7; // relative to the fitted view, as on the original site
 	const PREVIEW_ZOOM = 2; // hovering a dot previews it once zoomed in this far
+	// The fort panel covers part of the map, so a selected fort is centred in what's left:
+	// left of the docked panel, or above the bottom sheet (58% tall) on a phone.
+	// Keep these in step with FortPanel's CSS.
+	const panelWidth = (w: number) => Math.min(540, Math.max(380, w * 0.4));
+	const SHEET_TOP = 0.42;
+	const SHEET_Y0 = 124;
 
 	const TYPE_CLASS: Record<FortType, string> = {
 		'Hill Fort': 'hill',
@@ -97,7 +102,7 @@
 	// Dots keep a readable size on screen and grow a little as you zoom in, up to twice as big
 	const dotScale = $derived(u * Math.min(2, Math.max(1, Math.sqrt(t.k / fitK))));
 
-	// Hover or focus previews a fort once zoomed in; a click still opens the details card
+	// Hover or focus previews a fort once zoomed in; a click opens the fort panel
 	let hoverId = $state<string | null>(null);
 	const canPreview = $derived(t.k >= fitK * PREVIEW_ZOOM);
 	const preview = $derived(
@@ -106,10 +111,6 @@
 			: null
 	);
 
-	// Where the selected pin sits on screen, for the details card
-	const pinX = $derived(selected ? t.applyX(selected.x) : 0);
-	const pinY = $derived(selected ? t.applyY(selected.y) : 0);
-
 	function fitTransform() {
 		const x = (width - VBW * fitK) / 2;
 		const y = top + (height - top - VBH * fitK) / 2;
@@ -117,9 +118,13 @@
 	}
 
 	function focusTransform(p: { x: number; y: number }) {
-		const k = fitK * SELECTED_ZOOM;
+		const mobile = width < MOBILE;
+		const x1 = mobile ? width : width - panelWidth(width) - 24;
+		const y0 = mobile ? SHEET_Y0 : top; // the original's band on a phone, under the search pill
+		const y1 = mobile ? height * SHEET_TOP : height;
+		const k = Math.min(x1 / VBW, (y1 - y0) / VBH) * SELECTED_ZOOM;
 		return zoomIdentity
-			.translate(width / 2, top + (height - top) / 2)
+			.translate(x1 / 2, y0 + (y1 - y0) / 2)
 			.scale(k)
 			.translate(-p.x, -p.y);
 	}
@@ -317,6 +322,10 @@
 							/>
 							<circle cy="-27" r="5" class="eye" />
 						</g>
+						<text x="20" y="-22" class="pin-name">{selected.fort.name}</text>
+						{#if $showMr}
+							<text x="20" y="-4" class="pin-mr" lang="mr">{selected.fort.nameMarathi}</text>
+						{/if}
 					</g>
 				{/key}
 			{/if}
@@ -340,48 +349,6 @@
 					.join(' · ')}
 			</p>
 		</div>
-	{/if}
-
-	{#if selected}
-		{@const f = selected.fort}
-		{#key f.id}
-			<div
-				class="details"
-				data-type={selected.cls}
-				style="--pin-x: {pinX}px; --pin-y: {pinY}px"
-				role="dialog"
-				aria-label={f.name}
-			>
-				<button class="close" onclick={() => onselect?.(null)} aria-label="Close">×</button>
-				<p class="kicker"><span class="swatch"></span>{f.type}</p>
-				<h2>{f.name}</h2>
-				{#if $showMr}
-					<p class="name-mr" lang="mr">{f.nameMarathi}</p>
-				{/if}
-				<dl>
-					{#if f.district}
-						<dt>District</dt>
-						<dd>
-							{f.district}
-							{#if $showMr && f.districtMarathi}<span lang="mr">· {f.districtMarathi}</span>{/if}
-						</dd>
-					{/if}
-					{#if f.altitude}
-						<dt>Elevation</dt>
-						<dd>{f.altitude.toLocaleString('en-IN')} m</dd>
-					{/if}
-					{#if f.builtByOrEra}
-						<dt>Era</dt>
-						<dd>{f.builtByOrEra}</dd>
-					{/if}
-					{#if f.address}
-						<dt>Base village</dt>
-						<dd>{f.address.base} <span class="source">from OpenStreetMap</span></dd>
-					{/if}
-				</dl>
-				<a class="open" href={resolve('/[fort]', { fort: f.id })}>Open fort page →</a>
-			</div>
-		{/key}
 	{/if}
 </div>
 
@@ -569,18 +536,27 @@
 		fill: var(--bg);
 	}
 
-	/* Details card: paper palette, beside the pin on wide screens, a bottom sheet on narrow ones */
-	.details {
-		position: absolute;
-		left: calc(var(--pin-x) + 44px);
-		top: calc(var(--pin-y) - 72px);
-		width: 300px;
-		padding: 18px 20px 16px;
-		border-radius: var(--radius-panel);
-		background: var(--paper);
-		color: var(--paper-ink);
-		box-shadow: 0 18px 50px var(--shadow);
-		animation: rise 0.45s var(--ease) 1.1s both;
+	/* The selected fort's name beside its pin, haloed so it reads over any dot or border */
+	.pin-name,
+	.pin-mr {
+		font-size: 15px;
+		stroke: var(--bg);
+		stroke-width: 4;
+		stroke-linejoin: round;
+		paint-order: stroke;
+		animation: fade 0.4s ease 1.4s both;
+	}
+
+	.pin-name {
+		font-family: var(--font-map);
+		font-weight: 600;
+		fill: var(--ink);
+	}
+
+	.pin-mr {
+		font-family: var(--font-mr);
+		fill: var(--acc2);
+		animation-delay: 1.5s;
 	}
 
 	/* Hover preview: a small paper tag above the dot */
@@ -625,25 +601,6 @@
 		font-size: 12px;
 	}
 
-	.close {
-		position: absolute;
-		top: 8px;
-		right: 8px;
-		width: 32px;
-		height: 32px;
-		border: 0;
-		border-radius: var(--radius-pill);
-		background: none;
-		color: var(--paper-ink2);
-		font-size: 20px;
-		line-height: 1;
-		cursor: pointer;
-	}
-
-	.close:hover {
-		background: var(--paper-hover);
-	}
-
 	.kicker {
 		display: flex;
 		align-items: center;
@@ -677,85 +634,9 @@
 		background: var(--type-land);
 	}
 
-	h2 {
-		margin: 0;
-		padding-right: 28px;
-		font-size: 22px;
-		font-weight: 500;
-		line-height: 1.2;
-	}
-
-	.name-mr {
-		margin: 2px 0 0;
-		font-family: var(--font-mr-panel);
-		font-size: 18px;
-		font-weight: 500;
-	}
-
-	dl {
-		display: grid;
-		grid-template-columns: auto 1fr;
-		gap: 6px 14px;
-		margin: 14px 0 0;
-		padding-top: 12px;
-		border-top: 1px solid var(--paper-rule);
-		font-size: 13px;
-	}
-
-	dt {
-		color: var(--paper-ink2);
-	}
-
-	dd {
-		margin: 0;
-		font-weight: 400;
-	}
-
-	dd [lang='mr'] {
-		font-family: var(--font-mr-panel);
-	}
-
-	.source {
-		display: block;
-		color: var(--paper-ink2);
-		font-size: 11px;
-	}
-
-	.open {
-		display: inline-block;
-		margin-top: 14px;
-		padding: 8px 14px;
-		border-radius: var(--radius-pill);
-		background: var(--signal);
-		color: var(--paper-ink);
-		font-size: 13px;
-		font-weight: 500;
-		text-decoration: none;
-	}
-
-	.open:hover {
-		background: var(--signal-hover);
-	}
-
-	@media (max-width: 640px) {
-		.details {
-			left: 12px;
-			right: 12px;
-			top: auto;
-			bottom: 12px;
-			width: auto;
-			border-radius: var(--radius-sheet);
-		}
-	}
-
-	@keyframes rise {
+	@keyframes fade {
 		from {
 			opacity: 0;
-			transform: translateY(8px);
-		}
-		to {
-			opacity: 1;
-			transform: none;
 		}
 	}
 
@@ -808,7 +689,8 @@
 		.twinkle,
 		.sonar,
 		.drop,
-		.details {
+		.pin-name,
+		.pin-mr {
 			animation: none;
 		}
 	}
