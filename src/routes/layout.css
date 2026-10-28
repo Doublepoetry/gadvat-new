@@ -1,1 +1,144 @@
-@import 'tailwindcss';
+/* Design tokens and base styles. See docs/STYLE_GUIDE.md. */
+
+@import '@fontsource-variable/inter/opsz.css';
+@import '@fontsource/mukta/400.css';
+@import '@fontsource/mukta/500.css';
+@import '@fontsource/mukta/600.css';
+@import '@fontsource/mukta/700.css';
+@import '@fontsource/tiro-devanagari-marathi/400.css';
+@import '@fontsource/instrument-sans/500.css';
+@import '@fontsource/instrument-sans/600.css';
+
+:root {
+	/* Theme: dark (default) */
+	--bg: #0e1b20;
+	--bg2: #101f25;
+	--card: #132830;
+	--glass: rgba(20, 40, 48, 0.94);
+	--ink: #f3ead8;
+	--ink2: #e6e0d2;
+	--mut: #9fb0b3;
+	--mut2: #7f9398;
+	--ph: #6f8287;
+	--acc: #f1d2a1;
+	--acc2: #c9b48f;
+	--land: #14303a;
+	--land-on: #1c3f4b;
+	--edge: #2f4c55;
+	--lab: #5c747a;
+	--lab2: #6a8288;
+	--spark: #fff6e0;
+	--lr: 241, 210, 161; /* every tint is rgba(var(--lr), alpha) */
+	--shadow: rgba(0, 0, 0, 0.85);
+	--scrim: rgba(8, 16, 19, 0.72);
+
+	/* Fort panel: fixed paper palette, the same in both themes */
+	--paper: #ece5d4;
+	--paper-ink: #12392f;
+	--paper-ink2: #3f5f55;
+	--paper-rule: rgba(18, 57, 47, 0.2);
+	--paper-guide: rgba(18, 57, 47, 0.12);
+	--paper-hover: rgba(18, 57, 47, 0.06);
+	--signal: #f2c230;
+	--signal-hover: #e9b71f;
+
+	/* Fort types */
+	--type-hill: var(--acc);
+	--type-sea: #7cc6d6;
+	--type-coastal: #b2bd47;
+	--type-land: #e2704f;
+
+	/* Type */
+	--font-ui: 'Inter Variable', 'Mukta', system-ui, sans-serif;
+	--font-mr: 'Tiro Devanagari Marathi', serif;
+	--font-mr-panel: 'Mukta', sans-serif;
+	--font-map: 'Instrument Sans', sans-serif;
+
+	/* Shape and motion */
+	--radius-pill: 999px;
+	--radius-sheet: 20px;
+	--radius-row: 12px;
+	--radius-panel: 6px;
+	--ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+	color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+	--bg: #f4f0e6;
+	--bg2: #ede6d6;
+	--card: #fffdf8;
+	--glass: rgba(255, 253, 248, 0.96);
+	--ink: #1b2a2e;
+	--ink2: #2a3a3e;
+	--mut: #56676b;
+	--mut2: #66767a;
+	--ph: #8a8f8c;
+	--acc: #a4511c;
+	--acc2: #8a6232;
+	--land: #fffcf5;
+	--land-on: #f6e7cc;
+	--edge: #cfc3ac;
+	--lab: #9a8e78;
+	--lab2: #8a7e68;
+	--spark: ;
+	--lr: 27, 42, 46;
+	--shadow: rgba(60, 45, 20, 0.18);
+	--scrim: rgba(60, 50, 35, 0.28);
+
+	color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	height: 100%;
+	background: var(--bg);
+	color: var(--ink);
+	font-family: var(--font-ui);
+	font-weight: 300;
+	font-feature-settings: 'ss01', 'cv11';
+	font-optical-sizing: auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: var(--acc);
+	text-underline-offset: 3px;
+}
+
+input,
+button,
+select {
+	font: inherit;
+	color: inherit;
+}
+
+input::placeholder {
+	color: var(--ph);
+}
+
+:focus-visible {
+	outline: 2px solid var(--acc);
+	outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(var(--lr), 0.14);
+	border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}

@@ -132,12 +132,12 @@
 		width: 100%;
 		height: 500px;
 		border-radius: 0.5rem;
-		border: 1px solid #e5e7eb;
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		border: 1px solid rgba(var(--lr), 0.14);
+		box-shadow: 0 24px 60px -24px var(--shadow);
 	}
 
 	:global(.fort-popup) {
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-family: var(--font-ui);
 		padding: 0;
 		min-width: 200px;
 	}
@@ -146,27 +146,27 @@
 		margin: 0 0 0.5rem 0;
 		font-size: 1rem;
 		font-weight: 600;
-		color: #1f2937;
+		color: var(--paper-ink);
 	}
 
 	:global(.fort-popup .marathi-name) {
 		margin: 0 0 0.5rem 0;
 		font-size: 0.875rem;
-		color: #6b7280;
+		color: var(--paper-ink2);
 	}
 
 	:global(.fort-popup .fort-type) {
 		margin: 0 0 1rem 0;
 		font-size: 0.75rem;
-		color: #4f46e5;
+		color: var(--paper-ink);
 		font-weight: 500;
 	}
 
 	:global(.popup-button) {
 		width: 100%;
 		padding: 0.5rem;
-		background-color: #4f46e5;
-		color: white;
+		background-color: var(--paper-ink);
+		color: var(--paper);
 		border: none;
 		border-radius: 0.375rem;
 		cursor: pointer;
@@ -176,7 +176,7 @@
 	}
 
 	:global(.popup-button:hover) {
-		background-color: #4338ca;
+		background-color: var(--paper-ink2);
 	}
 
 	@media (max-width: 768px) {
