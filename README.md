@@ -52,9 +52,10 @@ Needs Node.js 24.
 
 ```bash
 npm install
-npm run build-data   # forts/*.md → src/data/forts.json
-npm run dev          # http://localhost:5173
+npm run dev   # http://localhost:5173
 ```
+
+`dev`, `build` and `check` first run `npm run build-data`, which compiles `forts/*.md` into `src/data/forts.json`. That file is generated, so it is not committed.
 
 Before opening a pull request:
 
