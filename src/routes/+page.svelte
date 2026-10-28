@@ -45,6 +45,7 @@
 <section class="map-section">
 	<FortMap
 		forts={data.forts}
+		districtNames={data.districtNames}
 		selectedId={selectedFort}
 		onselect={(id) => (selectedFort = id)}
 		{selectedDistrict}

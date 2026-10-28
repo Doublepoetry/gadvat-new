@@ -1,10 +1,11 @@
-import { getAllForts } from '#lib/data';
+import { getAllForts, getDistrictNames } from '#lib/data';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async () => {
-	const forts = await getAllForts();
+	const [forts, districtNames] = await Promise.all([getAllForts(), getDistrictNames()]);
 
 	return {
-		forts
+		forts,
+		districtNames
 	};
 };

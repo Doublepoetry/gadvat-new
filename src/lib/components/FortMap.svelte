@@ -10,6 +10,7 @@
 
 	let {
 		forts,
+		districtNames,
 		selectedId = null,
 		onselect,
 		selectedDistrict = null,
@@ -17,6 +18,7 @@
 		searchQuery = ''
 	}: {
 		forts: Fort[];
+		districtNames: Record<string, string>; // English → Marathi, for the labels
 		selectedId?: string | null;
 		onselect?: (id: string | null) => void;
 		selectedDistrict?: string | null;
@@ -37,15 +39,6 @@
 		'Coastal Fort': 'coastal',
 		'Land Fort': 'land'
 	};
-
-	// Marathi district names for the map labels
-	const districtMr = $derived(
-		new Map(
-			forts
-				.filter((f) => f.district && f.districtMarathi)
-				.map((f) => [f.district, f.districtMarathi])
-		)
-	);
 
 	function project([lat, lon]: [number, number]) {
 		return { x: geo.proj.ax * lon + geo.proj.bx, y: geo.proj.ay * lat + geo.proj.by };
@@ -199,8 +192,7 @@
 					>
 				{/if}
 				{#each geo.labels as l (l.name)}
-					{@const name = l.name.replace('Chh. ', 'Chhatrapati ')}
-					{@const mr = districtMr.get(name) ?? districtMr.get(l.name)}
+					{@const mr = districtNames[l.name.replace('Chh. ', 'Chhatrapati ')]}
 					<text class="district" x={l.x} y={l.y} font-size={10 * u} letter-spacing={1.6 * u}
 						>{l.name.toUpperCase()}</text
 					>

@@ -14983,9 +14983,47 @@
       ]
     }
   ],
+  "districts": {
+    "Ahilyanagar": "अहिल्यानगर",
+    "Akola": "अकोला",
+    "Amravati": "अमरावती",
+    "Beed": "बीड",
+    "Bhandara": "भंडारा",
+    "Buldhana": "बुलढाणा",
+    "Chandrapur": "चंद्रपूर",
+    "Chhatrapati Sambhajinagar": "छत्रपती संभाजीनगर",
+    "Dharashiv": "धाराशिव",
+    "Dhule": "धुळे",
+    "Gadchiroli": "गडचिरोली",
+    "Gondia": "गोंदिया",
+    "Hingoli": "हिंगोली",
+    "Jalgaon": "जळगाव",
+    "Jalna": "जालना",
+    "Kolhapur": "कोल्हापूर",
+    "Latur": "लातूर",
+    "Mumbai": "मुंबई",
+    "Nagpur": "नागपूर",
+    "Nanded": "नांदेड",
+    "Nandurbar": "नंदुरबार",
+    "Nashik": "नाशिक",
+    "Palghar": "पालघर",
+    "Parbhani": "परभणी",
+    "Pune": "पुणे",
+    "Raigad": "रायगड",
+    "Ratnagiri": "रत्नागिरी",
+    "Sangli": "सांगली",
+    "Satara": "सातारा",
+    "Sindhudurg": "सिंधुदुर्ग",
+    "Solapur": "सोलापूर",
+    "Thane": "ठाणे",
+    "Wardha": "वर्धा",
+    "Washim": "वाशिम",
+    "Yavatmal": "यवतमाळ",
+    "North Goa (Goa)": "उत्तर गोवा"
+  },
   "meta": {
     "total": 267,
-    "updated": "2026-10-28T08:06:12.377Z",
+    "updated": "2026-10-28T08:15:25.412Z",
     "version": "1.0"
   }
 }
