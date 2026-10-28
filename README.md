@@ -37,8 +37,7 @@ You need a free GitHub account to open an issue.
 ## Data sources
 
 - **Forts:** the original [Gadvat](https://github.com/Doublepoetry/Gadvat) dataset, corrected by contributors. Each fort links to its Wikipedia article for further reading.
-- **Addresses and map tiles:** [OpenStreetMap](https://www.openstreetmap.org/copyright), © OpenStreetMap contributors, available under the [ODbL](https://opendatacommons.org/licenses/odbl/).
-- **Photos:** [Wikimedia Commons](https://commons.wikimedia.org); each photo shows its author and licence.
+- **Addresses:** [OpenStreetMap](https://www.openstreetmap.org/copyright), © OpenStreetMap contributors, available under the [ODbL](https://opendatacommons.org/licenses/odbl/).
 
 ## Licence
 
@@ -47,7 +46,7 @@ You need a free GitHub account to open an issue.
 
 ## Development
 
-Built with SvelteKit, Svelte 5, TypeScript and Leaflet. Fort files are compiled to JSON at build time, so the site needs no server or database. See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+Built with SvelteKit, Svelte 5, TypeScript, and an SVG district map with d3-zoom. Fort files are compiled to JSON at build time, so the site needs no server or database. See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 Needs Node.js 24.
 
