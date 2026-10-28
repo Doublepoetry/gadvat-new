@@ -35,7 +35,5 @@
 		inset: 0;
 		overflow-y: auto;
 		overscroll-behavior: contain;
-		/* Clears the 64px header until the map page fills this area edge to edge */
-		padding: 76px 24px 40px;
 	}
 </style>

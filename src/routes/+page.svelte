@@ -8,6 +8,7 @@
 
 	let { data }: { data: PageData } = $props();
 
+	let selectedFort = $state<string | null>(null);
 	let selectedDistrict = $state<string | null>(null);
 	let selectedType = $state<string | null>(null);
 	let searchQuery = $state('');
@@ -41,24 +42,19 @@
 	const sortedForts = $derived(sortForts(filteredForts, $language));
 </script>
 
+<section class="map-section">
+	<FortMap
+		forts={data.forts}
+		selectedId={selectedFort}
+		onselect={(id) => (selectedFort = id)}
+		{selectedDistrict}
+		{selectedType}
+		{searchQuery}
+	/>
+</section>
+
+<!-- The original site's search and list replace this in later slices -->
 <div class="page-content">
-	<section class="hero">
-		<h1>
-			{$language === 'en'
-				? "Explore Maharashtra's Forts"
-				: 'महाराष्ट्राच्या किल्ल्यांचा अन्वेषण करा'}
-		</h1>
-		<p class="hero-subtitle">
-			{$language === 'en'
-				? `Discover ${data.forts.length} historic forts across Maharashtra`
-				: `महाराष्ट्र भरात ${data.forts.length} ऐतिहासिक किल्ले शोधा`}
-		</p>
-	</section>
-
-	<section class="map-section">
-		<FortMap forts={data.forts} {selectedDistrict} {selectedType} {searchQuery} />
-	</section>
-
 	<section class="filters">
 		<div class="search-box">
 			<input
@@ -129,29 +125,16 @@
 	.page-content {
 		max-width: 1200px;
 		margin: 0 auto;
+		padding: 2rem 24px 40px;
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
 	}
 
-	.hero {
-		text-align: center;
-	}
-
-	.hero h1 {
-		margin: 0 0 0.5rem 0;
-		font-size: 2.25rem;
-		color: var(--ink);
-	}
-
-	.hero-subtitle {
-		margin: 0;
-		font-size: 1.125rem;
-		color: var(--mut);
-	}
-
 	.map-section {
-		width: 100%;
+		position: relative;
+		height: 100vh;
+		height: 100dvh;
 	}
 
 	.filters {
@@ -247,10 +230,6 @@
 			gap: 1.5rem;
 		}
 
-		.hero h1 {
-			font-size: 1.875rem;
-		}
-
 		.filter-row {
 			grid-template-columns: 1fr;
 		}
@@ -264,10 +243,6 @@
 	@media (max-width: 640px) {
 		.page-content {
 			gap: 1rem;
-		}
-
-		.hero h1 {
-			font-size: 1.5rem;
 		}
 
 		.filter-row {

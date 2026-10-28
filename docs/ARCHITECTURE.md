@@ -123,7 +123,7 @@ Runs on every PR → catches issues before merge.
 **Home page** (`+page.svelte`):
 
 - Loads `forts.json` server-side
-- Renders interactive map (Leaflet + Svelte)
+- Renders the SVG district map (`districts.json` + d3-zoom)
 - Displays fort list/search
 
 **Detail page** (`[fort]/+page.svelte`):
