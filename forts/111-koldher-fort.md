@@ -1,15 +1,12 @@
 ---
 id: '111'
-name: Koldher Fort
-nameMarathi: कोल्धेर किल्ला
-coordinates: [19.95, 73.75]
-type: Hill Fort
-district: Nashik
-region: Western Ghats
+name: 'Koldher Fort'
+nameMarathi: 'कोळधेर'
+locationAccuracy: 'none'
+type: 'Hill Fort'
+district: 'Nashik'
+region: 'North Maharashtra'
 notable: false
-shortDescription: Koldher Fort in Nashik
+mapsLink: 'https://www.google.com/maps/search/?api=1&query=Koldher%20Fort%20Maharashtra'
+wikipediaLink: 'https://en.wikipedia.org/w/index.php?search=Koldher%20Fort'
 ---
-
-## Location
-
-Fort in Nashik.

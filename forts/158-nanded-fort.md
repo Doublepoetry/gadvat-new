@@ -1,17 +1,14 @@
 ---
 id: '158'
-name: Nanded fort
-nameMarathi: नांदेड किल्ला
+name: 'Nanded fort'
+nameMarathi: 'नांदेड किल्ला'
 coordinates: [19.155, 77.3]
-type: Plain Fort
-district: Nanded
-region: Marathwada
+locationAccuracy: 'rough'
+type: 'Land Fort'
+district: 'Nanded'
+region: 'Marathwada'
 notable: false
-shortDescription: On the Godavari
-mapsLink: https://www.google.com/maps/search/?api=1&query=19.155,77.30
-wikipediaLink: https://en.wikipedia.org/w/index.php?search=Nanded%20fort
+shortDescription: 'On the Godavari'
+mapsLink: 'https://www.google.com/maps/search/?api=1&query=19.155,77.30'
+wikipediaLink: 'https://en.wikipedia.org/w/index.php?search=Nanded%20fort'
 ---
-
-## Details
-
-On the Godavari

@@ -2,60 +2,25 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import matter from 'gray-matter';
+import {
+	DISTRICTS,
+	LOCATION_ACCURACY,
+	REGIONS,
+	TYPES,
+	formatAddress,
+	nearbyForts
+} from './places.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const fortsDir = path.join(__dirname, '../forts');
 const outputDir = path.join(__dirname, '../src/data');
 const outputFile = path.join(outputDir, 'forts.json');
+const addressesFile = path.join(outputDir, 'addresses.json');
 
-// Required fields for each fort
-const REQUIRED_FIELDS = ['id', 'name', 'nameMarathi', 'coordinates', 'type', 'district'];
-
-// Valid fort types
-const VALID_TYPES = ['Hill Fort', 'Plain Fort', 'Sea Fort', 'Island Fort', 'Underground Fort'];
-
-// Valid Maharashtra districts
-const VALID_DISTRICTS = [
-	'Pune',
-	'Nashik',
-	'Aurangabad',
-	'Ahmednagar',
-	'Solapur',
-	'Buldhana',
-	'Akola',
-	'Washim',
-	'Yavatmal',
-	'Amravati',
-	'Nagpur',
-	'Wardha',
-	'Chandrapur',
-	'Gondia',
-	'Bhandara',
-	'Ratnagiri',
-	'Sindhudurg',
-	'Kolhapur',
-	'Sangli',
-	'Satara',
-	'Visakhapatnam',
-	'Bangalore',
-	'Belgaum',
-	'Gadchiroli',
-	'Palghar',
-	'Latur',
-	'Mumbai',
-	'Raigad',
-	'Thane',
-	'Jalna',
-	'Hingoli',
-	'Chhatrapati Sambhajinagar',
-	'Haridwar',
-	'Jaisalmer',
-	'Dhule',
-	'Goa',
-	'Jalgaon',
-	'Dharashiv',
-	'Nanded'
-];
+// Required fields for each fort. Forts with locationAccuracy "none" aren't on
+// the map yet, so they may leave out coordinates and district.
+const REQUIRED_FIELDS = ['id', 'name', 'nameMarathi', 'locationAccuracy', 'type'];
+const LOCATED_FIELDS = ['coordinates', 'district'];
 
 function validateCoordinates(coords) {
 	if (!Array.isArray(coords) || coords.length !== 2) return false;
@@ -80,19 +45,39 @@ function validateFortData(id, frontmatter) {
 		}
 	}
 
+	if (frontmatter.locationAccuracy && !LOCATION_ACCURACY.includes(frontmatter.locationAccuracy)) {
+		errors.push(
+			`  ✗ Invalid locationAccuracy: ${frontmatter.locationAccuracy}. Must be one of: ${LOCATION_ACCURACY.join(', ')}`
+		);
+	}
+	if (frontmatter.locationAccuracy !== 'none') {
+		for (const field of LOCATED_FIELDS) {
+			if (!frontmatter[field]) errors.push(`  ✗ Missing required field: ${field}`);
+		}
+	}
+
 	// Validate coordinates
 	if (frontmatter.coordinates && !validateCoordinates(frontmatter.coordinates)) {
 		errors.push(`  ✗ Invalid coordinates format: ${JSON.stringify(frontmatter.coordinates)}`);
 	}
 
 	// Validate type
-	if (frontmatter.type && !VALID_TYPES.includes(frontmatter.type)) {
-		errors.push(`  ✗ Invalid type: ${frontmatter.type}. Must be one of: ${VALID_TYPES.join(', ')}`);
+	if (frontmatter.type && !TYPES[frontmatter.type]) {
+		errors.push(
+			`  ✗ Invalid type: ${frontmatter.type}. Must be one of: ${Object.keys(TYPES).join(', ')}`
+		);
 	}
 
 	// Validate district
-	if (frontmatter.district && !VALID_DISTRICTS.includes(frontmatter.district)) {
+	if (frontmatter.district && !DISTRICTS[frontmatter.district]) {
 		errors.push(`  ✗ Invalid district: ${frontmatter.district}`);
+	}
+
+	// Validate region
+	if (frontmatter.region && !REGIONS[frontmatter.region]) {
+		errors.push(
+			`  ✗ Invalid region: ${frontmatter.region}. Must be one of: ${Object.keys(REGIONS).join(', ')}`
+		);
 	}
 
 	// Validate id format (3 digits)
@@ -129,6 +114,7 @@ async function buildData() {
 		return;
 	}
 
+	const addresses = JSON.parse(fs.readFileSync(addressesFile, 'utf-8'));
 	const forts = [];
 	const ids = new Set();
 	let hasErrors = false;
@@ -162,11 +148,18 @@ async function buildData() {
 			id,
 			name: data.name,
 			nameMarathi: data.nameMarathi,
-			coordinates: data.coordinates,
+			coordinates: data.coordinates || null,
+			locationAccuracy: data.locationAccuracy,
 			type: data.type,
-			district: data.district,
+			typeMarathi: TYPES[data.type],
+			district: data.district || null,
+			districtMarathi: DISTRICTS[data.district] || null,
 			region: data.region || null,
+			regionMarathi: REGIONS[data.region] || null,
 			altitude: data.altitude || null,
+			builtByOrEra: data.builtByOrEra || null,
+			associatedWith: data.associatedWith || null,
+			address: data.coordinates ? formatAddress(data.district, addresses[id]) : null,
 			area: data.area || null,
 			foundedYear: data.foundedYear || null,
 			notable: data.notable || false,
@@ -194,6 +187,7 @@ async function buildData() {
 
 	// Sort by ID for consistency
 	forts.sort((a, b) => a.id.localeCompare(b.id));
+	for (const fort of forts) fort.nearby = nearbyForts(fort, forts);
 
 	const output = {
 		forts,

@@ -1,15 +1,11 @@
 ---
 id: '263'
-name: Virathan Fort
-nameMarathi: विराथन किल्ला
-coordinates: [19.35, 73.85]
-type: Hill Fort
-district: Ratnagiri
-region: Konkan
+name: 'Virathan Fort'
+nameMarathi: 'विराथन किल्ला'
+locationAccuracy: 'none'
+type: 'Hill Fort'
 notable: false
-shortDescription: Virathan Fort in Ratnagiri
+shortDescription: 'Location not confirmed'
+mapsLink: 'https://www.google.com/maps/search/?api=1&query=Virathan%20Fort%20Maharashtra'
+wikipediaLink: 'https://en.wikipedia.org/w/index.php?search=Virathan%20Fort'
 ---
-
-## Location
-
-Fort in Ratnagiri.

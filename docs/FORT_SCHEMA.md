@@ -22,6 +22,7 @@ id: 001
 name: Fort Name
 nameMarathi: किल्ल्याचे नाव
 coordinates: [latitude, longitude]
+locationAccuracy: close
 type: Fort Type
 district: District Name
 ---
@@ -29,31 +30,36 @@ district: District Name
 
 ### Required Fields
 
-| Field         | Type   | Format                  | Example                   |
-| ------------- | ------ | ----------------------- | ------------------------- |
-| `id`          | String | 3 digits, zero-padded   | `"001"`, `"042"`, `"267"` |
-| `name`        | String | English name            | `"Raigad Fort"`           |
-| `nameMarathi` | String | Marathi (Devanagari)    | `"राइगड किल्ला"`          |
-| `coordinates` | Array  | `[latitude, longitude]` | `[18.3545, 73.3433]`      |
-| `type`        | String | See valid types below   | `"Hill Fort"`             |
-| `district`    | String | Maharashtra district    | `"Pune"`                  |
+| Field              | Type   | Format                  | Example                   |
+| ------------------ | ------ | ----------------------- | ------------------------- |
+| `id`               | String | 3 digits, zero-padded   | `"001"`, `"042"`, `"267"` |
+| `name`             | String | English name            | `"Raigad Fort"`           |
+| `nameMarathi`      | String | Marathi (Devanagari)    | `"राइगड किल्ला"`          |
+| `coordinates`      | Array  | `[latitude, longitude]` | `[18.3545, 73.3433]`      |
+| `locationAccuracy` | String | See below               | `"approx"`                |
+| `type`             | String | See valid types below   | `"Hill Fort"`             |
+| `district`         | String | Maharashtra district    | `"Pune"`                  |
+
+`coordinates` and `district` may be left out only when `locationAccuracy` is `"none"`.
 
 ### Optional Fields
 
-| Field                     | Type    | Format                 | Example                          |
-| ------------------------- | ------- | ---------------------- | -------------------------------- |
-| `region`                  | String  | Geographic region      | `"Western Ghats"`                |
-| `altitude`                | Number  | Meters above sea level | `2700`                           |
-| `area`                    | Number  | Square kilometers      | `270`                            |
-| `foundedYear`             | Number  | Historical year        | `1656`                           |
-| `notable`                 | Boolean | Featured fort          | `true`                           |
-| `shortDescription`        | String  | One-line summary       | `"Historic hill fort"`           |
-| `shortDescriptionMarathi` | String  | One-line Marathi       | `"ऐतिहासिक पहाड किल्ला"`         |
-| `description`             | String  | 2-3 sentences          | `"Raigad Fort is..."`            |
-| `descriptionMarathi`      | String  | 2-3 sentences Marathi  | `"राइगड किल्ला एक..."`           |
-| `tags`                    | Array   | Keyword tags           | `["trekking", "photography"]`    |
-| `mapsLink`                | String  | Google Maps URL        | `"https://maps.google.com/..."`  |
-| `wikipediaLink`           | String  | Wikipedia URL          | `"https://en.wikipedia.org/..."` |
+| Field                     | Type    | Format                 | Example                            |
+| ------------------------- | ------- | ---------------------- | ---------------------------------- |
+| `region`                  | String  | See valid regions      | `"Konkan"`                         |
+| `altitude`                | Number  | Meters above sea level | `2700`                             |
+| `builtByOrEra`            | String  | Builder or period      | `"Nizam Shahi; present fort 1559"` |
+| `associatedWith`          | String  | People and events      | `"Chand Bibi"`                     |
+| `area`                    | Number  | Square kilometers      | `270`                              |
+| `foundedYear`             | Number  | Historical year        | `1656`                             |
+| `notable`                 | Boolean | Featured fort          | `true`                             |
+| `shortDescription`        | String  | One-line summary       | `"Historic hill fort"`             |
+| `shortDescriptionMarathi` | String  | One-line Marathi       | `"ऐतिहासिक पहाड किल्ला"`           |
+| `description`             | String  | 2-3 sentences          | `"Raigad Fort is..."`              |
+| `descriptionMarathi`      | String  | 2-3 sentences Marathi  | `"राइगड किल्ला एक..."`             |
+| `tags`                    | Array   | Keyword tags           | `["trekking", "photography"]`      |
+| `mapsLink`                | String  | Google Maps URL        | `"https://maps.google.com/..."`    |
+| `wikipediaLink`           | String  | Wikipedia URL          | `"https://en.wikipedia.org/..."`   |
 
 ## Field Specifications
 
@@ -88,34 +94,47 @@ Geographic location as `[latitude, longitude]` in decimal format (WGS84).
 - Latitude: -90 to 90
 - Longitude: -180 to 180
 
+Leave `coordinates` out entirely when nobody knows where the fort is (`locationAccuracy: none`). Don't guess.
+
+### `locationAccuracy` (Required)
+
+How far the pin can be trusted. Must be one of:
+
+- `"close"` — pin checked against the fort
+- `"approx"` — pin is near the fort, exact spot not confirmed
+- `"rough"` — the fort may be some distance from the pin
+- `"none"` — location unknown; the fort is not on the map
+
 ### `type` (Required)
 
 Classification of the fort. Must be one of:
 
-- `"Hill Fort"` — Fort built on elevated terrain
-- `"Plain Fort"` — Fort built on flat ground
-- `"Sea Fort"` — Coastal/maritime fort
-- `"Island Fort"` — Fort on an island
-- `"Underground Fort"` — Subterranean fort
+- `"Hill Fort"` (गिरिदुर्ग) — fort on a hill or ridge
+- `"Sea Fort"` (जलदुर्ग) — fort surrounded by water
+- `"Coastal Fort"` (सागरी किनारा) — fort on the shore
+- `"Land Fort"` (भुईकोट) — fort on flat ground
 
-✅ Valid: `"Hill Fort"`, `"Sea Fort"`
-❌ Invalid: `"Mountain Fort"`, `"Coastal Fort"`, `"hill fort"` (case-sensitive)
+✅ Valid: `"Hill Fort"`, `"Coastal Fort"`
+❌ Invalid: `"Mountain Fort"`, `"Plain Fort"`, `"hill fort"` (case-sensitive)
 
 ### `district` (Required)
 
-Maharashtra district name. Must match the official district list.
-
-Valid Maharashtra districts:
+Maharashtra district name, using the current official names. The list (with Marathi names) is `DISTRICTS` in `scripts/places.js`:
 
 ```
-Pune, Nashik, Aurangabad, Ahmednagar, Solapur,
-Buldhana, Akola, Washim, Yavatmal, Amravati,
-Nagpur, Wardha, Chandrapur, Gondia, Bhandara,
-Ratnagiri, Sindhudurg, Kolhapur, Sangli, Satara
+Ahilyanagar, Akola, Amravati, Beed, Bhandara, Buldhana, Chandrapur,
+Chhatrapati Sambhajinagar, Dharashiv, Dhule, Gadchiroli, Gondia, Hingoli,
+Jalgaon, Jalna, Kolhapur, Latur, Mumbai, Nagpur, Nanded, Nandurbar, Nashik,
+Palghar, Parbhani, Pune, Raigad, Ratnagiri, Sangli, Satara, Sindhudurg,
+Solapur, Thane, Wardha, Washim, Yavatmal, North Goa (Goa)
 ```
 
-✅ Valid: `"Pune"`, `"Nashik"`
-❌ Invalid: `"pune"` (case-sensitive), `"Maharahstra"`, `"Deccan"`
+✅ Valid: `"Pune"`, `"Ahilyanagar"`
+❌ Invalid: `"pune"` (case-sensitive), `"Ahmednagar"` (old name), `"Deccan"`
+
+### `region` (Optional)
+
+One of `Konkan`, `Western Maharashtra`, `North Maharashtra`, `Marathwada`, `Vidarbha`, or `Outside Maharashtra` (Terekhol, in Goa).
 
 ### `altitude` (Optional)
 
@@ -211,9 +230,10 @@ id: 001
 name: Raigad Fort
 nameMarathi: राइगड किल्ला
 coordinates: [18.3545, 73.3433]
+locationAccuracy: close
 type: Hill Fort
-district: Pune
-region: Western Ghats
+district: Raigad
+region: Konkan
 altitude: 2700
 foundedYear: 1656
 notable: true
@@ -295,7 +315,7 @@ Before submitting a fort file, verify:
 
 - [ ] ID is 3 digits, zero-padded, unique
 - [ ] Name and nameMarathi are filled
-- [ ] Coordinates are valid `[lat, lon]` in decimal format
+- [ ] Coordinates are valid `[lat, lon]` in decimal format, or left out with `locationAccuracy: none`
 - [ ] Type is one of the valid options
 - [ ] District matches the valid list
 - [ ] Marathi text uses Devanagari script (not Romanized)

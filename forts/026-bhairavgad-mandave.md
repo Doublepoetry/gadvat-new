@@ -1,15 +1,11 @@
 ---
 id: '026'
-name: Bhairavgad (Mandave)
-nameMarathi: भैरवगड (मांडवे)
-coordinates: [20.02, 74.15]
-type: Hill Fort
-district: Dhule
-region: North Maharashtra
+name: 'Bhairavgad (Mandave)'
+nameMarathi: 'भैरवगड (मांडवे)'
+locationAccuracy: 'none'
+type: 'Hill Fort'
 notable: false
-shortDescription: Bhairavgad (Mandave) in Dhule
+shortDescription: 'Location not confirmed'
+mapsLink: 'https://www.google.com/maps/search/?api=1&query=Bhairavgad%20%28Mandave%29%20Maharashtra'
+wikipediaLink: 'https://en.wikipedia.org/w/index.php?search=Bhairavgad%20%28Mandave%29'
 ---
-
-## Location
-
-Fort in Dhule.

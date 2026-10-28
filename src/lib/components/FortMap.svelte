@@ -33,7 +33,7 @@
 			const matches =
 				fort.name.toLowerCase().includes(query) ||
 				fort.nameMarathi.includes(searchQuery) ||
-				fort.district.toLowerCase().includes(query);
+				(fort.district?.toLowerCase().includes(query) ?? false);
 			return matches;
 		}
 		return true;
@@ -80,6 +80,7 @@
 
 		// Add fort markers
 		forts.forEach((fort) => {
+			if (!fort.coordinates) return;
 			const [lat, lon] = fort.coordinates;
 			const marker = L.marker([lat, lon], {
 				title: fort.name

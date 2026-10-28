@@ -30,7 +30,7 @@
 				return (
 					fort.name.toLowerCase().includes(query) ||
 					fort.nameMarathi.includes(searchQuery) ||
-					fort.district.toLowerCase().includes(query)
+					(fort.district?.toLowerCase().includes(query) ?? false)
 				);
 			}
 

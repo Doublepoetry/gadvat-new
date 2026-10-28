@@ -6,7 +6,7 @@
 	const { fort }: { fort: Fort } = $props();
 
 	const display = $derived(getFortDisplay(fort, $language));
-	const mapsUrl = $derived(getMapsUrl(fort.coordinates));
+	const mapsUrl = $derived(getMapsUrl(fort));
 
 	function navigateToFort() {
 		window.location.href = `/${fort.id}`;
@@ -30,7 +30,9 @@
 		<p class="fort-type">{display.type}</p>
 
 		<div class="fort-meta">
-			<span class="badge">{display.district}</span>
+			{#if display.district}
+				<span class="badge">{display.district}</span>
+			{/if}
 			{#if display.region}
 				<span class="badge secondary">{display.region}</span>
 			{/if}

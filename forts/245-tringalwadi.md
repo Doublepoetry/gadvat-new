@@ -1,17 +1,14 @@
 ---
 id: '245'
-name: Tringalwadi
-nameMarathi: त्रिंगलवाडी
+name: 'Tringalwadi'
+nameMarathi: 'त्रिंगलवाडी'
 coordinates: [19.73, 73.57]
-type: Hill Fort
-district: Nashik
-region: North Maharashtra
+locationAccuracy: 'approx'
+type: 'Hill Fort'
+district: 'Nashik'
+region: 'North Maharashtra'
 notable: false
-shortDescription: Igatpuri; Jain cave
-mapsLink: https://www.google.com/maps/search/?api=1&query=19.73,73.57
-wikipediaLink: https://en.wikipedia.org/w/index.php?search=Tringalwadi
+shortDescription: 'Igatpuri; Jain cave'
+mapsLink: 'https://www.google.com/maps/search/?api=1&query=19.73,73.57'
+wikipediaLink: 'https://en.wikipedia.org/w/index.php?search=Tringalwadi'
 ---
-
-## Details
-
-Igatpuri; Jain cave

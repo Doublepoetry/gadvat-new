@@ -37,7 +37,7 @@ export function getFortDisplay(fort: Fort, language: Language): FortDisplay {
 				? fort.shortDescription || fort.description || ''
 				: fort.shortDescriptionMarathi || fort.descriptionMarathi || '',
 		type: fort.type,
-		district: fort.district,
+		district: fort.district || '',
 		region: fort.region || '',
 		coordinates: fort.coordinates
 	};
@@ -48,8 +48,11 @@ export function formatCoordinates(coords: [number, number]): string {
 	return `${lat.toFixed(4)}, ${lon.toFixed(4)}`;
 }
 
-export function getMapsUrl(coords: [number, number]): string {
-	const [lat, lon] = coords;
+export function getMapsUrl(fort: Fort): string {
+	if (fort.mapsLink) return fort.mapsLink;
+	if (!fort.coordinates)
+		return `https://maps.google.com/?q=${encodeURIComponent(fort.name + ' Maharashtra')}`;
+	const [lat, lon] = fort.coordinates;
 	return `https://maps.google.com/?q=${lat},${lon}`;
 }
 
@@ -70,7 +73,7 @@ export function filterFortsByType(forts: Fort[], type: string): Fort[] {
 }
 
 export function getUniqueDistricts(forts: Fort[]): string[] {
-	const districts = new Set(forts.map((f) => f.district));
+	const districts = new Set(forts.flatMap((f) => (f.district ? [f.district] : [])));
 	return Array.from(districts).sort();
 }
 

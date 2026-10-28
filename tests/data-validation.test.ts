@@ -35,7 +35,7 @@ describe('Fort Data Validation', () => {
 		});
 
 		it('should have all required fields', () => {
-			const requiredFields = ['id', 'name', 'nameMarathi', 'coordinates', 'type', 'district'];
+			const requiredFields = ['id', 'name', 'nameMarathi', 'locationAccuracy', 'type'];
 
 			fortFiles.forEach((file) => {
 				const content = fs.readFileSync(path.join(fortsDir, file), 'utf-8');
@@ -53,6 +53,13 @@ describe('Fort Data Validation', () => {
 			fortFiles.forEach((file) => {
 				const content = fs.readFileSync(path.join(fortsDir, file), 'utf-8');
 				const { data } = matter(content);
+
+				// Forts the original site couldn't place have no coordinates yet.
+				if (data.locationAccuracy === 'none') {
+					expect(data.coordinates).toBeUndefined();
+					return;
+				}
+				expect(data.district).toBeTruthy();
 
 				const coords = data.coordinates;
 				expect(Array.isArray(coords)).toBe(true);
@@ -102,23 +109,13 @@ describe('Fort Data Validation', () => {
 		});
 
 		it('should have valid fort types', () => {
-			const validTypes = ['Hill Fort', 'Plain Fort', 'Sea Fort', 'Island Fort', 'Underground Fort'];
+			const validTypes = ['Hill Fort', 'Sea Fort', 'Coastal Fort', 'Land Fort'];
 
 			fortFiles.forEach((file) => {
 				const content = fs.readFileSync(path.join(fortsDir, file), 'utf-8');
 				const { data } = matter(content);
 
 				expect(validTypes.includes(data.type)).toBe(true);
-			});
-		});
-
-		it('should have markdown content', () => {
-			fortFiles.forEach((file) => {
-				const content = fs.readFileSync(path.join(fortsDir, file), 'utf-8');
-				const { content: markdown } = matter(content);
-
-				expect(markdown).toBeDefined();
-				expect(markdown.length).toBeGreaterThan(0);
 			});
 		});
 	});
