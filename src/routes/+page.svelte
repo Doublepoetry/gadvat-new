@@ -1,6 +1,7 @@
 <script lang="ts">
 	import FortCard from '#lib/components/FortCard.svelte';
 	import FortMap from '#lib/components/FortMap.svelte';
+	import SearchPill from '#lib/components/SearchPill.svelte';
 	import { sortForts, getUniqueDistricts, getUniqueFortTypes } from '#lib/data';
 	import { language } from '#lib/stores/language';
 	import type { Fort } from '#lib/types';
@@ -11,7 +12,9 @@
 	let selectedFort = $state<string | null>(null);
 	let selectedDistrict = $state<string | null>(null);
 	let selectedType = $state<string | null>(null);
-	let searchQuery = $state('');
+	let search: SearchPill;
+
+	const selected = $derived(data.forts.find((f) => f.id === selectedFort) ?? null);
 
 	const districts = $derived(getUniqueDistricts(data.forts));
 	const fortTypes = $derived(getUniqueFortTypes(data.forts));
@@ -26,23 +29,33 @@
 				return false;
 			}
 
-			if (searchQuery) {
-				const query = searchQuery.toLowerCase();
-				return (
-					fort.name.toLowerCase().includes(query) ||
-					fort.nameMarathi.includes(searchQuery) ||
-					(fort.district?.toLowerCase().includes(query) ?? false)
-				);
-			}
-
 			return true;
 		});
 	});
 
 	const sortedForts = $derived(sortForts(filteredForts, $language));
+
+	// `/` focuses search; Esc closes the search dropdown first, then the selected fort
+	function handleKeydown(e: KeyboardEvent) {
+		const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName ?? '');
+		if (e.key === 'Escape') {
+			if (!search.close() && selectedFort) selectedFort = null;
+		} else if (e.key === '/' && !typing) {
+			e.preventDefault();
+			search.focus();
+		}
+	}
 </script>
 
+<svelte:window onkeydown={handleKeydown} />
+
 <section class="map-section">
+	<SearchPill
+		bind:this={search}
+		forts={data.forts}
+		{selected}
+		onselect={(id) => (selectedFort = id)}
+	/>
 	<FortMap
 		forts={data.forts}
 		districtNames={data.districtNames}
@@ -50,22 +63,12 @@
 		onselect={(id) => (selectedFort = id)}
 		{selectedDistrict}
 		{selectedType}
-		{searchQuery}
 	/>
 </section>
 
 <!-- The original site's search and list replace this in later slices -->
 <div class="page-content">
 	<section class="filters">
-		<div class="search-box">
-			<input
-				type="text"
-				placeholder={$language === 'en' ? 'Search forts...' : 'किल्ले शोधा...'}
-				bind:value={searchQuery}
-				class="search-input"
-			/>
-		</div>
-
 		<div class="filter-row">
 			<div class="district-filter">
 				<label for="district-select">
@@ -144,30 +147,10 @@
 		gap: 1rem;
 	}
 
-	.search-box {
-		flex: 1;
-	}
-
 	.filter-row {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 1rem;
-	}
-
-	.search-input {
-		width: 100%;
-		background-color: var(--card);
-		padding: 0.75rem;
-		border: 1px solid rgba(var(--lr), 0.18);
-		border-radius: 0.375rem;
-		font-size: 1rem;
-		transition: border-color 0.2s ease;
-	}
-
-	.search-input:focus {
-		outline: none;
-		border-color: var(--acc);
-		box-shadow: 0 0 0 3px rgba(var(--lr), 0.12);
 	}
 
 	.district-filter,

@@ -130,7 +130,7 @@ Glass effects: `blur(16px)` on the search pill, and `blur(6px)` plus the scrim o
 
 - **One easing everywhere:** `cubic-bezier(.2,.8,.2,1)`.
 - **Panel:** slides in over .5s with a .15s delay (desktop: from the right; mobile: a bottom sheet over .45s).
-- **Search pill:** glides from the middle of the screen to the top bar over .7s when a fort is selected, and narrows to 240–420px.
+- **Search pill:** in the original it glides from the middle of the screen to the top bar over .7s when a fort is selected, and narrows to 240–420px. The port keeps it in the top bar throughout (see Idle state) and only narrows it, 580px → 420px.
 - **Map:** flies to the fort over 1100ms.
 - **Pin:** drops in (`gvDrop` .6s, overshoot), then sends a sonar ring (radius 6→34, 2.4s, looping). The label fades in .4s.
 - **Fort dots:** twinkle (opacity .35↔1, 2.2–4.2s, staggered per fort).
@@ -139,7 +139,7 @@ Glass effects: `blur(16px)` on the search pill, and `blur(6px)` plus the scrim o
 ## 5. Layout
 
 - **Shell:** `100dvh`, `overflow: hidden`. The map is `inset: 0`. The **header** is 64px with 20px padding, transparent, and `pointer-events: none` except on its controls. The wordmark (+ गडवाट) sits on the left. On the right: the theme icon button, the मराठी switch, and the **Forts** pill (filled `--acc` while the list is open).
-- **Idle state:** the search pill is centred, up to 580px wide and 56px tall, sitting at 26% of the viewport height (20% on mobile), with the map fitted below it. Placeholder: "Search 267 forts · किल्ला शोधा". It's a **single bilingual** placeholder.
+- **Idle state:** the search pill is centred, up to 580px wide and 56px tall, sitting at 26% of the viewport height (20% on mobile), with the map fitted below it. **In the port it stays docked in the header row** (top 4px; 60px on mobile), so the map keeps its full size and its district names stay readable. Placeholder: "Search 267 forts · किल्ला शोधा". It's a **single bilingual** placeholder.
 - **Selected state:** the panel docks right at `top: 76px; right/bottom: 20px`, with width `clamp(380px, 40vw, 540px)`. The map re-centres the fort in the space left over. The selected district lightens to `--landOn`.
 - **Mobile (< 760px):** the panel becomes a bottom sheet at 58% height with radius `6 6 0 0`. The search pill runs full width, 12px from each edge.
 - **List modal:** max 820px, scrim behind it. The header has a title + Marathi + count, a filter input, and type chips with counts. Rows are grouped under sticky letters (11px, .14em, `--acc2`) in three columns: name+MR / district / type. The type column is hidden on mobile.
@@ -163,7 +163,7 @@ Built on a **hairline grid**: 1px `rgba(18,57,47,.2)` rules between bands. From 
 ## 7. Map
 
 - **A custom SVG of district shapes, not tiles** (`src/data/districts.json`, pan and zoom by d3-zoom). It's flat with no relief. District stroke is `.22` alpha (`.32` when selected; the original used `.1`, raised so borders read at a glance), and the coastline is 2.4px at `.32`.
-- **District names are always on:** uppercase Instrument Sans 10px, tracking 1.6. The Marathi line sits below in Tiro 13px and fades in once you zoom past 1.2×. "ARABIAN SEA" / अरबी समुद्र appears in `--edge`. (The original faded all labels in with zoom.)
+- **District names show from the first view on a large screen:** uppercase Instrument Sans 10px, tracking 1.6. Labels fade in by on-screen scale (English from 0.5–0.65 px per map unit, so a phone shows them once zoomed in), and the Marathi line below in Tiro 13px from 1.0–1.4. "ARABIAN SEA" / अरबी समुद्र appears in `--edge`. (The original faded all labels in with zoom.)
 - **Fort dots:** a 4px halo at .18–.22 alpha plus a core (`--spark` in dark mode, the type colour with a cream stroke in light mode).
 - **Selected pin:** a teardrop in the type colour with a `--bg` stroke and centre, a ground ellipse shadow and the sonar ring.
 - **Details card:** clicking a fort flies to it and opens a paper card beside the pin (a bottom sheet under 640px): type kicker, name 22px, Marathi in Mukta, then district, elevation, era and base village (marked "from OpenStreetMap"), and a `--signal` "Open fort page" pill. It replaces the original's floating pin label. The full field-card panel replaces it in a later slice.
@@ -176,7 +176,7 @@ Built on a **hairline grid**: 1px `rgba(18,57,47,.2)` rules between bands. From 
 
 ## 9. Interaction and accessibility
 
-- **Keyboard:** `/` focuses search. `Esc` closes, in order: the list, then the search dropdown, then the panel. ↑/↓ + Enter work in the results.
+- **Keyboard:** `/` focuses search. `Esc` closes, in order: the list, then the search dropdown, then the panel. ↑/↓ + Enter work in the results. **Map dots:** one dot is in the tab order; the arrow keys move focus to the nearest dot in that direction (a 2px `--acc` ring), and Enter or Space selects it.
 - **Hit targets** are at least 36–40px. Icon buttons carry an `aria-label`.
 - **Focus:** every focusable element gets a `:focus-visible` ring, 2px `--acc` with a 2px offset. The original had none.
 - **Still to do in the port:** announce the fort panel when it opens (`aria-live`, and move focus to it).
