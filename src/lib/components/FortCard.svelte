@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import { language } from '../stores/language';
 	import { getFortDisplay, getMapsUrl } from '../data';
 	import type { Fort } from '../types';
@@ -9,7 +10,7 @@
 	const mapsUrl = $derived(getMapsUrl(fort));
 
 	function navigateToFort() {
-		window.location.href = `/${fort.id}`;
+		window.location.href = resolve('/[fort]', { fort: fort.id });
 	}
 
 	function openMap(e: MouseEvent) {

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import { onMount } from 'svelte';
 	import { select } from 'd3-selection';
 	import 'd3-transition';
@@ -286,7 +287,7 @@
 						<dd>{f.address.base} <span class="source">from OpenStreetMap</span></dd>
 					{/if}
 				</dl>
-				<a class="open" href="/{f.id}">Open fort page →</a>
+				<a class="open" href={resolve('/[fort]', { fort: f.id })}>Open fort page →</a>
 			</div>
 		{/key}
 	{/if}

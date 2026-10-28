@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import { getMapsUrl, getFortDisplay, formatCoordinates } from '#lib/data';
 	import { language, translations } from '#lib/stores/language';
 	import type { PageData } from './$types';
@@ -11,7 +12,7 @@
 
 <div class="fort-detail">
 	<div class="breadcrumb">
-		<a href="/">← {$language === 'en' ? 'Back to List' : 'सूचीकडे परत जा'}</a>
+		<a href={resolve('/')}>← {$language === 'en' ? 'Back to List' : 'सूचीकडे परत जा'}</a>
 	</div>
 
 	<div class="detail-header">
