@@ -32,6 +32,9 @@ jobs:
       - name: Type check
         run: npm run check --if-present
 
+      - name: Check Commons images
+        run: npm run commons:sync -- --check
+
       - name: Build data
         run: npm run build-data
 

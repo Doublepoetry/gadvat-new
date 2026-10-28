@@ -13,6 +13,21 @@ export interface NearbyFort {
 	km: number; // great-circle distance, one decimal
 }
 
+/** A fort photo hosted on Wikimedia Commons, resolved at build time by `npm run build-data`. */
+export interface GalleryImage {
+	file: string; // Commons filename, e.g. "Torna fort gate.jpg"
+	src: string; // Commons thumbnail URL, 1280px wide (or the original if smaller)
+	width: number; // of src
+	height: number; // of src
+	alt: string;
+	caption?: string;
+	captionMarathi?: string;
+	credit: string; // author, plain text
+	license: string; // e.g. "CC BY-SA 4.0"
+	licenseUrl: string;
+	sourceUrl: string; // Commons file page; link credits here
+}
+
 export interface Fort {
 	id: string;
 	name: string;
@@ -41,6 +56,7 @@ export interface Fort {
 	tags?: string[];
 	mapsLink?: string;
 	wikipediaLink?: string;
+	images?: GalleryImage[];
 	content?: string;
 	filename?: string;
 }
