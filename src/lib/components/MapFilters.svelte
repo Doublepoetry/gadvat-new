@@ -35,6 +35,17 @@
 	const range = $derived(elevationRange(forts));
 	const withAltitude = $derived(forts.filter((f) => f.altitude).length);
 
+	// A radio group: one tab stop, arrow keys move the choice
+	function handleColorKeydown(e: KeyboardEvent) {
+		const step = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
+		if (!step) return;
+		e.preventDefault();
+		const i = COLOR_MODES.findIndex((m) => m.value === colorBy);
+		colorBy = COLOR_MODES[(i + step + COLOR_MODES.length) % COLOR_MODES.length].value;
+		const group = e.currentTarget as HTMLElement;
+		requestAnimationFrame(() => group.querySelector<HTMLElement>('[aria-checked="true"]')?.focus());
+	}
+
 	function toggle(type: FortType) {
 		types = types.includes(type) ? types.filter((t) => t !== type) : [...types, type];
 	}
@@ -58,12 +69,19 @@
 
 		<span class="divider" aria-hidden="true"></span>
 
-		<div class="segmented" role="radiogroup" aria-label="Colour the forts by">
+		<div
+			class="segmented"
+			role="radiogroup"
+			aria-label="Colour the forts by"
+			tabindex="-1"
+			onkeydown={handleColorKeydown}
+		>
 			<span class="seg-label" aria-hidden="true">Colour</span>
 			{#each COLOR_MODES as m (m.value)}
 				<button
 					role="radio"
 					aria-checked={colorBy === m.value}
+					tabindex={colorBy === m.value ? 0 : -1}
 					class:on={colorBy === m.value}
 					onclick={() => (colorBy = m.value)}>{m.label}</button
 				>
