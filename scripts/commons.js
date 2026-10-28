@@ -79,9 +79,13 @@ export function validateImages(images, cache) {
 		}
 		const entry = cache[file];
 		if (!entry) {
-			errors.push(`  ✗ images[${i}]: ${file} is not in src/data/commons.json (run npm run commons:sync)`);
+			errors.push(
+				`  ✗ images[${i}]: ${file} is not in src/data/commons.json (run npm run commons:sync)`
+			);
 		} else if (!isFreeLicense(entry.licenseCode)) {
-			errors.push(`  ✗ images[${i}]: ${file} has licence "${entry.license}"; only CC BY, CC BY-SA, CC0 and public domain are allowed`);
+			errors.push(
+				`  ✗ images[${i}]: ${file} has licence "${entry.license}"; only CC BY, CC BY-SA, CC0 and public domain are allowed`
+			);
 		}
 	});
 	return errors;

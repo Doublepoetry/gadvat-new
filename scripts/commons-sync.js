@@ -9,7 +9,13 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import matter from 'gray-matter';
-import { API_URL, THUMB_WIDTH, isFreeLicense, normalizeFilename, toCommonsEntry } from './commons.js';
+import {
+	API_URL,
+	THUMB_WIDTH,
+	isFreeLicense,
+	normalizeFilename,
+	toCommonsEntry
+} from './commons.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const fortsDir = path.join(__dirname, '../forts');
@@ -47,7 +53,9 @@ async function fetchBatch(files) {
 	});
 	const response = await fetch(`${API_URL}?${params}`, { headers: { 'User-Agent': USER_AGENT } });
 	if (!response.ok) throw new Error(`Commons API: HTTP ${response.status}`);
-	const { query } = await response.json();
+	const body = await response.json();
+	if (body.error) throw new Error(`Commons API: ${body.error.code}: ${body.error.info}`);
+	const { query } = body;
 
 	// Map each final page title back to the name the fort file asked for.
 	const finalTitle = new Map(files.map((f) => [f, `File:${f}`]));
@@ -55,7 +63,10 @@ async function fetchBatch(files) {
 		for (const [file, title] of finalTitle) if (title === step.from) finalTitle.set(file, step.to);
 	}
 	const pages = new Map(query.pages.map((p) => [p.title, p]));
-	return files.map((file) => [file, toCommonsEntry(pages.get(finalTitle.get(file)) ?? { missing: true })]);
+	return files.map((file) => [
+		file,
+		toCommonsEntry(pages.get(finalTitle.get(file)) ?? { missing: true })
+	]);
 }
 
 async function main() {
@@ -70,7 +81,9 @@ async function main() {
 			if (!entry) {
 				errors.push(`  ✗ ${file}: not found on Commons`);
 			} else if (!isFreeLicense(entry.licenseCode)) {
-				errors.push(`  ✗ ${file}: licence "${entry.license}" is not CC BY, CC BY-SA, CC0 or public domain`);
+				errors.push(
+					`  ✗ ${file}: licence "${entry.license}" is not CC BY, CC BY-SA, CC0 or public domain`
+				);
 			} else {
 				fresh[file] = entry;
 			}
@@ -78,7 +91,9 @@ async function main() {
 	}
 
 	if (check) {
-		const committed = fs.existsSync(outputFile) ? JSON.parse(fs.readFileSync(outputFile, 'utf-8')) : {};
+		const committed = fs.existsSync(outputFile)
+			? JSON.parse(fs.readFileSync(outputFile, 'utf-8'))
+			: {};
 		for (const [file, entry] of Object.entries(fresh)) {
 			const old = committed[file];
 			if (!old) {
