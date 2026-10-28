@@ -18,6 +18,7 @@
       "altitude": null,
       "builtByOrEra": "Nizam Shahi; present fort 1559 (Hussain Nizam Shah)",
       "associatedWith": "Chand Bibi",
+      "checkFlag": null,
       "address": {
         "base": "Foi",
         "line": "Ahilyanagar, Nagar Taluka, Ahilyanagar District, Maharashtra 414001"
@@ -75,6 +76,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Valmiki ashram legend (Lav–Kush)",
+      "checkFlag": null,
       "address": {
         "base": "Veluk",
         "line": "Murbad Taluka, Thane District, Maharashtra"
@@ -132,6 +134,7 @@
       "altitude": null,
       "builtByOrEra": "Shilahara, 12th century (Bhoja II)",
       "associatedWith": "Chh. Shahu; Maharani Tarabai",
+      "checkFlag": null,
       "address": {
         "base": "Guruwar Peth",
         "line": "Satara, Satara, Satara District, Maharashtra 415002"
@@ -189,6 +192,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Akluj",
         "line": "Malshiras, Solapur District, Maharashtra 413101"
@@ -246,6 +250,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Akola",
         "line": "Akola, Akola District, Maharashtra 444001"
@@ -303,6 +308,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": "Pin falls in Nashik district, listed as Ahilyanagar",
       "address": {
         "base": "Udadavne",
         "line": "Akola, Ahilyanagar District, Maharashtra"
@@ -360,6 +366,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Vijaydurg",
         "line": "Devgad Taluka, Sindhudurg District, Maharashtra"
@@ -417,6 +424,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Believed birthplace of Hanuman",
+      "checkFlag": null,
       "address": {
         "base": "Pegalwadi Khurd",
         "line": "Pegalwadi Budruk, Trimbakeshwar Taluka, Nashik District, Maharashtra 422212"
@@ -474,6 +482,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Guhagar",
         "line": "Guhagar Taluka, Ratnagiri District, Maharashtra 415703"
@@ -531,6 +540,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Ankai",
         "line": "Yeola Taluka, Nashik District, Maharashtra"
@@ -588,6 +598,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Dudhmal",
         "line": "Kannad, Chhatrapati Sambhajinagar District, Maharashtra 431147"
@@ -645,6 +656,7 @@
       "altitude": null,
       "builtByOrEra": "Gujarat Sultanate 1516; rebuilt by Marathas",
       "associatedWith": "Chimaji Appa took it from the Portuguese, 1737",
+      "checkFlag": null,
       "address": {
         "base": "Janjire Arnala",
         "line": "Arnala, Vasai Taluka, Palghar District, Maharashtra"
@@ -702,6 +714,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Nandgaon",
         "line": "Palghar Taluka, Palghar District, Maharashtra 401403"
@@ -759,6 +772,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -813,6 +827,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Janori",
         "line": "Igatpuri Taluka, Nashik District, Maharashtra"
@@ -870,6 +885,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Usar",
         "line": "Roha Taluka, Raigad District, Maharashtra 402109"
@@ -927,6 +943,7 @@
       "altitude": null,
       "builtByOrEra": "Mughal",
       "associatedWith": "Chh. Sambhaji Maharaj was brought here after his capture, 1689",
+      "checkFlag": null,
       "address": {
         "base": "Pedgaon",
         "line": "Shrigonda, Ahilyanagar District, Maharashtra"
@@ -984,6 +1001,7 @@
       "altitude": null,
       "builtByOrEra": "Mughal, 18th century",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Balapur",
         "line": "Balapur, Akola District, Maharashtra 444302"
@@ -1041,6 +1059,7 @@
       "altitude": null,
       "builtByOrEra": "Gond kings",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Ballarshah",
         "line": "Ballarshah, Ballarpur Taluka, Chandrapur District, Maharashtra 442901"
@@ -1098,6 +1117,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Angre; later British (Fort Victoria)",
+      "checkFlag": null,
       "address": {
         "base": "Boudhawadi",
         "line": "Bankot, Mandangad Taluka, Ratnagiri District, Maharashtra"
@@ -1155,6 +1175,7 @@
       "altitude": null,
       "builtByOrEra": "Siddis; Portuguese",
       "associatedWith": "Chimaji Appa, 1737",
+      "checkFlag": "Pin falls in Raigad district, listed as Thane",
       "address": {
         "base": "Belapur West",
         "line": "Navi Mumbai, Thane Taluka, Thane District, Maharashtra 400706"
@@ -1212,6 +1233,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": "Pin falls in Ratnagiri district, listed as Sindhudurg",
       "address": {
         "base": "Sagwe",
         "line": "Rajapur Taluka, Ratnagiri District, Maharashtra 416804"
@@ -1269,6 +1291,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": "Pin falls in Pune district, listed as Thane",
       "address": {
         "base": "Ghatghar",
         "line": "Junnar, Pune District, Maharashtra"
@@ -1326,6 +1349,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": "Pin falls in Thane district, listed as Ahilyanagar",
       "address": {
         "base": "Kelawadi",
         "line": "Murbad Taluka, Thane District, Maharashtra"
@@ -1383,6 +1407,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Ambavchiwadi",
         "line": "Akola, Ahilyanagar District, Maharashtra 422604"
@@ -1437,6 +1462,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -1470,6 +1496,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Dhangai",
         "line": "Sakri Taluka, Dhule District, Maharashtra"
@@ -1527,6 +1554,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Malgaon",
         "line": "Malvan Taluka, Sindhudurg District, Maharashtra"
@@ -1584,6 +1612,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Kalmuste",
         "line": "Jambhulwadi, Trimbakeshwar Taluka, Nashik District, Maharashtra"
@@ -1641,6 +1670,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Palghar",
         "line": "Palghar Taluka, Palghar District, Maharashtra 401404"
@@ -1698,6 +1728,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Burujwadi",
         "line": "Khalapur Taluka, Raigad District, Maharashtra 410102"
@@ -1755,6 +1786,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -1809,6 +1841,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Palewadi",
         "line": "Kolwan, Bhudargad, Kolhapur District, Maharashtra 416223"
@@ -1863,6 +1896,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -1896,6 +1930,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -1950,6 +1985,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "MIDC Mahad",
         "line": "Mahad Taluka, Raigad District, Maharashtra 402302"
@@ -2007,6 +2043,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Pardeshwadi",
         "line": "Khed, Igatpuri Taluka, Nashik District, Maharashtra"
@@ -2064,6 +2101,7 @@
       "altitude": null,
       "builtByOrEra": "Portuguese house, fortified by the British, 17th century",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Fort",
         "line": "Mumbai City District, Maharashtra 400038"
@@ -2121,6 +2159,7 @@
       "altitude": null,
       "builtByOrEra": "Portuguese, 1640",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Khar",
         "line": "Mumbai, Mumbai Suburban District, Maharashtra 400035"
@@ -2178,6 +2217,7 @@
       "altitude": null,
       "builtByOrEra": "Gond kings",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Chandrapur",
         "line": "Chandrapur Taluka, Chandrapur District, Maharashtra 442401"
@@ -2235,6 +2275,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -2289,6 +2330,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Shiravli",
         "line": "Mahabaleshwar, Satara District, Maharashtra"
@@ -2346,6 +2388,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Holkars",
+      "checkFlag": null,
       "address": {
         "base": "Chandvad",
         "line": "Chandwad Taluka, Nashik District, Maharashtra 423101"
@@ -2403,6 +2446,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -2457,6 +2501,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Shivaji Maharaj renamed it Prasannagad",
+      "checkFlag": null,
       "address": {
         "base": "Aptale",
         "line": "Junnar, Pune District, Maharashtra"
@@ -2514,6 +2559,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Patan",
         "line": "Patan, Satara District, Maharashtra"
@@ -2571,6 +2617,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -2625,6 +2672,7 @@
       "altitude": null,
       "builtByOrEra": "Yadavas, 12th century; renamed by Muhammad bin Tughluq, 1327",
       "associatedWith": "Yadava capital Devagiri",
+      "checkFlag": null,
       "address": {
         "base": "Daulatabad",
         "line": "Chhatrapati Sambhajinagar, Chhatrapati Sambhajinagar District, Maharashtra"
@@ -2679,6 +2727,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -2712,6 +2761,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Devgad",
         "line": "Devgad Taluka, Sindhudurg District, Maharashtra 416613"
@@ -2769,6 +2819,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Valvand",
         "line": "Mawal Taluka, Pune District, Maharashtra"
@@ -2826,6 +2877,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Malshiras",
         "line": "Purandhar, Pune District, Maharashtra"
@@ -2883,6 +2935,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -2934,6 +2987,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -2967,6 +3021,7 @@
       "altitude": null,
       "builtByOrEra": "British",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Dongri",
         "line": "Mumbai City District, Maharashtra 400009"
@@ -3024,6 +3079,7 @@
       "altitude": null,
       "builtByOrEra": "Portuguese",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Karanja",
         "line": "Uran Taluka, Raigad District, Maharashtra 400702"
@@ -3081,6 +3137,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Musalgaon",
         "line": "Sinnar Taluka, Nashik District, Maharashtra"
@@ -3138,6 +3195,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -3192,6 +3250,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Shivaji Maharaj took Kalyan in 1654",
+      "checkFlag": null,
       "address": {
         "base": "Aadharwadi",
         "line": "Kalyan-Dombivli, Kalyan Taluka, Thane District, Maharashtra 421306"
@@ -3249,6 +3308,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Harnai",
         "line": "Dapoli Taluka, Ratnagiri District, Maharashtra 415713"
@@ -3306,6 +3366,7 @@
       "altitude": null,
       "builtByOrEra": "British, 1769",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Fort",
         "line": "Mumbai City District, Maharashtra 400020"
@@ -3363,6 +3424,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Revyachiwad",
         "line": "Khokurle, Vaibhavwadi Taluka, Sindhudurg District, Maharashtra"
@@ -3420,6 +3482,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -3474,6 +3537,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Raipur",
         "line": "Dahanu Taluka, Palghar District, Maharashtra 104606"
@@ -3531,6 +3595,7 @@
       "altitude": null,
       "builtByOrEra": "Imad Shahi, 15th century",
       "associatedWith": "Battle of Gawilghur, 1803 (Arthur Wellesley)",
+      "checkFlag": null,
       "address": {
         "base": "Baglinga",
         "line": "Chikhaldara, Amravati District, Maharashtra 444717"
@@ -3588,6 +3653,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Asanwadi",
         "line": "Mulshi Taluka, Pune District, Maharashtra"
@@ -3645,6 +3711,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Awli Dumala",
         "line": "Rayambe, Igatpuri Taluka, Nashik District, Maharashtra"
@@ -3702,6 +3769,7 @@
       "altitude": null,
       "builtByOrEra": "Portuguese, 16th century",
       "associatedWith": "Marathas took it in 1737",
+      "checkFlag": null,
       "address": {
         "base": "Ghodbunder",
         "line": "Thane Taluka, Thane District, Maharashtra 401107"
@@ -3759,6 +3827,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Roha",
         "line": "Roha Taluka, Raigad District, Maharashtra 402105"
@@ -3816,6 +3885,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Harnai",
         "line": "Dapoli Taluka, Ratnagiri District, Maharashtra 415713"
@@ -3873,6 +3943,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Wadi",
         "line": "Khamgaon, Buldhana District, Maharashtra 444300"
@@ -3930,6 +4001,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Guhagar",
         "line": "Guhagar Taluka, Ratnagiri District, Maharashtra 415703"
@@ -3987,6 +4059,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Madwaadi",
         "line": "Rampur, Murbad Taluka, Thane District, Maharashtra"
@@ -4044,6 +4117,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Chiplun",
         "line": "Chiplun Taluka, Ratnagiri District, Maharashtra 415600"
@@ -4101,6 +4175,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -4155,6 +4230,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Pethchiwadi",
         "line": "Junnar, Pune District, Maharashtra"
@@ -4212,6 +4288,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -4266,6 +4343,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Kotmachiwadi",
         "line": "Take harsha, Trimbakeshwar Taluka, Nashik District, Maharashtra"
@@ -4323,6 +4401,7 @@
       "altitude": 1424,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Khireshwar",
         "line": "Junnar, Pune District, Maharashtra"
@@ -4380,6 +4459,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Dalwat",
         "line": "Kalwan Taluka, Nashik District, Maharashtra"
@@ -4437,6 +4517,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Dabhade family",
+      "checkFlag": null,
       "address": {
         "base": "Induri",
         "line": "Mawal Taluka, Pune District, Maharashtra 410506"
@@ -4494,6 +4575,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -4548,6 +4630,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Umbarwadi",
         "line": "Ambewadi, Khalapur Taluka, Raigad District, Maharashtra 410102"
@@ -4605,6 +4688,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Wadki",
         "line": "Haveli Taluka, Pune District, Maharashtra 412308"
@@ -4662,6 +4746,7 @@
       "altitude": null,
       "builtByOrEra": "Bijapur; later Marathas",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Kumbharwadi",
         "line": "Ratnagiri Taluka, Ratnagiri District, Maharashtra 415614"
@@ -4719,6 +4804,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Scindia (Shinde)",
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -4773,6 +4859,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Jamner",
         "line": "Jamner, Jalgaon District, Maharashtra 424206"
@@ -4830,6 +4917,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Manachnagar",
         "line": "Patan, Satara District, Maharashtra"
@@ -4887,6 +4975,7 @@
       "altitude": null,
       "builtByOrEra": "Siddis, 16th century",
       "associatedWith": "Siddis of Janjira",
+      "checkFlag": null,
       "address": {
         "base": "Rajapuri",
         "line": "Murud Taluka, Raigad District, Maharashtra 402401"
@@ -4944,6 +5033,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -4998,6 +5088,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Ghatghar",
         "line": "Junnar, Pune District, Maharashtra"
@@ -5055,6 +5146,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Kalkichiwadi",
         "line": "Kumshet, Akola, Ahilyanagar District, Maharashtra"
@@ -5112,6 +5204,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Jambare",
         "line": "Chandgad, Kolhapur District, Maharashtra"
@@ -5169,6 +5262,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -5223,6 +5317,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Nandgaon",
         "line": "Palghar Taluka, Palghar District, Maharashtra 401403"
@@ -5280,6 +5375,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Satara Road",
         "line": "Koregaon, Satara District, Maharashtra 415010"
@@ -5337,6 +5433,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -5391,6 +5488,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Vasai-Virar",
         "line": "Vasai Taluka, Palghar District, Maharashtra"
@@ -5448,6 +5546,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Navrangpura",
         "line": "Kandhar, Nanded District, Maharashtra 431714"
@@ -5505,6 +5604,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -5559,6 +5659,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Khadaki Bk",
         "line": "Chalisgaon, Jalgaon District, Maharashtra"
@@ -5613,6 +5714,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -5646,6 +5748,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -5700,6 +5803,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Ghoti",
         "line": "Igatpuri Taluka, Nashik District, Maharashtra 422402"
@@ -5757,6 +5861,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -5811,6 +5916,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -5865,6 +5971,7 @@
       "altitude": null,
       "builtByOrEra": "Shivaji Maharaj, 1679",
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -5919,6 +6026,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Battle of Kharda, 1795",
+      "checkFlag": null,
       "address": {
         "base": "Kharda",
         "line": "Jamkhed, Ahilyanagar District, Maharashtra 413204"
@@ -5976,6 +6084,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -6030,6 +6139,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Kanhoji Angre's naval base",
+      "checkFlag": null,
       "address": {
         "base": "Alibag",
         "line": "Alibag Taluka, Raigad District, Maharashtra 402200"
@@ -6084,6 +6194,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -6117,6 +6228,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Jholichakond",
         "line": "Mahad Taluka, Raigad District, Maharashtra"
@@ -6174,6 +6286,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Peth Shahpur",
         "line": "Mulshi Taluka, Pune District, Maharashtra"
@@ -6231,6 +6344,7 @@
       "altitude": null,
       "builtByOrEra": "Portuguese, 1594",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Korlai",
         "line": "Murud Taluka, Raigad District, Maharashtra 402201"
@@ -6288,6 +6402,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Kadav",
         "line": "Karjat Taluka, Raigad District, Maharashtra 410201"
@@ -6345,6 +6460,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Ambewadi",
         "line": "Igatpuri Taluka, Nashik District, Maharashtra"
@@ -6402,6 +6518,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": "Pin falls in Pune district, listed as Ahilyanagar",
       "address": {
         "base": "Patilwadi",
         "line": "Khireshwar, Junnar, Pune District, Maharashtra"
@@ -6459,6 +6576,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Umbardi",
         "line": "Mangaon Taluka, Raigad District, Maharashtra 402308"
@@ -6516,6 +6634,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Junnar",
         "line": "Dhule Taluka, Dhule District, Maharashtra 424006"
@@ -6573,6 +6692,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Used as a prison under Shivaji Maharaj",
+      "checkFlag": null,
       "address": {
         "base": "Shendurmali",
         "line": "Padvi, Mahad Taluka, Raigad District, Maharashtra 402306"
@@ -6630,6 +6750,7 @@
       "altitude": 1033,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Lohagadwadi",
         "line": "Aundholi, Mawal Taluka, Pune District, Maharashtra 410401"
@@ -6687,6 +6808,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Malimala",
         "line": "Kapuskhed, Walwa, Sangli District, Maharashtra 415409"
@@ -6744,6 +6866,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Vadapur",
         "line": "Solapur South, Solapur District, Maharashtra"
@@ -6801,6 +6924,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -6855,6 +6979,7 @@
       "altitude": null,
       "builtByOrEra": "Portuguese",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Madh",
         "line": "Mumbai, Mumbai Suburban District, Maharashtra 400061"
@@ -6912,6 +7037,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Mahim",
         "line": "Mumbai City District, Maharashtra 400016"
@@ -6969,6 +7095,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -7020,6 +7147,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -7053,6 +7181,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": "Pin falls in Raigad district, listed as Ratnagiri",
       "address": {
         "base": "Kudpan Khurd",
         "line": "Poladpur Taluka, Raigad District, Maharashtra"
@@ -7110,6 +7239,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Shahapur",
         "line": "Shahapur Taluka, Thane District, Maharashtra 421601"
@@ -7167,6 +7297,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Mahur",
         "line": "Mahoor, Nanded District, Maharashtra 431721"
@@ -7224,6 +7355,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Bhankhed",
         "line": "Chikhli, Buldhana District, Maharashtra"
@@ -7281,6 +7413,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Kasrut",
         "line": "Mahabaleshwar, Satara District, Maharashtra 412806"
@@ -7338,6 +7471,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Badlapur",
         "line": "Ambernath Taluka, Thane District, Maharashtra 421503"
@@ -7395,6 +7529,7 @@
       "altitude": null,
       "builtByOrEra": "Naro Shankar, 1740",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Malegaon",
         "line": "Malegaon Taluka, Nashik District, Maharashtra 423200"
@@ -7452,6 +7587,7 @@
       "altitude": null,
       "builtByOrEra": "Panse brothers, around 1757",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Saswad",
         "line": "Purandhar, Pune District, Maharashtra 412300"
@@ -7509,6 +7645,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Valvand",
         "line": "Rajmachi village, Mawal Taluka, Pune District, Maharashtra"
@@ -7566,6 +7703,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Mandangad",
         "line": "Mandangad Taluka, Ratnagiri District, Maharashtra 415203"
@@ -7623,6 +7761,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Kavle",
         "line": "Pachad, Mangaon Taluka, Raigad District, Maharashtra 402305"
@@ -7680,6 +7819,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -7734,6 +7874,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Jain pilgrimage site",
+      "checkFlag": null,
       "address": {
         "base": "Maliwade",
         "line": "Baglan Taluka, Nashik District, Maharashtra"
@@ -7791,6 +7932,7 @@
       "altitude": null,
       "builtByOrEra": "Gond kings",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Markal",
         "line": "Jiwati Taluka, Chandrapur District, Maharashtra"
@@ -7848,6 +7990,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -7902,6 +8045,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Wadgaon Gupta",
         "line": "Nagar Taluka, Ahilyanagar District, Maharashtra 414111"
@@ -7956,6 +8100,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -7989,6 +8134,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Tergalwadi",
         "line": "Kudal Taluka, Sindhudurg District, Maharashtra"
@@ -8046,6 +8192,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Tergalwadi",
         "line": "Kudal Taluka, Sindhudurg District, Maharashtra"
@@ -8103,6 +8250,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -8157,6 +8305,7 @@
       "altitude": null,
       "builtByOrEra": "British",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Chinch Bunder",
         "line": "Mumbai City District, Maharashtra 200008"
@@ -8214,6 +8363,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Trimbak",
         "line": "Trimbakeshwar Taluka, Nashik District, Maharashtra 422212"
@@ -8271,6 +8421,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Abhona",
         "line": "Kalwan Taluka, Nashik District, Maharashtra"
@@ -8328,6 +8479,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -8382,6 +8534,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Uran",
         "line": "Uran Taluka, Raigad District, Maharashtra 400702"
@@ -8439,6 +8592,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -8493,6 +8647,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -8547,6 +8702,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Kandhane",
         "line": "Baglan Taluka, Nashik District, Maharashtra"
@@ -8604,6 +8760,7 @@
       "altitude": null,
       "builtByOrEra": "Bijapur (Adil Shahi) rebuilding",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Naldurg",
         "line": "Tuljapur, Dharashiv District, Maharashtra 413602"
@@ -8661,6 +8818,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Nanded",
         "line": "Nanded, Nanded District, Maharashtra 431600"
@@ -8715,6 +8873,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -8748,6 +8907,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -8802,6 +8962,7 @@
       "altitude": null,
       "builtByOrEra": "Gond; Bahmani",
       "associatedWith": null,
+      "checkFlag": "Pin falls in Amravati district, listed as Akola",
       "address": {
         "base": "Gularghat",
         "line": "Chikhaldara, Amravati District, Maharashtra"
@@ -8856,6 +9017,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -8889,6 +9051,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Dasane",
         "line": "Baglan Taluka, Nashik District, Maharashtra"
@@ -8946,6 +9109,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Aptale",
         "line": "Junnar, Pune District, Maharashtra"
@@ -9003,6 +9167,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Kille Nivati",
         "line": "Kudal Taluka, Sindhudurg District, Maharashtra"
@@ -9060,6 +9225,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Shirpunje Budruk",
         "line": "Akola, Ahilyanagar District, Maharashtra 422604"
@@ -9117,6 +9283,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Thakunwadi",
         "line": "Jambrung, Karjat Taluka, Raigad District, Maharashtra"
@@ -9174,6 +9341,7 @@
       "altitude": null,
       "builtByOrEra": "Shivaji Maharaj",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Nanavali",
         "line": "Shrivardhan Taluka, Raigad District, Maharashtra 402401"
@@ -9228,6 +9396,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -9261,6 +9430,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -9315,6 +9485,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Dapoli",
         "line": "Dapoli Taluka, Ratnagiri District, Maharashtra 415712"
@@ -9372,6 +9543,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Wai",
         "line": "Wai, Satara District, Maharashtra 412803"
@@ -9429,6 +9601,7 @@
       "altitude": null,
       "builtByOrEra": "Shilahara, 12th century (Bhoja II)",
       "associatedWith": "Shivaji Maharaj's escape, 1660; Baji Prabhu Deshpande",
+      "checkFlag": null,
       "address": {
         "base": "Panhala",
         "line": "Panhala, Kolhapur District, Maharashtra 415416"
@@ -9486,6 +9659,7 @@
       "altitude": null,
       "builtByOrEra": "Bahmani",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Paranda",
         "line": "Paranda, Dharashiv District, Maharashtra 413502"
@@ -9543,6 +9717,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Jambare",
         "line": "Chandgad, Kolhapur District, Maharashtra"
@@ -9600,6 +9775,7 @@
       "altitude": null,
       "builtByOrEra": "18th century",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Parola",
         "line": "Parola, Jalgaon District, Maharashtra 425111"
@@ -9657,6 +9833,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Shivaji Maharaj rested here, 1679 (Vishramgad)",
+      "checkFlag": null,
       "address": {
         "base": "Belgaon Tarhale",
         "line": "Igatpuri Taluka, Nashik District, Maharashtra"
@@ -9714,6 +9891,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Waghbeel",
         "line": "Navali, Panhala, Kolhapur District, Maharashtra 415416"
@@ -9771,6 +9949,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Shahaji Raje, 1633",
+      "checkFlag": null,
       "address": {
         "base": "Dhandharphal",
         "line": "Sangamner, Ahilyanagar District, Maharashtra 422603"
@@ -9828,6 +10007,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Bhendi",
         "line": "Belkhed, Khamgaon, Buldhana District, Maharashtra"
@@ -9885,6 +10065,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Yelgaon Dam",
         "line": "Buldhana, Buldhana District, Maharashtra 443001"
@@ -9942,6 +10123,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Nitane",
         "line": "Baglan Taluka, Nashik District, Maharashtra"
@@ -9999,6 +10181,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -10053,6 +10236,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": "Pin falls in Ratnagiri district, listed as Sangli",
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -10107,6 +10291,7 @@
       "altitude": null,
       "builtByOrEra": "Shivaji Maharaj, 1656",
       "associatedWith": "Afzal Khan encounter, 1659",
+      "checkFlag": null,
       "address": {
         "base": "Vada Kumbhroshi",
         "line": "Mahabaleshwar, Satara District, Maharashtra"
@@ -10164,6 +10349,7 @@
       "altitude": 1387,
       "builtByOrEra": null,
       "associatedWith": "Treaty of Purandar, 1665; Chh. Sambhaji born here, 1657",
+      "checkFlag": null,
       "address": {
         "base": "Narayanpur",
         "line": "Purandhar, Pune District, Maharashtra 412302"
@@ -10221,6 +10407,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Mervi",
         "line": "Ratnagiri Taluka, Ratnagiri District, Maharashtra 415616"
@@ -10278,6 +10465,7 @@
       "altitude": 820,
       "builtByOrEra": "Fortified by Shivaji Maharaj as capital",
       "associatedWith": "Coronation of Shivaji Maharaj, 1674; his samadhi",
+      "checkFlag": null,
       "address": {
         "base": "Hirkaniwadi",
         "line": "Mahad Taluka, Raigad District, Maharashtra 402305"
@@ -10335,6 +10523,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Shivaji Maharaj's oath of Swarajya (tradition), 1645",
+      "checkFlag": null,
       "address": {
         "base": "Wadtumbi",
         "line": "Titeghar, Bhor, Pune District, Maharashtra"
@@ -10392,6 +10581,7 @@
       "altitude": 1376,
       "builtByOrEra": null,
       "associatedWith": "Shivaji Maharaj's first capital, about 25 years",
+      "checkFlag": null,
       "address": {
         "base": "Pali",
         "line": "Velhe, Pune District, Maharashtra"
@@ -10449,6 +10639,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -10503,6 +10694,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Held out against a long Mughal siege, 1680s",
+      "checkFlag": null,
       "address": {
         "base": "Makhamalabad",
         "line": "Nashik, Nashik Taluka, Nashik District, Maharashtra 422001"
@@ -10560,6 +10752,7 @@
       "altitude": null,
       "builtByOrEra": "Walls by Raghuji Bhonsle",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Ramtek",
         "line": "Ramtek Taluka, Nagpur District, Maharashtra 441401"
@@ -10617,6 +10810,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": "Pin falls in Sindhudurg district, listed as Kolhapur",
       "address": {
         "base": "Manohargarh Fort",
         "line": "Kudal Taluka, Kolhapur District, Maharashtra"
@@ -10674,6 +10868,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Mandwe",
         "line": "Khed Taluka, Ratnagiri District, Maharashtra 415730"
@@ -10731,6 +10926,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Pethkilla",
         "line": "Ratnagiri Taluka, Pethkilla District, Maharashtra 415612"
@@ -10788,6 +10984,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Ratanwadi",
         "line": "Akola, Ahilyanagar District, Maharashtra"
@@ -10845,6 +11042,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Pethkilla",
         "line": "Ratnagiri Taluka, Pethkilla District, Maharashtra 415612"
@@ -10902,6 +11100,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -10956,6 +11155,7 @@
       "altitude": null,
       "builtByOrEra": "Portuguese, 16th century",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Revadanda",
         "line": "Alibag Taluka, Raigad District, Maharashtra 402203"
@@ -11013,6 +11213,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Agarwada Colony",
         "line": "Mumbai City District, F/N Ward District, Maharashtra 400022"
@@ -11070,6 +11271,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Hathnoshi",
         "line": "Bhor, Pune District, Maharashtra 412206"
@@ -11127,6 +11329,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Tinvira",
         "line": "Alibag Taluka, Raigad District, Maharashtra"
@@ -11184,6 +11387,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Samadhi of Samarth Ramdas",
+      "checkFlag": null,
       "address": {
         "base": "New Banghar",
         "line": "Satara, Satara District, Maharashtra"
@@ -11241,6 +11445,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Dusarbid",
         "line": "Sindkhed Raja, Buldhana District, Maharashtra 443308"
@@ -11295,6 +11500,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -11328,6 +11534,7 @@
       "altitude": 1567,
       "builtByOrEra": null,
       "associatedWith": "Battle of Salher, 1672",
+      "checkFlag": null,
       "address": {
         "base": "Salher",
         "line": "Baglan Taluka, Nashik District, Maharashtra"
@@ -11385,6 +11592,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Waghambe",
         "line": "Baglan Taluka, Nashik District, Maharashtra"
@@ -11442,6 +11650,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Basarge kK",
         "line": "Basarge Bk, Gadhinglaj, Kolhapur District, Maharashtra 416506"
@@ -11499,6 +11708,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Firangoji Narsala's defence against Shaista Khan, 1660",
+      "checkFlag": null,
       "address": {
         "base": "Chakan",
         "line": "Khed, Pune District, Maharashtra 410501"
@@ -11556,6 +11766,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Mol",
         "line": "Khatav, Satara District, Maharashtra 415504"
@@ -11613,6 +11824,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Pali",
         "line": "Sudhagad Taluka, Raigad District, Maharashtra 410205"
@@ -11670,6 +11882,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Kolamb",
         "line": "Malvan Taluka, Kolamb District, Maharashtra 415612"
@@ -11727,6 +11940,7 @@
       "altitude": null,
       "builtByOrEra": "British, 1680",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Rajiv Gandhi Nagar",
         "line": "Mumbai City District, F/S Ward District, Maharashtra 400001"
@@ -11784,6 +11998,7 @@
       "altitude": null,
       "builtByOrEra": "Bajirao I, 1732",
       "associatedWith": "Seat of the Peshwas",
+      "checkFlag": null,
       "address": {
         "base": "Pune",
         "line": "Pune City Taluka, Shaniwar Peth District, Maharashtra 411001"
@@ -11841,6 +12056,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Shirgaon",
         "line": "Palghar Taluka, Palghar District, Maharashtra 401407"
@@ -11898,6 +12114,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -11952,6 +12169,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Birthplace of Chh. Shivaji Maharaj, 1630",
+      "checkFlag": null,
       "address": {
         "base": "Junnar",
         "line": "Junnar, Pune District, Maharashtra 410502"
@@ -12009,6 +12227,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Rajmachi Fort",
         "line": "Mawal Taluka, Pune District, Maharashtra"
@@ -12066,6 +12285,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Thadachapada",
         "line": "Murbad Taluka, Thane District, Maharashtra"
@@ -12123,6 +12343,7 @@
       "altitude": null,
       "builtByOrEra": "Shivaji Maharaj, 1664–67",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Padamged Island",
         "line": "Malvan Taluka, Kolamb District, Maharashtra 416606"
@@ -12177,6 +12398,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -12210,6 +12432,7 @@
       "altitude": 1312,
       "builtByOrEra": null,
       "associatedWith": "Tanaji Malusare, 1670",
+      "checkFlag": null,
       "address": {
         "base": "Kalyan Gaon",
         "line": "Haveli Taluka, Pune District, Maharashtra 415115"
@@ -12267,6 +12490,7 @@
       "altitude": null,
       "builtByOrEra": "British",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Sion East",
         "line": "Mumbai City District, F/N Ward District, Maharashtra 400022"
@@ -12324,6 +12548,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Battle of Sitabuldi, 1817",
+      "checkFlag": null,
       "address": {
         "base": "Nagpur",
         "line": "Nagpur Urban Taluka, Ramdaspeth District, Maharashtra 440001"
@@ -12381,6 +12606,7 @@
       "altitude": null,
       "builtByOrEra": "Bahmani",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Sidheshwar Peth",
         "line": "Solapur North, Solapur District, Maharashtra 413001"
@@ -12438,6 +12664,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Bhagatwadi",
         "line": "Khalapur Taluka, Wagheshwar District, Maharashtra 410102"
@@ -12495,6 +12722,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Songvir",
         "line": "Dhule Taluka, Dhule District, Maharashtra 424309"
@@ -12552,6 +12780,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Karjat",
         "line": "Karjat Taluka, Halavali District, Maharashtra 410201"
@@ -12609,6 +12838,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Considered for the capital before Raigad",
+      "checkFlag": null,
       "address": {
         "base": "Pachchapur",
         "line": "Sudhagad Taluka, Buddhawada District, Maharashtra"
@@ -12666,6 +12896,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Vadgaon",
         "line": "Khed Taluka, Ratnagiri District, Maharashtra"
@@ -12723,6 +12954,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Sangade",
         "line": "Roha Taluka, Raigad District, Maharashtra 402116"
@@ -12780,6 +13012,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Angre naval base; taken by the British, 1755",
+      "checkFlag": null,
       "address": {
         "base": "Malkhab Peth",
         "line": "Dapoli Taluka, Ratnagiri District, Maharashtra 415713"
@@ -12837,6 +13070,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Bapre Khurd",
         "line": "Mulshi Taluka, Pune District, Maharashtra"
@@ -12894,6 +13128,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -12948,6 +13183,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Roha",
         "line": "Roha Taluka, Raigad District, Maharashtra 402105"
@@ -13005,6 +13241,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -13059,6 +13296,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Ankai",
         "line": "Yeola Taluka, Nashik District, Maharashtra 423403"
@@ -13116,6 +13354,7 @@
       "altitude": null,
       "builtByOrEra": "Portuguese",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Tarapur Village Main Road",
         "line": "Palghar Taluka, Palghar District, Maharashtra 401503"
@@ -13173,6 +13412,7 @@
       "altitude": null,
       "builtByOrEra": "Sawant Bhonsle of Sawantwadi; later Portuguese",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Querim",
         "line": "Pernem, North Goa (Goa) District, Maharashtra 403524"
@@ -13230,6 +13470,7 @@
       "altitude": null,
       "builtByOrEra": "Faruqi dynasty",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Manjarod",
         "line": "Shirpur Taluka, Dhule District, Maharashtra 425421"
@@ -13287,6 +13528,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Tikona Fort Lake",
         "line": "Mawal Taluka, Kale Colony District, Maharashtra"
@@ -13344,6 +13586,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Metejangada",
         "line": "Gadchiroli, Gadchiroli District, Maharashtra"
@@ -13401,6 +13644,7 @@
       "altitude": 1403,
       "builtByOrEra": null,
       "associatedWith": "First fort taken by Shivaji Maharaj, about 1646",
+      "checkFlag": null,
       "address": {
         "base": "Torna",
         "line": "Velhe, Met Pilavare District, Maharashtra 412212"
@@ -13458,6 +13702,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Igatpuri",
         "line": "Igatpuri Taluka, Nashik District, Maharashtra 422403"
@@ -13515,6 +13760,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Trimbak",
         "line": "Trimbakeshwar Taluka, Metghar District, Maharashtra 422212"
@@ -13572,6 +13818,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Lake Pavna Club Mahindra",
         "line": "Mawal Taluka, Pune District, Maharashtra"
@@ -13629,6 +13876,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Battle of Udgir, 1760",
+      "checkFlag": null,
       "address": {
         "base": "Udgir",
         "line": "Udgir, Latur District, Maharashtra 413517"
@@ -13686,6 +13934,7 @@
       "altitude": null,
       "builtByOrEra": "Siddis, 1680",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Underi Island",
         "line": "Raigad, Raigad District, Maharashtra"
@@ -13743,6 +13992,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Rohile, PHC",
         "line": "Trimbakeshwar Taluka, Nashik District, Maharashtra 422203"
@@ -13800,6 +14050,7 @@
       "altitude": null,
       "builtByOrEra": "Gond kings",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Dongargaon",
         "line": "Armori Taluka, Gadchiroli District, Maharashtra 441208"
@@ -13857,6 +14108,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -13911,6 +14163,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Narayanpur",
         "line": "Purandhar, Pune District, Maharashtra 412102"
@@ -13968,6 +14221,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -14022,6 +14276,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Koregaon",
         "line": "Koregaon, Satara District, Maharashtra 415500"
@@ -14079,6 +14334,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -14133,6 +14389,7 @@
       "altitude": null,
       "builtByOrEra": "Portuguese, 1530s",
       "associatedWith": "Chimaji Appa took it, 1739",
+      "checkFlag": null,
       "address": {
         "base": "Vasai-Virar",
         "line": "Vasai Taluka, Vasai District, Maharashtra 401200"
@@ -14190,6 +14447,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Karad",
         "line": "Karad, Satara District, Maharashtra 415100"
@@ -14247,6 +14505,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Takvali",
         "line": "Jaoli, Satara District, Maharashtra"
@@ -14304,6 +14563,7 @@
       "altitude": null,
       "builtByOrEra": "Shilahara origins; expanded by Shivaji Maharaj",
       "associatedWith": "Angre naval base",
+      "checkFlag": "Pin falls in Ratnagiri district, listed as Sindhudurg",
       "address": {
         "base": "Vijaydurg",
         "line": "Devgad Taluka, Sindhudurg District, Maharashtra"
@@ -14361,6 +14621,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Tavsal",
         "line": "Guhagar Taluka, Tavsal District, Maharashtra 415614"
@@ -14418,6 +14679,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Holy Cross Church",
         "line": "Khalapur Taluka, Dhangarwada District, Maharashtra 410102"
@@ -14472,6 +14734,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": null,
       "area": null,
       "foundedYear": null,
@@ -14505,6 +14768,7 @@
       "altitude": null,
       "builtByOrEra": "Peshwa Balaji Vishwanath, 1713–20",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Malavli",
         "line": "Mawal Taluka, Pune District, Maharashtra 410401"
@@ -14562,6 +14826,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": "Shivaji Maharaj reached here after Pavan Khind, 1660",
+      "checkFlag": null,
       "address": {
         "base": "Vishalgad",
         "line": "Shahuwadi, Kolhapur District, Maharashtra"
@@ -14619,6 +14884,7 @@
       "altitude": null,
       "builtByOrEra": "British, 1675",
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Worli Koliwada",
         "line": "Mumbai City District, G/S Ward District, Maharashtra 400030"
@@ -14676,6 +14942,7 @@
       "altitude": null,
       "builtByOrEra": null,
       "associatedWith": null,
+      "checkFlag": null,
       "address": {
         "base": "Redi",
         "line": "Vengurla Taluka, Sindhudurg District, Maharashtra 416517"
@@ -14718,7 +14985,7 @@
   ],
   "meta": {
     "total": 267,
-    "updated": "2026-10-28T08:00:22.703Z",
+    "updated": "2026-10-28T08:06:12.377Z",
     "version": "1.0"
   }
 }

@@ -7,6 +7,7 @@ locationAccuracy: 'rough'
 type: 'Hill Fort'
 district: 'Thane'
 region: 'Konkan'
+checkFlag: 'Pin falls in Pune district, listed as Thane'
 notable: false
 shortDescription: 'Sheer rock pinnacle near Malshej Ghat'
 mapsLink: 'https://www.google.com/maps/search/?api=1&query=19.28,73.70'

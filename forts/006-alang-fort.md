@@ -7,6 +7,7 @@ locationAccuracy: 'approx'
 type: 'Hill Fort'
 district: 'Ahilyanagar'
 region: 'North Maharashtra'
+checkFlag: 'Pin falls in Nashik district, listed as Ahilyanagar'
 notable: false
 shortDescription: 'Part of the Alang–Madan–Kulang trio, among the hardest treks in the Sahyadri'
 mapsLink: 'https://www.google.com/maps/search/?api=1&query=19.586,73.665'

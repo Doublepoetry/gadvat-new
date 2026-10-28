@@ -7,6 +7,7 @@ locationAccuracy: 'rough'
 type: 'Hill Fort'
 district: 'Kolhapur'
 region: 'Western Maharashtra'
+checkFlag: 'Pin falls in Sindhudurg district, listed as Kolhapur'
 notable: false
 shortDescription: 'Bhudargad taluka; dense forest'
 mapsLink: 'https://www.google.com/maps/search/?api=1&query=16.05,73.97'

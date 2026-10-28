@@ -28,6 +28,7 @@ export interface Fort {
 	altitude?: number;
 	builtByOrEra?: string | null;
 	associatedWith?: string | null;
+	checkFlag?: string | null; // open data question, e.g. "Pin falls in Pune district, listed as Thane"
 	address: FortAddress | null; // nearest settlement, from OpenStreetMap
 	nearby: NearbyFort[]; // five closest located forts, nearest first
 	area?: number;

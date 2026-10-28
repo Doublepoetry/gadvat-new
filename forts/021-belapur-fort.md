@@ -9,6 +9,7 @@ district: 'Thane'
 region: 'Konkan'
 builtByOrEra: 'Siddis; Portuguese'
 associatedWith: 'Chimaji Appa, 1737'
+checkFlag: 'Pin falls in Raigad district, listed as Thane'
 notable: false
 shortDescription: 'Now in Navi Mumbai'
 mapsLink: 'https://www.google.com/maps/search/?api=1&query=19.01,73.04'
