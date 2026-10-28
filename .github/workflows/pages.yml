@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 # One deploy at a time; a newer push replaces a queued one but never cancels a running deploy.
 concurrency:
@@ -42,6 +40,10 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    # Only the deploy job gets the Pages grant and the OIDC token, not the build's npm install.
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
