@@ -10,12 +10,14 @@ import {
 	formatAddress,
 	nearbyForts
 } from './places.js';
+import { validateImages, toGalleryImages } from './commons.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const fortsDir = path.join(__dirname, '../forts');
 const outputDir = path.join(__dirname, '../src/data');
 const outputFile = path.join(outputDir, 'forts.json');
 const addressesFile = path.join(outputDir, 'addresses.json');
+const commonsFile = path.join(outputDir, 'commons.json');
 
 // Required fields for each fort. Forts with locationAccuracy "none" aren't on
 // the map yet, so they may leave out coordinates and district.
@@ -35,7 +37,7 @@ function validateCoordinates(coords) {
 	);
 }
 
-function validateFortData(id, frontmatter) {
+function validateFortData(id, frontmatter, commons) {
 	const errors = [];
 
 	// Check required fields
@@ -85,6 +87,9 @@ function validateFortData(id, frontmatter) {
 		errors.push(`  ✗ Invalid ID format: ${id}. Must be 3 digits (e.g., 001)`);
 	}
 
+	// Validate gallery images against the committed Commons metadata
+	errors.push(...validateImages(frontmatter.images, commons));
+
 	return errors;
 }
 
@@ -115,6 +120,10 @@ async function buildData() {
 	}
 
 	const addresses = JSON.parse(fs.readFileSync(addressesFile, 'utf-8'));
+	const commons = fs.existsSync(commonsFile)
+		? JSON.parse(fs.readFileSync(commonsFile, 'utf-8'))
+		: {};
+
 	const forts = [];
 	const ids = new Set();
 	let hasErrors = false;
@@ -127,7 +136,7 @@ async function buildData() {
 		const { data, content: markdown } = matter(content);
 
 		const id = data.id;
-		const errors = validateFortData(id, data);
+		const errors = validateFortData(id, data, commons);
 
 		if (errors.length > 0) {
 			console.error(`❌ Validation failed for ${file}:`);
@@ -171,6 +180,7 @@ async function buildData() {
 			tags: data.tags || [],
 			mapsLink: data.mapsLink || null,
 			wikipediaLink: data.wikipediaLink || null,
+			images: toGalleryImages(data.images, commons),
 			content: markdown.trim() || null,
 			filename: file
 		};
