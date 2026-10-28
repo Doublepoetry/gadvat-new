@@ -37,6 +37,7 @@
 	const MOBILE_TOP = 168;
 	const FLIGHT_MS = 1100;
 	const SELECTED_ZOOM = 7; // relative to the fitted view, as on the original site
+	const PREVIEW_ZOOM = 2; // hovering a dot previews it once zoomed in this far
 
 	const TYPE_CLASS: Record<FortType, string> = {
 		'Hill Fort': 'hill',
@@ -93,6 +94,17 @@
 	const clamp01 = (v: number) => Math.min(1, Math.max(0, v));
 	const labelOpacity = $derived(clamp01((t.k - 0.5) / 0.15));
 	const mrLabelOpacity = $derived(clamp01((t.k - 1) / 0.4));
+	// Dots keep a readable size on screen and grow a little as you zoom in, up to twice as big
+	const dotScale = $derived(u * Math.min(2, Math.max(1, Math.sqrt(t.k / fitK))));
+
+	// Hover or focus previews a fort once zoomed in; a click still opens the details card
+	let hoverId = $state<string | null>(null);
+	const canPreview = $derived(t.k >= fitK * PREVIEW_ZOOM);
+	const preview = $derived(
+		canPreview && hoverId !== selectedId
+			? (located.find((p) => p.fort.id === hoverId) ?? null)
+			: null
+	);
 
 	// Where the selected pin sits on screen, for the details card
 	const pinX = $derived(selected ? t.applyX(selected.x) : 0);
@@ -267,23 +279,26 @@
 							class:dim={!matchesFilters(p.fort)}
 							class:colored={colorBy !== 'stars'}
 							style={dotColor(p.fort)}
-							transform="translate({p.x} {p.y}) scale({u})"
+							transform="translate({p.x} {p.y}) scale({dotScale})"
 							data-id={p.fort.id}
 							role="button"
 							tabindex={p.fort.id === tabbableId ? 0 : -1}
 							aria-label={p.fort.district ? `${p.fort.name}, ${p.fort.district}` : p.fort.name}
 							onclick={() => onselect?.(p.fort.id)}
 							onkeydown={(e) => handleDotKeydown(e, p)}
-							onfocus={() => (rovingId = p.fort.id)}
+							onfocus={() => (rovingId = hoverId = p.fort.id)}
+							onblur={() => hoverId === p.fort.id && (hoverId = null)}
+							onpointerenter={(e) => e.pointerType === 'mouse' && (hoverId = p.fort.id)}
+							onpointerleave={() => hoverId === p.fort.id && (hoverId = null)}
 						>
 							<g class="twinkle" style={p.twinkle}>
-								<circle class="halo" r="4" />
-								<circle class="core" r="1.8" />
+								<circle class="halo" r="6" />
+								<circle class="core" r="3" />
 							</g>
-							<circle class="ring" r="7" />
+							<circle class="ring" r="9" />
 							<!-- Larger invisible target so dots are easy to hit -->
-							<circle class="hit" r="9">
-								<title>{p.fort.name}</title>
+							<circle class="hit" r="11">
+								{#if !canPreview}<title>{p.fort.name}</title>{/if}
 							</circle>
 						</g>
 					{/if}
@@ -307,6 +322,25 @@
 			{/if}
 		</g>
 	</svg>
+
+	{#if preview}
+		{@const f = preview.fort}
+		<div
+			class="preview"
+			data-type={preview.cls}
+			style="left: {t.applyX(preview.x)}px; top: {t.applyY(preview.y)}px"
+			aria-hidden="true"
+		>
+			<p class="kicker"><span class="swatch"></span>{f.type}</p>
+			<p class="preview-name">{f.name}</p>
+			{#if $showMr}<p class="preview-mr" lang="mr">{f.nameMarathi}</p>{/if}
+			<p class="preview-meta">
+				{[f.district, f.altitude && `${f.altitude.toLocaleString('en-IN')} m`]
+					.filter(Boolean)
+					.join(' · ')}
+			</p>
+		</div>
+	{/if}
 
 	{#if selected}
 		{@const f = selected.fort}
@@ -456,8 +490,11 @@
 		opacity: 0.18;
 	}
 
+	/* Outlined against the land so dots read at a glance */
 	.core {
 		fill: var(--spark);
+		stroke: var(--bg);
+		stroke-width: 0.8;
 	}
 
 	/* Coloured by type or height: the core takes the dot's colour too */
@@ -476,7 +513,7 @@
 	:global(:root[data-theme='light']) .core {
 		fill: currentColor;
 		stroke: #fffcf5;
-		stroke-width: 0.6;
+		stroke-width: 0.8;
 	}
 
 	.hit {
@@ -544,6 +581,48 @@
 		color: var(--paper-ink);
 		box-shadow: 0 18px 50px var(--shadow);
 		animation: rise 0.45s var(--ease) 1.1s both;
+	}
+
+	/* Hover preview: a small paper tag above the dot */
+	.preview {
+		position: absolute;
+		z-index: 20;
+		transform: translate(-50%, calc(-100% - 16px));
+		max-width: 240px;
+		padding: 10px 14px 11px;
+		border-radius: var(--radius-panel);
+		border: 1px solid var(--paper-rule);
+		background: var(--paper);
+		color: var(--paper-ink);
+		box-shadow: 0 12px 32px var(--shadow);
+		pointer-events: none;
+		white-space: nowrap;
+		animation: pop 0.16s var(--ease) both;
+	}
+
+	.preview .kicker {
+		margin-bottom: 4px;
+		font-size: 10px;
+	}
+
+	.preview p {
+		margin: 0;
+	}
+
+	.preview-name {
+		font-size: 15px;
+		font-weight: 500;
+	}
+
+	.preview-mr {
+		font-family: var(--font-mr-panel);
+		font-size: 14px;
+	}
+
+	.preview .preview-meta {
+		margin-top: 3px;
+		color: var(--paper-ink2);
+		font-size: 12px;
 	}
 
 	.close {
@@ -680,10 +759,17 @@
 		}
 	}
 
+	@keyframes pop {
+		from {
+			opacity: 0;
+		}
+	}
+
+	/* A gentle twinkle: dots never fade far enough to get lost */
 	@keyframes twinkle {
 		0%,
 		100% {
-			opacity: 0.35;
+			opacity: 0.7;
 		}
 		50% {
 			opacity: 1;
