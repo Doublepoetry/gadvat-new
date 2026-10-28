@@ -18,19 +18,9 @@ export async function loadForts(): Promise<FortData> {
 	}
 }
 
-export async function getFort(id: string): Promise<Fort | null> {
-	const data = await loadForts();
-	return data.forts.find((f) => f.id === id) || null;
-}
-
 export async function getAllForts(): Promise<Fort[]> {
 	const data = await loadForts();
 	return data.forts;
-}
-
-export async function getDistrictNames(): Promise<Record<string, string>> {
-	const data = await loadForts();
-	return data.districts;
 }
 
 export function getFortDisplay(fort: Fort, language: Language): FortDisplay {
@@ -46,11 +36,6 @@ export function getFortDisplay(fort: Fort, language: Language): FortDisplay {
 		region: fort.region || '',
 		coordinates: fort.coordinates
 	};
-}
-
-export function formatCoordinates(coords: [number, number]): string {
-	const [lat, lon] = coords;
-	return `${lat.toFixed(4)}, ${lon.toFixed(4)}`;
 }
 
 export function getMapsUrl(fort: Fort): string {

@@ -6,9 +6,11 @@
 	let {
 		forts,
 		types = $bindable([]),
-		colorBy = $bindable('stars')
+		colorBy = $bindable('stars'),
+		docked = false
 	}: {
 		forts: Fort[];
+		docked?: boolean; // the fort panel is open, so stay left of it
 		types?: FortType[];
 		colorBy?: ColorBy;
 	} = $props();
@@ -51,7 +53,7 @@
 	}
 </script>
 
-<div class="filters">
+<div class="filters" class:docked>
 	<div class="row" role="group" aria-label="Filter by fort type">
 		{#each chips as t (t.type)}
 			<button
@@ -261,10 +263,33 @@
 		color: var(--mut2);
 	}
 
+	/* Matches the fort panel's width and its 20px inset; the row wraps instead of hiding under it */
+	.filters.docked {
+		right: calc(clamp(380px, 40vw, 540px) + 32px);
+	}
+
+	.docked .row {
+		flex-wrap: wrap;
+		justify-content: center;
+		overflow-x: visible;
+	}
+
+	.docked .divider {
+		display: none;
+	}
+
 	@media (max-width: 759px) {
-		.filters {
+		.filters,
+		.filters.docked {
 			top: 124px;
+			right: 12px;
 			align-items: stretch;
+		}
+
+		.docked .row {
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			overflow-x: auto;
 		}
 	}
 </style>
