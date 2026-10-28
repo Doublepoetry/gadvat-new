@@ -15,8 +15,7 @@
 		selectedId = null,
 		onselect,
 		selectedDistrict = null,
-		selectedType = null,
-		searchQuery = ''
+		selectedType = null
 	}: {
 		forts: Fort[];
 		districtNames: Record<string, string>; // English → Marathi, for the labels
@@ -24,13 +23,14 @@
 		onselect?: (id: string | null) => void;
 		selectedDistrict?: string | null;
 		selectedType?: string | null;
-		searchQuery?: string;
 	} = $props();
 
 	// The district map's own coordinate space (projected from lat/lon by geo.proj)
 	const VBW = 977;
 	const VBH = 816;
 	const HEADER = 64;
+	const MOBILE = 760; // below this width the search pill sits under the header
+	const MOBILE_TOP = 124;
 	const FLIGHT_MS = 1100;
 	const SELECTED_ZOOM = 7; // relative to the fitted view, as on the original site
 
@@ -62,14 +62,6 @@
 	function matchesFilters(f: Fort) {
 		if (selectedDistrict && f.district !== selectedDistrict) return false;
 		if (selectedType && f.type !== selectedType) return false;
-		if (searchQuery) {
-			const q = searchQuery.toLowerCase();
-			return (
-				f.name.toLowerCase().includes(q) ||
-				f.nameMarathi.includes(searchQuery) ||
-				(f.district?.toLowerCase().includes(q) ?? false)
-			);
-		}
 		return true;
 	}
 
@@ -80,11 +72,14 @@
 	let behavior: ZoomBehavior<SVGSVGElement, unknown> | undefined;
 
 	// Scale at which the whole state fits below the header
-	const fitK = $derived(Math.max(0.01, Math.min((width - 48) / VBW, (height - HEADER - 48) / VBH)));
-	const zr = $derived(t.k / fitK);
+	const top = $derived(width < MOBILE ? MOBILE_TOP : HEADER);
+	const fitK = $derived(Math.max(0.01, Math.min((width - 48) / VBW, (height - top - 48) / VBH)));
 	const u = $derived(1 / t.k); // one screen pixel, in map units
-	// District names are always shown; the Marathi line joins once there is room for it
-	const mrLabelOpacity = $derived(Math.min(1, Math.max(0, (zr - 1.2) / 0.8)));
+	// Labels fade in by on-screen scale, so a large screen shows district names from the start
+	// and a phone shows them once zoomed in far enough for them not to overlap
+	const clamp01 = (v: number) => Math.min(1, Math.max(0, v));
+	const labelOpacity = $derived(clamp01((t.k - 0.5) / 0.15));
+	const mrLabelOpacity = $derived(clamp01((t.k - 1) / 0.4));
 
 	// Where the selected pin sits on screen, for the details card
 	const pinX = $derived(selected ? t.applyX(selected.x) : 0);
@@ -92,14 +87,14 @@
 
 	function fitTransform() {
 		const x = (width - VBW * fitK) / 2;
-		const y = HEADER + (height - HEADER - VBH * fitK) / 2;
+		const y = top + (height - top - VBH * fitK) / 2;
 		return zoomIdentity.translate(x, y).scale(fitK);
 	}
 
 	function focusTransform(p: { x: number; y: number }) {
 		const k = fitK * SELECTED_ZOOM;
 		return zoomIdentity
-			.translate(width / 2, HEADER + (height - HEADER) / 2)
+			.translate(width / 2, top + (height - top) / 2)
 			.scale(k)
 			.translate(-p.x, -p.y);
 	}
@@ -152,12 +147,53 @@
 		flyTo(selected ? focusTransform(selected) : fitTransform());
 	});
 
-	function handleKeydown(e: KeyboardEvent) {
-		if (e.key === 'Escape' && selectedId) onselect?.(null);
+	// Keyboard: one dot is in the tab order; arrow keys move to the nearest dot that way
+	let rovingId = $state<string | null>(null);
+	const tabbableId = $derived(
+		(rovingId !== selectedId ? rovingId : null) ??
+			located.find((p) => p.fort.id !== selectedId)?.fort.id ??
+			null
+	);
+
+	const ARROWS: Record<string, [number, number]> = {
+		ArrowLeft: [-1, 0],
+		ArrowRight: [1, 0],
+		ArrowUp: [0, -1],
+		ArrowDown: [0, 1]
+	};
+
+	function nearestToward(from: { x: number; y: number }, [dx, dy]: [number, number]) {
+		let best: (typeof located)[number] | null = null;
+		let bestCost = Infinity;
+		for (const p of located) {
+			if (p.fort.id === selectedId) continue;
+			const along = (p.x - from.x) * dx + (p.y - from.y) * dy;
+			if (along <= 0) continue;
+			const across = Math.abs((p.x - from.x) * dy - (p.y - from.y) * dx);
+			const cost = along + 2 * across;
+			if (cost < bestCost) {
+				bestCost = cost;
+				best = p;
+			}
+		}
+		return best;
+	}
+
+	function handleDotKeydown(e: KeyboardEvent, p: (typeof located)[number]) {
+		if (e.key === 'Enter' || e.key === ' ') {
+			e.preventDefault();
+			onselect?.(p.fort.id);
+			return;
+		}
+		const dir = ARROWS[e.key];
+		if (!dir) return;
+		e.preventDefault();
+		const next = nearestToward(p, dir);
+		if (!next) return;
+		rovingId = next.fort.id;
+		svg.querySelector<SVGGElement>(`[data-id="${next.fort.id}"]`)?.focus();
 	}
 </script>
-
-<svelte:window onkeydown={handleKeydown} />
 
 <div class="map-wrap">
 	<svg
@@ -165,7 +201,7 @@
 		class="fort-map"
 		class:ready={width > 0}
 		role="application"
-		aria-label="Map of Maharashtra's forts. Drag to pan, scroll or pinch to zoom."
+		aria-label="Map of Maharashtra's forts. Drag to pan, scroll or pinch to zoom. Tab to the forts, then use the arrow keys."
 	>
 		<g transform={t.toString()}>
 			<g class="edge">
@@ -183,7 +219,7 @@
 				{/each}
 			</g>
 
-			<g class="labels">
+			<g class="labels" opacity={labelOpacity} visibility={labelOpacity > 0 ? 'visible' : 'hidden'}>
 				<text class="sea-label" x="36" y="640" font-size={10 * u} letter-spacing={6 * u}
 					>ARABIAN SEA</text
 				>
@@ -217,14 +253,21 @@
 							class="dot {p.cls}"
 							class:dim={!matchesFilters(p.fort)}
 							transform="translate({p.x} {p.y}) scale({u})"
+							data-id={p.fort.id}
+							role="button"
+							tabindex={p.fort.id === tabbableId ? 0 : -1}
+							aria-label={p.fort.district ? `${p.fort.name}, ${p.fort.district}` : p.fort.name}
+							onclick={() => onselect?.(p.fort.id)}
+							onkeydown={(e) => handleDotKeydown(e, p)}
+							onfocus={() => (rovingId = p.fort.id)}
 						>
 							<g class="twinkle" style={p.twinkle}>
 								<circle class="halo" r="4" />
 								<circle class="core" r="1.8" />
 							</g>
+							<circle class="ring" r="7" />
 							<!-- Larger invisible target so dots are easy to hit -->
-							<!-- svelte-ignore a11y_click_events_have_key_events, a11y_no_static_element_interactions -->
-							<circle class="hit" r="9" onclick={() => onselect?.(p.fort.id)}>
+							<circle class="hit" r="9">
 								<title>{p.fort.name}</title>
 							</circle>
 						</g>
@@ -415,6 +458,25 @@
 	.hit {
 		fill: transparent;
 		cursor: pointer;
+	}
+
+	.dot:focus {
+		outline: none;
+	}
+
+	.ring {
+		fill: none;
+		stroke: var(--acc);
+		stroke-width: 2;
+		opacity: 0;
+	}
+
+	.dot:focus-visible .ring {
+		opacity: 1;
+	}
+
+	.dot:focus-visible {
+		opacity: 1;
 	}
 
 	.pin {
