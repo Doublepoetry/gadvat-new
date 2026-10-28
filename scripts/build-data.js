@@ -159,6 +159,7 @@ async function buildData() {
 			altitude: data.altitude || null,
 			builtByOrEra: data.builtByOrEra || null,
 			associatedWith: data.associatedWith || null,
+			checkFlag: data.checkFlag || null,
 			address: data.coordinates ? formatAddress(data.district, addresses[id]) : null,
 			area: data.area || null,
 			foundedYear: data.foundedYear || null,

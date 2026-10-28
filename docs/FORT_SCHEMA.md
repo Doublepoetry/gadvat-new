@@ -44,22 +44,23 @@ district: District Name
 
 ### Optional Fields
 
-| Field                     | Type    | Format                 | Example                            |
-| ------------------------- | ------- | ---------------------- | ---------------------------------- |
-| `region`                  | String  | See valid regions      | `"Konkan"`                         |
-| `altitude`                | Number  | Meters above sea level | `2700`                             |
-| `builtByOrEra`            | String  | Builder or period      | `"Nizam Shahi; present fort 1559"` |
-| `associatedWith`          | String  | People and events      | `"Chand Bibi"`                     |
-| `area`                    | Number  | Square kilometers      | `270`                              |
-| `foundedYear`             | Number  | Historical year        | `1656`                             |
-| `notable`                 | Boolean | Featured fort          | `true`                             |
-| `shortDescription`        | String  | One-line summary       | `"Historic hill fort"`             |
-| `shortDescriptionMarathi` | String  | One-line Marathi       | `"ऐतिहासिक पहाड किल्ला"`           |
-| `description`             | String  | 2-3 sentences          | `"Raigad Fort is..."`              |
-| `descriptionMarathi`      | String  | 2-3 sentences Marathi  | `"राइगड किल्ला एक..."`             |
-| `tags`                    | Array   | Keyword tags           | `["trekking", "photography"]`      |
-| `mapsLink`                | String  | Google Maps URL        | `"https://maps.google.com/..."`    |
-| `wikipediaLink`           | String  | Wikipedia URL          | `"https://en.wikipedia.org/..."`   |
+| Field                     | Type    | Format                 | Example                                         |
+| ------------------------- | ------- | ---------------------- | ----------------------------------------------- |
+| `region`                  | String  | See valid regions      | `"Konkan"`                                      |
+| `altitude`                | Number  | Meters above sea level | `2700`                                          |
+| `builtByOrEra`            | String  | Builder or period      | `"Nizam Shahi; present fort 1559"`              |
+| `associatedWith`          | String  | People and events      | `"Chand Bibi"`                                  |
+| `checkFlag`               | String  | Open data question     | `"Pin falls in Pune district, listed as Thane"` |
+| `area`                    | Number  | Square kilometers      | `270`                                           |
+| `foundedYear`             | Number  | Historical year        | `1656`                                          |
+| `notable`                 | Boolean | Featured fort          | `true`                                          |
+| `shortDescription`        | String  | One-line summary       | `"Historic hill fort"`                          |
+| `shortDescriptionMarathi` | String  | One-line Marathi       | `"ऐतिहासिक पहाड किल्ला"`                        |
+| `description`             | String  | 2-3 sentences          | `"Raigad Fort is..."`                           |
+| `descriptionMarathi`      | String  | 2-3 sentences Marathi  | `"राइगड किल्ला एक..."`                          |
+| `tags`                    | Array   | Keyword tags           | `["trekking", "photography"]`                   |
+| `mapsLink`                | String  | Google Maps URL        | `"https://maps.google.com/..."`                 |
+| `wikipediaLink`           | String  | Wikipedia URL          | `"https://en.wikipedia.org/..."`                |
 
 ## Field Specifications
 

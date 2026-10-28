@@ -48,6 +48,7 @@ function createMarkdown(fort) {
 		...(fort.elevation_m && { altitude: parseInt(fort.elevation_m, 10) }),
 		...(fort.built_by_or_era && { builtByOrEra: fort.built_by_or_era }),
 		...(fort.associated_with && { associatedWith: fort.associated_with }),
+		...(fort.check_flag && { checkFlag: fort.check_flag }),
 		notable: false,
 		...(fort.notes && { shortDescription: fort.notes }),
 		...(fort.google_maps && { mapsLink: fort.google_maps }),

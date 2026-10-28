@@ -9,6 +9,7 @@ district: 'Sindhudurg'
 region: 'Konkan'
 builtByOrEra: 'Shilahara origins; expanded by Shivaji Maharaj'
 associatedWith: 'Angre naval base'
+checkFlag: 'Pin falls in Ratnagiri district, listed as Sindhudurg'
 notable: false
 shortDescription: 'Called the Eastern Gibraltar; underwater wall'
 mapsLink: 'https://www.google.com/maps/search/?api=1&query=16.562,73.333'

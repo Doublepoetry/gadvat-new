@@ -7,6 +7,7 @@ locationAccuracy: 'rough'
 type: 'Hill Fort'
 district: 'Sangli'
 region: 'Western Maharashtra'
+checkFlag: 'Pin falls in Ratnagiri district, listed as Sangli'
 notable: false
 shortDescription: 'Chandoli forest, on the Ratnagiri edge'
 mapsLink: 'https://www.google.com/maps/search/?api=1&query=17.12,73.70'

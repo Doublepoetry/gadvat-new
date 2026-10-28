@@ -7,6 +7,7 @@ locationAccuracy: 'rough'
 type: 'Hill Fort'
 district: 'Ahilyanagar'
 region: 'North Maharashtra'
+checkFlag: 'Pin falls in Pune district, listed as Ahilyanagar'
 notable: false
 shortDescription: 'Akole taluka'
 mapsLink: 'https://www.google.com/maps/search/?api=1&query=19.36,73.82'
