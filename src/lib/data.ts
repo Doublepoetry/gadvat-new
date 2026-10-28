@@ -81,8 +81,3 @@ export function getUniqueDistricts(forts: Fort[]): string[] {
 	const districts = new Set(forts.flatMap((f) => (f.district ? [f.district] : [])));
 	return Array.from(districts).sort();
 }
-
-export function getUniqueFortTypes(forts: Fort[]): string[] {
-	const types = new Set(forts.map((f) => f.type));
-	return Array.from(types).sort();
-}
