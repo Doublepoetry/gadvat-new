@@ -5,8 +5,4 @@
 	let { data }: { data: PageData } = $props();
 </script>
 
-<svelte:head>
-	<title>{data.fort.name} · Gadvat</title>
-</svelte:head>
-
-<Atlas forts={data.forts} districtNames={data.districtNames} initialId={data.fort.id} />
+<Atlas initialId={data.id} />

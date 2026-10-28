@@ -4,20 +4,19 @@
 	import FortPanel from '#lib/components/FortPanel.svelte';
 	import MapFilters from '#lib/components/MapFilters.svelte';
 	import SearchPill from '#lib/components/SearchPill.svelte';
+	import { resolve } from '$app/paths';
+	import { replaceState } from '$app/navigation';
 	import type { ColorBy } from '#lib/elevation';
 	import { sortForts, getUniqueDistricts } from '#lib/data';
 	import { language } from '#lib/stores/language';
-	import type { Fort, FortType } from '#lib/types';
+	import type { Fort, FortData, FortType } from '#lib/types';
+	import fortData from '../../data/forts.json';
+
+	// Bundled once with the app, rather than serialised into every prerendered page's HTML
+	const { forts, districts: districtNames } = fortData as unknown as FortData;
+
 	// The home page, and every fort page, which opens with that fort's panel showing
-	let {
-		forts,
-		districtNames,
-		initialId = null
-	}: {
-		forts: Fort[];
-		districtNames: Record<string, string>;
-		initialId?: string | null;
-	} = $props();
+	let { initialId = null }: { initialId?: string | null } = $props();
 
 	// Follows the page's fort when the route changes; picking another fort overrides it
 	let selectedFort = $derived<string | null>(initialId);
@@ -27,6 +26,12 @@
 	let search: SearchPill;
 
 	const selected = $derived(forts.find((f) => f.id === selectedFort) ?? null);
+
+	// The address bar follows the open fort, so a copied link opens what's on screen
+	function select(id: string | null) {
+		selectedFort = id;
+		replaceState(id ? resolve('/[fort]', { fort: id }) : resolve('/'), {});
+	}
 
 	const districts = $derived(getUniqueDistricts(forts));
 
@@ -50,7 +55,7 @@
 	function handleKeydown(e: KeyboardEvent) {
 		const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName ?? '');
 		if (e.key === 'Escape') {
-			if (!search.close() && selectedFort) selectedFort = null;
+			if (!search.close() && selectedFort) select(null);
 		} else if (e.key === '/' && !typing) {
 			e.preventDefault();
 			search.focus();
@@ -60,25 +65,28 @@
 
 <svelte:window onkeydown={handleKeydown} />
 
+<svelte:head>
+	<title
+		>{selected
+			? `${selected.name} · Gadvat`
+			: 'Gadvat - Interactive Atlas of Maharashtra Forts'}</title
+	>
+</svelte:head>
+
 <section class="map-section">
-	<SearchPill bind:this={search} {forts} {selected} onselect={(id) => (selectedFort = id)} />
+	<SearchPill bind:this={search} {forts} {selected} onselect={select} />
 	<FortMap
 		{forts}
 		{districtNames}
 		selectedId={selectedFort}
-		onselect={(id) => (selectedFort = id)}
+		onselect={select}
 		{selectedDistrict}
 		{types}
 		{colorBy}
 	/>
 	<MapFilters {forts} bind:types bind:colorBy docked={!!selected} />
 	{#if selected}
-		<FortPanel
-			fort={selected}
-			{forts}
-			onselect={(id) => (selectedFort = id)}
-			onclose={() => (selectedFort = null)}
-		/>
+		<FortPanel fort={selected} {forts} onselect={select} onclose={() => select(null)} />
 	{/if}
 </section>
 

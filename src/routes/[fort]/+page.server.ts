@@ -1,4 +1,4 @@
-import { getAllForts, getDistrictNames } from '#lib/data';
+import { getAllForts } from '#lib/data';
 import { error } from '@sveltejs/kit';
 import type { EntryGenerator, PageServerLoad } from './$types';
 
@@ -7,16 +7,12 @@ export const entries: EntryGenerator = async () =>
 	(await getAllForts()).map((fort) => ({ fort: fort.id }));
 
 export const load: PageServerLoad = async ({ params }) => {
-	const [forts, districtNames] = await Promise.all([getAllForts(), getDistrictNames()]);
-	const fort = forts.find((f) => f.id === params.fort);
+	// Only the id: the page reads the forts from the bundled data, like the home page
+	const forts = await getAllForts();
 
-	if (!fort) {
+	if (!forts.some((f) => f.id === params.fort)) {
 		error(404, 'Fort not found');
 	}
 
-	return {
-		fort,
-		forts,
-		districtNames
-	};
+	return { id: params.fort };
 };

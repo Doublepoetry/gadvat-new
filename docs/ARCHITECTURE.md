@@ -120,23 +120,21 @@ Runs on every PR → catches issues before merge.
 
 ### 4. Frontend (`src/routes/`)
 
-**Home page** (`+page.svelte`):
+Both pages render `Atlas.svelte`, the full-screen map with search, filters and the fort panel. It imports `forts.json` into the app bundle, so the data downloads once and isn't repeated in every prerendered page's HTML.
 
-- Loads `forts.json` server-side
-- Renders the SVG district map (`districts.json` + d3-zoom)
-- Displays fort list/search
+**Home page** (`+page.svelte`): the map with no fort selected.
 
-**Detail page** (`[fort]/+page.svelte`):
+**Fort page** (`[fort]/+page.svelte`): the same map with that fort's panel open. Its load only checks the fort ID exists and passes it on.
 
-- Dynamic route parameter (fort ID)
-- Renders fort details + content
-- Bilingual UI (English + Marathi)
+Picking or closing a fort updates the address bar (`replaceState`), so `/` or `/<id>` always matches what's on screen.
 
 ### 5. Components (`src/lib/components/`)
 
 Reusable Svelte components:
 
+- `Atlas.svelte` — The map page both routes render
 - `FortMap.svelte` — Interactive map
+- `FortPanel.svelte` — The selected fort's field-card panel
 - `FortCard.svelte` — Fort summary card
 - `FortDetail.svelte` — Full fort page
 - `SearchBar.svelte` — Find forts
