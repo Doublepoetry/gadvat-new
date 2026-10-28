@@ -7,3 +7,6 @@ bun.lockb
 
 # Miscellaneous
 /static/
+
+# Generated or copied data (build-data output, old-site imports)
+/src/data/*.json
