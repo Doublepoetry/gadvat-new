@@ -1,23 +1,25 @@
 <script lang="ts">
 	import FortCard from '#lib/components/FortCard.svelte';
 	import FortMap from '#lib/components/FortMap.svelte';
+	import MapFilters from '#lib/components/MapFilters.svelte';
 	import SearchPill from '#lib/components/SearchPill.svelte';
-	import { sortForts, getUniqueDistricts, getUniqueFortTypes } from '#lib/data';
+	import type { ColorBy } from '#lib/elevation';
+	import { sortForts, getUniqueDistricts } from '#lib/data';
 	import { language } from '#lib/stores/language';
-	import type { Fort } from '#lib/types';
+	import type { Fort, FortType } from '#lib/types';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
 
 	let selectedFort = $state<string | null>(null);
 	let selectedDistrict = $state<string | null>(null);
-	let selectedType = $state<string | null>(null);
+	let types = $state<FortType[]>([]);
+	let colorBy = $state<ColorBy>('stars');
 	let search: SearchPill;
 
 	const selected = $derived(data.forts.find((f) => f.id === selectedFort) ?? null);
 
 	const districts = $derived(getUniqueDistricts(data.forts));
-	const fortTypes = $derived(getUniqueFortTypes(data.forts));
 
 	const filteredForts = $derived.by(() => {
 		return data.forts.filter((fort: Fort) => {
@@ -25,7 +27,7 @@
 				return false;
 			}
 
-			if (selectedType && fort.type !== selectedType) {
+			if (types.length && !types.includes(fort.type)) {
 				return false;
 			}
 
@@ -62,8 +64,10 @@
 		selectedId={selectedFort}
 		onselect={(id) => (selectedFort = id)}
 		{selectedDistrict}
-		{selectedType}
+		{types}
+		{colorBy}
 	/>
+	<MapFilters forts={data.forts} bind:types bind:colorBy />
 </section>
 
 <!-- The original site's search and list replace this in later slices -->
@@ -80,20 +84,6 @@
 					</option>
 					{#each districts as district (district)}
 						<option value={district}>{district}</option>
-					{/each}
-				</select>
-			</div>
-
-			<div class="type-filter">
-				<label for="type-select">
-					{$language === 'en' ? 'Filter by Type' : 'प्रकारानुसार फिल्टर करा'}
-				</label>
-				<select id="type-select" bind:value={selectedType} class="type-select">
-					<option value={null}>
-						{$language === 'en' ? 'All Types' : 'सर्व प्रकार'}
-					</option>
-					{#each fortTypes as type (type)}
-						<option value={type}>{type}</option>
 					{/each}
 				</select>
 			</div>
@@ -153,22 +143,19 @@
 		gap: 1rem;
 	}
 
-	.district-filter,
-	.type-filter {
+	.district-filter {
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
 	}
 
-	.district-filter label,
-	.type-filter label {
+	.district-filter label {
 		font-weight: 500;
 		color: var(--ink2);
 		font-size: 0.875rem;
 	}
 
-	.district-select,
-	.type-select {
+	.district-select {
 		width: 100%;
 		padding: 0.75rem;
 		border: 1px solid rgba(var(--lr), 0.18);
@@ -179,8 +166,7 @@
 		transition: border-color 0.2s ease;
 	}
 
-	.district-select:focus,
-	.type-select:focus {
+	.district-select:focus {
 		outline: none;
 		border-color: var(--acc);
 		box-shadow: 0 0 0 3px rgba(var(--lr), 0.12);

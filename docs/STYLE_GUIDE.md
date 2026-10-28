@@ -167,6 +167,7 @@ Built on a **hairline grid**: 1px `rgba(18,57,47,.2)` rules between bands. From 
 - **Fort dots:** a 4px halo at .18–.22 alpha plus a core (`--spark` in dark mode, the type colour with a cream stroke in light mode).
 - **Selected pin:** a teardrop in the type colour with a `--bg` stroke and centre, a ground ellipse shadow and the sonar ring.
 - **Details card:** clicking a fort flies to it and opens a paper card beside the pin (a bottom sheet under 640px): type kicker, name 22px, Marathi in Mukta, then district, elevation, era and base village (marked "from OpenStreetMap"), and a `--signal` "Open fort page" pill. It replaces the original's floating pin label. The full field-card panel replaces it in a later slice.
+- **Filter row** (new, not in the original): glass chips under the search pill, one per fort type with its glyph, Marathi name and count, multi-select; non-matching dots dim to .2. Beside them, a **Colour** segmented control: Plain (the starfield), Type (dot cores take the type colour), Height (teal → parchment → orange from lowest to highest elevation, with a legend; forts without an elevation dim). On mobile the row scrolls sideways under the pill.
 - **Controls:** drag to pan, wheel or pinch to zoom, click a dot to select, `Esc` to go back out. Panning stays within Maharashtra. (The original only allowed pan and zoom while a fort was selected, and its dots weren't clickable.)
 
 ## 8. Language

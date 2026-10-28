@@ -7,6 +7,7 @@
 	import { easeCubicInOut } from 'd3-ease';
 	import geo from '../../data/districts.json';
 	import { showMr } from '../stores/preferences';
+	import { elevationColor, elevationRange, type ColorBy } from '../elevation';
 	import type { Fort, FortType } from '../types';
 
 	let {
@@ -15,22 +16,25 @@
 		selectedId = null,
 		onselect,
 		selectedDistrict = null,
-		selectedType = null
+		types = [],
+		colorBy = 'stars'
 	}: {
 		forts: Fort[];
 		districtNames: Record<string, string>; // English → Marathi, for the labels
 		selectedId?: string | null;
 		onselect?: (id: string | null) => void;
 		selectedDistrict?: string | null;
-		selectedType?: string | null;
+		types?: FortType[]; // empty means every type
+		colorBy?: ColorBy;
 	} = $props();
 
 	// The district map's own coordinate space (projected from lat/lon by geo.proj)
 	const VBW = 977;
 	const VBH = 816;
-	const HEADER = 64;
-	const MOBILE = 760; // below this width the search pill sits under the header
-	const MOBILE_TOP = 124;
+	// Where the map's fitted view starts: below the header, search pill and filter row
+	const TOP = 112;
+	const MOBILE = 760; // below this width the search pill and filters stack under the header
+	const MOBILE_TOP = 168;
 	const FLIGHT_MS = 1100;
 	const SELECTED_ZOOM = 7; // relative to the fitted view, as on the original site
 
@@ -57,11 +61,20 @@
 			}))
 	);
 
+	const altRange = $derived(elevationRange(forts));
+
+	function dotColor(f: Fort) {
+		return colorBy === 'height' && f.altitude && altRange
+			? `color: ${elevationColor(f.altitude, altRange)}`
+			: undefined;
+	}
+
 	const selected = $derived(located.find((p) => p.fort.id === selectedId) ?? null);
 
 	function matchesFilters(f: Fort) {
 		if (selectedDistrict && f.district !== selectedDistrict) return false;
-		if (selectedType && f.type !== selectedType) return false;
+		if (types.length && !types.includes(f.type)) return false;
+		if (colorBy === 'height' && !f.altitude) return false;
 		return true;
 	}
 
@@ -72,7 +85,7 @@
 	let behavior: ZoomBehavior<SVGSVGElement, unknown> | undefined;
 
 	// Scale at which the whole state fits below the header
-	const top = $derived(width < MOBILE ? MOBILE_TOP : HEADER);
+	const top = $derived(width < MOBILE ? MOBILE_TOP : TOP);
 	const fitK = $derived(Math.max(0.01, Math.min((width - 48) / VBW, (height - top - 48) / VBH)));
 	const u = $derived(1 / t.k); // one screen pixel, in map units
 	// Labels fade in by on-screen scale, so a large screen shows district names from the start
@@ -252,6 +265,8 @@
 						<g
 							class="dot {p.cls}"
 							class:dim={!matchesFilters(p.fort)}
+							class:colored={colorBy !== 'stars'}
+							style={dotColor(p.fort)}
 							transform="translate({p.x} {p.y}) scale({u})"
 							data-id={p.fort.id}
 							role="button"
@@ -443,6 +458,15 @@
 
 	.core {
 		fill: var(--spark);
+	}
+
+	/* Coloured by type or height: the core takes the dot's colour too */
+	.dot.colored .core {
+		fill: currentColor;
+	}
+
+	.dot.colored .halo {
+		opacity: 0.3;
 	}
 
 	:global(:root[data-theme='light']) .halo {
