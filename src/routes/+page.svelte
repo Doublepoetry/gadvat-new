@@ -100,7 +100,7 @@
 		</div>
 	</section>
 
-	<section class="results">
+	<section class="results" id="forts">
 		<div class="results-header">
 			<h2>
 				{$language === 'en' ? 'Results' : 'परिणाम'} ({sortedForts.length})
@@ -127,6 +127,8 @@
 
 <style>
 	.page-content {
+		max-width: 1200px;
+		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
@@ -139,13 +141,13 @@
 	.hero h1 {
 		margin: 0 0 0.5rem 0;
 		font-size: 2.25rem;
-		color: #1f2937;
+		color: var(--ink);
 	}
 
 	.hero-subtitle {
 		margin: 0;
 		font-size: 1.125rem;
-		color: #6b7280;
+		color: var(--mut);
 	}
 
 	.map-section {
@@ -170,8 +172,9 @@
 
 	.search-input {
 		width: 100%;
+		background-color: var(--card);
 		padding: 0.75rem;
-		border: 1px solid #d1d5db;
+		border: 1px solid rgba(var(--lr), 0.18);
 		border-radius: 0.375rem;
 		font-size: 1rem;
 		transition: border-color 0.2s ease;
@@ -179,8 +182,8 @@
 
 	.search-input:focus {
 		outline: none;
-		border-color: #4f46e5;
-		box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+		border-color: var(--acc);
+		box-shadow: 0 0 0 3px rgba(var(--lr), 0.12);
 	}
 
 	.district-filter,
@@ -193,7 +196,7 @@
 	.district-filter label,
 	.type-filter label {
 		font-weight: 500;
-		color: #374151;
+		color: var(--ink2);
 		font-size: 0.875rem;
 	}
 
@@ -201,10 +204,10 @@
 	.type-select {
 		width: 100%;
 		padding: 0.75rem;
-		border: 1px solid #d1d5db;
+		border: 1px solid rgba(var(--lr), 0.18);
 		border-radius: 0.375rem;
 		font-size: 1rem;
-		background-color: white;
+		background-color: var(--card);
 		cursor: pointer;
 		transition: border-color 0.2s ease;
 	}
@@ -212,19 +215,19 @@
 	.district-select:focus,
 	.type-select:focus {
 		outline: none;
-		border-color: #4f46e5;
-		box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+		border-color: var(--acc);
+		box-shadow: 0 0 0 3px rgba(var(--lr), 0.12);
 	}
 
 	.results-header {
-		border-bottom: 2px solid #e5e7eb;
+		border-bottom: 2px solid rgba(var(--lr), 0.14);
 		padding-bottom: 1rem;
 	}
 
 	.results-header h2 {
 		margin: 0;
 		font-size: 1.5rem;
-		color: #1f2937;
+		color: var(--ink);
 	}
 
 	.forts-grid {
@@ -236,7 +239,7 @@
 	.no-results {
 		text-align: center;
 		padding: 2rem;
-		color: #6b7280;
+		color: var(--mut);
 	}
 
 	@media (max-width: 768px) {

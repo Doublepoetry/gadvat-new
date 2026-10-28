@@ -7,7 +7,7 @@ Gadvat is a SvelteKit-based web application that displays an interactive map of 
 ## Tech Stack
 
 - **Frontend**: SvelteKit 3.0 + Svelte 5
-- **Styling**: Tailwind CSS 4.x
+- **Styling**: scoped Svelte styles on CSS design tokens (`src/routes/layout.css`); see [STYLE_GUIDE.md](STYLE_GUIDE.md)
 - **Language**: TypeScript
 - **Testing**: Vitest
 - **CI/CD**: GitHub Actions
@@ -43,7 +43,6 @@ gadvat-rewrite/
 ├── package.json
 ├── tsconfig.json
 ├── vite.config.ts
-└── tailwind.config.js
 ```
 
 ## Data Flow
@@ -204,7 +203,7 @@ npm run format
 
 ### Minimal
 
-- Minimal dependencies (gray-matter, SvelteKit, Tailwind)
+- Minimal dependencies (gray-matter, SvelteKit)
 - No heavy libraries (no Redux, no Apollo)
 - Server-side rendering for performance
 - Static export capability (future)

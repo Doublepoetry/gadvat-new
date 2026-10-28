@@ -1,9 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="text-scale" content="scale" />
+		<script>
+			// Apply the saved theme before first paint, so light-theme visitors don't see a dark flash
+			try {
+				if (localStorage.getItem('gadvat:theme') === 'light') {
+					document.documentElement.dataset.theme = 'light';
+				}
+			} catch {}
+		</script>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">

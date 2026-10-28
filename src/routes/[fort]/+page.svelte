@@ -141,32 +141,32 @@
 	}
 
 	.breadcrumb a {
-		color: #4f46e5;
+		color: var(--acc);
 		text-decoration: none;
 		font-weight: 500;
 		transition: color 0.2s ease;
 	}
 
 	.breadcrumb a:hover {
-		color: #4338ca;
+		color: var(--ink);
 	}
 
 	.detail-header {
 		margin-bottom: 2rem;
-		border-bottom: 2px solid #e5e7eb;
+		border-bottom: 2px solid rgba(var(--lr), 0.14);
 		padding-bottom: 1.5rem;
 	}
 
 	.detail-header h1 {
 		margin: 0 0 0.5rem 0;
 		font-size: 2rem;
-		color: #1f2937;
+		color: var(--ink);
 	}
 
 	.marathi-name {
 		margin: 0 0 1rem 0;
 		font-size: 1.5rem;
-		color: #6b7280;
+		color: var(--mut);
 		font-weight: 500;
 	}
 
@@ -185,18 +185,18 @@
 	}
 
 	.badge-primary {
-		background-color: #4f46e5;
-		color: white;
+		background-color: var(--acc);
+		color: var(--bg);
 	}
 
 	.badge-secondary {
-		background-color: #f3f4f6;
-		color: #374151;
+		background-color: rgba(var(--lr), 0.08);
+		color: var(--ink2);
 	}
 
 	.badge-tertiary {
-		background-color: #ede9fe;
-		color: #6d28d9;
+		background-color: rgba(var(--lr), 0.08);
+		color: var(--acc2);
 	}
 
 	.detail-sections {
@@ -207,15 +207,15 @@
 
 	.detail-section {
 		padding: 1.5rem;
-		background-color: #f9fafb;
+		background-color: var(--card);
 		border-radius: 0.5rem;
-		border: 1px solid #e5e7eb;
+		border: 1px solid rgba(var(--lr), 0.14);
 	}
 
 	.detail-section h2 {
 		margin: 0 0 1rem 0;
 		font-size: 1.25rem;
-		color: #1f2937;
+		color: var(--ink);
 	}
 
 	.detail-grid {
@@ -232,17 +232,17 @@
 
 	.detail-label {
 		font-weight: 600;
-		color: #374151;
+		color: var(--ink2);
 		font-size: 0.875rem;
 	}
 
 	.detail-value {
-		color: #6b7280;
+		color: var(--mut);
 		font-size: 1rem;
 	}
 
 	.detail-text {
-		color: #6b7280;
+		color: var(--mut);
 		line-height: 1.6;
 	}
 
@@ -261,14 +261,14 @@
 		text-decoration: none;
 		font-weight: 500;
 		transition: all 0.2s ease;
-		color: #4f46e5;
-		border: 1px solid #4f46e5;
+		color: var(--acc);
+		border: 1px solid var(--acc);
 	}
 
 	.button-primary {
-		background-color: #4f46e5;
-		color: white;
-		border-color: #4f46e5;
+		background-color: var(--acc);
+		color: var(--bg);
+		border-color: var(--acc);
 	}
 
 	.button:hover {
@@ -284,8 +284,8 @@
 	.tag {
 		display: inline-block;
 		padding: 0.25rem 0.75rem;
-		background-color: #e5e7eb;
-		color: #374151;
+		background-color: rgba(var(--lr), 0.14);
+		color: var(--ink2);
 		border-radius: 9999px;
 		font-size: 0.875rem;
 	}

@@ -51,9 +51,9 @@
 <style>
 	.fort-card {
 		display: block;
-		background: white;
+		background: var(--card);
 		border-radius: 0.5rem;
-		border: 1px solid #e5e7eb;
+		border: 1px solid rgba(var(--lr), 0.14);
 		padding: 1rem;
 		transition: all 0.2s ease;
 		text-decoration: none;
@@ -62,8 +62,8 @@
 	}
 
 	.fort-card:hover {
-		border-color: #4f46e5;
-		box-shadow: 0 4px 12px rgba(79, 70, 229, 0.1);
+		border-color: var(--acc);
+		box-shadow: 0 4px 12px rgba(var(--lr), 0.12);
 		transform: translateY(-2px);
 	}
 
@@ -77,13 +77,13 @@
 		margin: 0;
 		font-size: 1.125rem;
 		font-weight: 600;
-		color: #1f2937;
+		color: var(--ink);
 	}
 
 	.fort-type {
 		margin: 0;
 		font-size: 0.875rem;
-		color: #6b7280;
+		color: var(--mut);
 	}
 
 	.fort-meta {
@@ -94,8 +94,8 @@
 
 	.badge {
 		display: inline-block;
-		background-color: #4f46e5;
-		color: white;
+		background-color: var(--acc);
+		color: var(--bg);
 		padding: 0.25rem 0.75rem;
 		border-radius: 9999px;
 		font-size: 0.75rem;
@@ -103,14 +103,14 @@
 	}
 
 	.badge.secondary {
-		background-color: #f3f4f6;
-		color: #374151;
+		background-color: rgba(var(--lr), 0.08);
+		color: var(--ink2);
 	}
 
 	.fort-description {
 		margin: 0;
 		font-size: 0.875rem;
-		color: #6b7280;
+		color: var(--mut);
 		line-height: 1.5;
 	}
 
@@ -120,15 +120,19 @@
 	}
 
 	.link-button {
+		padding: 0;
+		border: 0;
+		background: none;
+		cursor: pointer;
 		font-size: 0.875rem;
-		color: #4f46e5;
+		color: var(--acc);
 		text-decoration: none;
 		font-weight: 500;
 		transition: color 0.2s ease;
 	}
 
 	.link-button:hover {
-		color: #4338ca;
+		color: var(--ink);
 	}
 
 	@media (max-width: 640px) {
