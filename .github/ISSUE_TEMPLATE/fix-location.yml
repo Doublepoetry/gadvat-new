@@ -1,0 +1,39 @@
+name: Fix fort details
+description: Report a wrong location, name, type, district or other detail
+title: '[Fix] '
+labels: [fix]
+body:
+  - type: input
+    id: fort
+    attributes:
+      label: Fort
+      description: Name, and the ID if you know it. The ID is the number at the end of the fort's page address (e.g. Raigad, 188).
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What's wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What's correct?
+      description: For a location, give latitude and longitude in decimal (e.g. 18.235, 73.441).
+    validations:
+      required: true
+  - type: dropdown
+    id: accuracy
+    attributes:
+      label: How sure is the location?
+      description: Only for location fixes.
+      options:
+        - I've been there, or checked it on satellite imagery
+        - Near the fort, exact spot not confirmed
+        - Rough area only
+  - type: textarea
+    id: sources
+    attributes:
+      label: How you know
+      description: A visit, a map, a book or a link.
