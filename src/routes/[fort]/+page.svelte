@@ -1,5 +1,7 @@
 <script lang="ts">
+	import Gallery from '#lib/components/Gallery.svelte';
 	import { getMapsUrl, getFortDisplay, formatCoordinates } from '#lib/data';
+	import { mockGalleries } from '#lib/gallery-mock';
 	import { language, translations } from '#lib/stores/language';
 	import type { PageData } from './$types';
 
@@ -7,6 +9,11 @@
 
 	const display = $derived(getFortDisplay(data.fort, $language));
 	const mapsUrl = $derived(getMapsUrl(data.fort.coordinates));
+	const images = $derived(
+		data.fort.images ?? (import.meta.env.DEV ? mockGalleries[data.fort.id] : undefined) ?? []
+	);
+
+	const uploadUrl = 'https://commons.wikimedia.org/wiki/Special:UploadWizard';
 </script>
 
 <div class="fort-detail">
@@ -27,6 +34,18 @@
 	</div>
 
 	<section class="detail-sections">
+		{#if images.length > 0}
+			<section class="detail-section">
+				<div class="section-heading">
+					<h2>{translations[$language]['photos']}</h2>
+					<a href={uploadUrl} target="_blank" rel="noopener noreferrer" class="add-photo">
+						+ {translations[$language]['addPhoto']}
+					</a>
+				</div>
+				<Gallery {images} label="{display.name}: {translations[$language]['photos']}" />
+			</section>
+		{/if}
+
 		<section class="detail-section">
 			<h2>{translations[$language]['fortDetails']}</h2>
 			<div class="detail-grid">
@@ -112,6 +131,13 @@
 						class="button"
 					>
 						📖 Wikipedia
+					</a>
+				</p>
+			{/if}
+			{#if images.length === 0}
+				<p>
+					<a href={uploadUrl} target="_blank" rel="noopener noreferrer" class="button">
+						📷 {translations[$language]['addPhoto']}
 					</a>
 				</p>
 			{/if}
@@ -216,6 +242,29 @@
 		margin: 0 0 1rem 0;
 		font-size: 1.25rem;
 		color: #1f2937;
+	}
+
+	.section-heading {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.section-heading h2 {
+		margin: 0;
+	}
+
+	.add-photo {
+		color: #4f46e5;
+		font-size: 0.875rem;
+		font-weight: 500;
+		text-decoration: none;
+	}
+
+	.add-photo:hover {
+		text-decoration: underline;
 	}
 
 	.detail-grid {
