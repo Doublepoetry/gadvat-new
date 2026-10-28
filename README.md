@@ -6,8 +6,6 @@ An open, interactive atlas of the forts of Maharashtra, on one map, in English a
 
 **Live site → [doublepoetry.github.io/gadvat-new](https://doublepoetry.github.io/gadvat-new/)** _(goes live with the first deploy)_
 
-<!-- Screenshots: add map.png and fort.png to docs/screenshots/, then keep these lines -->
-
 ![The map of Maharashtra with every fort pinned](docs/screenshots/map.png)
 ![A fort page with its details, directions and links](docs/screenshots/fort.png)
 
