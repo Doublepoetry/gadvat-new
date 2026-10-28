@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import { showMr, theme } from '../stores/preferences';
 
 	function toggleTheme() {
@@ -11,7 +12,7 @@
 </script>
 
 <header class="site-header">
-	<a class="wordmark" href="/">
+	<a class="wordmark" href={resolve('/')}>
 		<span class="wordmark-en">Gadvat</span>
 		{#if $showMr}
 			<span class="wordmark-mr" lang="mr">गडवाट</span>
@@ -66,7 +67,7 @@
 			<span class="track" class:on={$showMr} aria-hidden="true"><span class="knob"></span></span>
 		</button>
 
-		<a class="forts-pill" href="/#forts">Forts</a>
+		<a class="forts-pill" href={resolve('/#forts')}>Forts</a>
 	</div>
 </header>
 

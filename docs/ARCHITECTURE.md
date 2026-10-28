@@ -11,7 +11,7 @@ Gadvat is a SvelteKit-based web application that displays an interactive map of 
 - **Language**: TypeScript
 - **Testing**: Vitest
 - **CI/CD**: GitHub Actions
-- **Deployment**: Containerized (Docker)
+- **Deployment**: Static site on GitHub Pages
 
 ## Project Structure
 
@@ -217,13 +217,11 @@ npm run format
 
 ## Deployment
 
-(Coming in Phase 2)
+The site is fully static. `@sveltejs/adapter-static` prerenders `/` and one page per fort (via `entries` in `src/routes/[fort]/+page.server.ts`) into `build/`, with `404.html` as the fallback for unknown paths.
 
-Options:
+`.github/workflows/pages.yml` deploys every push to `main` to GitHub Pages. It sets `BASE_PATH=/<repo name>`, so the site works under `https://<owner>.github.io/<repo>/`. Locally `BASE_PATH` is unset and the site serves from `/`. Internal links must go through `resolve()` from `$app/paths` so they pick up the base path.
 
-- Static hosting (Netlify, Vercel, GitHub Pages)
-- Docker container (self-hosted)
-- Node.js server (production)
+To try the production build locally: `BASE_PATH=/gadvat-new npm run build`, then serve `build/` under `/gadvat-new`.
 
 ## Testing Strategy
 
