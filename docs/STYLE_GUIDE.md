@@ -162,11 +162,12 @@ Built on a **hairline grid**: 1px `rgba(18,57,47,.2)` rules between bands. From 
 
 ## 7. Map
 
-- **A custom SVG of district shapes, not tiles.** It's flat with no relief. District stroke is `.1` alpha (`.32` when selected), and the coastline is 2.4px at `.32`.
-- **Labels fade in with zoom:** uppercase Instrument Sans 10px, tracking 1.6. The Marathi line sits below in Tiro 13px. "ARABIAN SEA" / अरबी समुद्र appears in `--edge`.
+- **A custom SVG of district shapes, not tiles** (`src/data/districts.json`, pan and zoom by d3-zoom). It's flat with no relief. District stroke is `.22` alpha (`.32` when selected; the original used `.1`, raised so borders read at a glance), and the coastline is 2.4px at `.32`.
+- **District names are always on:** uppercase Instrument Sans 10px, tracking 1.6. The Marathi line sits below in Tiro 13px and fades in once you zoom past 1.2×. "ARABIAN SEA" / अरबी समुद्र appears in `--edge`. (The original faded all labels in with zoom.)
 - **Fort dots:** a 4px halo at .18–.22 alpha plus a core (`--spark` in dark mode, the type colour with a cream stroke in light mode).
-- **Selected pin:** a teardrop in the type colour with a `--bg` stroke and centre, a ground ellipse shadow and the sonar ring. The label is name 15px/600 + Marathi in `--acc2`, with a 4px `--bg` halo stroke so it reads over the map.
-- **Controls:** drag to pan and wheel to zoom, **only while a fort is selected**. The idle map is static.
+- **Selected pin:** a teardrop in the type colour with a `--bg` stroke and centre, a ground ellipse shadow and the sonar ring.
+- **Details card:** clicking a fort flies to it and opens a paper card beside the pin (a bottom sheet under 640px): type kicker, name 22px, Marathi in Mukta, then district, elevation, era and base village (marked "from OpenStreetMap"), and a `--signal` "Open fort page" pill. It replaces the original's floating pin label. The full field-card panel replaces it in a later slice.
+- **Controls:** drag to pan, wheel or pinch to zoom, click a dot to select, `Esc` to go back out. Panning stays within Maharashtra. (The original only allowed pan and zoom while a fort was selected, and its dots weren't clickable.)
 
 ## 8. Language
 
@@ -182,5 +183,4 @@ Built on a **hairline grid**: 1px `rgba(18,57,47,.2)` rules between bands. From 
 
 ## 10. Open questions
 
-1. **Map engine:** keep Leaflet with OSM tiles, or port the custom SVG district map that this look depends on?
-2. **Fort page:** the original has no separate fort page. Everything lives in the panel. Should `/[fort]` reuse the panel design?
+1. **Fort page:** the original has no separate fort page. Everything lives in the panel. Should `/[fort]` reuse the panel design?
