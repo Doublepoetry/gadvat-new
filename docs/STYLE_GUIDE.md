@@ -133,7 +133,7 @@ Glass effects: `blur(16px)` on the search pill, and `blur(6px)` plus the scrim o
 - **Search pill:** in the original it glides from the middle of the screen to the top bar over .7s when a fort is selected, and narrows to 240–420px. The port keeps it in the top bar throughout (see Idle state) and only narrows it, 580px → 420px.
 - **Map:** flies to the fort over 1100ms.
 - **Pin:** drops in (`gvDrop` .6s, overshoot), then sends a sonar ring (radius 6→34, 2.4s, looping). The label fades in .4s.
-- **Fort dots:** twinkle (opacity .35↔1, 2.2–4.2s, staggered per fort).
+- **Fort dots:** twinkle (opacity .7↔1, 2.2–4.2s, staggered per fort; the original's .35 floor lost dots against the land).
 - **Small state changes:** .2s.
 
 ## 5. Layout
@@ -164,7 +164,8 @@ Built on a **hairline grid**: 1px `rgba(18,57,47,.2)` rules between bands. From 
 
 - **A custom SVG of district shapes, not tiles** (`src/data/districts.json`, pan and zoom by d3-zoom). It's flat with no relief. District stroke is `.22` alpha (`.32` when selected; the original used `.1`, raised so borders read at a glance), and the coastline is 2.4px at `.32`.
 - **District names show from the first view on a large screen:** uppercase Instrument Sans 10px, tracking 1.6. Labels fade in by on-screen scale (English from 0.5–0.65 px per map unit, so a phone shows them once zoomed in), and the Marathi line below in Tiro 13px from 1.0–1.4. "ARABIAN SEA" / अरबी समुद्र appears in `--edge`. (The original faded all labels in with zoom.)
-- **Fort dots:** a 4px halo at .18–.22 alpha plus a core (`--spark` in dark mode, the type colour with a cream stroke in light mode).
+- **Fort dots:** a 6px halo at .18–.22 alpha plus a 3px core with a 0.8px outline (`--spark` with a `--bg` stroke in dark mode, the type colour with a cream stroke in light mode). They keep that size on screen at the fitted view and grow with the square root of the zoom, up to 2×. (The original's 1.8px core was hard to see.)
+- **Hover preview** (new): once zoomed past 2× the fitted view, hovering or focusing a dot shows a small paper tag above it with the type kicker, name, Marathi name, district and elevation. Below that zoom, the browser tooltip shows the name. A click still opens the details card.
 - **Selected pin:** a teardrop in the type colour with a `--bg` stroke and centre, a ground ellipse shadow and the sonar ring.
 - **Details card:** clicking a fort flies to it and opens a paper card beside the pin (a bottom sheet under 640px): type kicker, name 22px, Marathi in Mukta, then district, elevation, era and base village (marked "from OpenStreetMap"), and a `--signal` "Open fort page" pill. It replaces the original's floating pin label. The full field-card panel replaces it in a later slice.
 - **Filter row** (new, not in the original): glass chips under the search pill, one per fort type with its glyph, Marathi name and count, multi-select; non-matching dots dim to .2. Beside them, a **Colour** segmented control: Plain (the starfield), Type (dot cores take the type colour), Height (teal → parchment → orange from lowest to highest elevation, with a legend; forts without an elevation dim). On mobile the row scrolls sideways under the pill.
