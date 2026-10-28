@@ -9,14 +9,15 @@ const originalDataPath = '/tmp/original-gadvat/data/forts.json';
 // Type mapping from original to new format
 const typeMap = {
 	Hill: 'Hill Fort',
-	Land: 'Plain Fort',
 	Sea: 'Sea Fort',
-	Island: 'Island Fort',
-	Underground: 'Underground Fort'
+	Coastal: 'Coastal Fort',
+	Land: 'Land Fort'
 };
 
 function convertType(originalType) {
-	return typeMap[originalType] || 'Hill Fort';
+	const type = typeMap[originalType];
+	if (!type) throw new Error(`unknown type "${originalType}"`);
+	return type;
 }
 
 function sanitizeId(id) {
@@ -25,79 +26,36 @@ function sanitizeId(id) {
 	return String(num).padStart(3, '0');
 }
 
-function normalizeDistrict(district) {
-	// Map old district names to current ones
-	const districtMap = {
-		Ahilyanagar: 'Pune',
-		Yavatmal: 'Yavatmal',
-		Kolhapur: 'Kolhapur',
-		Ratnagiri: 'Ratnagiri',
-		Sindhudurg: 'Sindhudurg'
-	};
-	return districtMap[district] || district;
+function yamlValue(value) {
+	if (Array.isArray(value)) return `[${value.join(', ')}]`;
+	if (typeof value === 'string') return JSON.stringify(value);
+	return String(value);
 }
 
 function createMarkdown(fort) {
-	const id = sanitizeId(fort.id);
-	const name = fort.name;
-	const nameMarathi = fort.name_marathi;
-	const coordinates = [parseFloat(fort.latitude), parseFloat(fort.longitude)];
-	const type = convertType(fort.type);
-	const district = normalizeDistrict(fort.district);
-	const region = fort.region || '';
-
-	// Build frontmatter
+	// Forts the original site couldn't place (location_accuracy "none") have no
+	// coordinates, district or region there; keep them that way.
+	const located = fort.latitude !== '' && fort.longitude !== '';
 	const frontmatter = {
-		id,
-		name,
-		nameMarathi,
-		coordinates,
-		type,
-		district,
-		...(region && { region }),
-		...(fort.elevation_m && { altitude: parseInt(fort.elevation_m) || null }),
+		id: sanitizeId(fort.id),
+		name: fort.name,
+		nameMarathi: fort.name_marathi,
+		...(located && { coordinates: [parseFloat(fort.latitude), parseFloat(fort.longitude)] }),
+		locationAccuracy: fort.location_accuracy,
+		type: convertType(fort.type),
+		...(fort.district && { district: fort.district }),
+		...(fort.region && { region: fort.region }),
+		...(fort.elevation_m && { altitude: parseInt(fort.elevation_m, 10) }),
+		...(fort.built_by_or_era && { builtByOrEra: fort.built_by_or_era }),
+		...(fort.associated_with && { associatedWith: fort.associated_with }),
 		notable: false,
-		shortDescription: fort.notes || '',
-		mapsLink: fort.google_maps || null,
-		wikipediaLink: fort.wikipedia_search || null
+		...(fort.notes && { shortDescription: fort.notes }),
+		...(fort.google_maps && { mapsLink: fort.google_maps }),
+		...(fort.wikipedia_search && { wikipediaLink: fort.wikipedia_search })
 	};
 
-	// Build content
-	let content = '';
-
-	if (fort.built_by_or_era) {
-		content += `## History\n\n${fort.built_by_or_era}\n\n`;
-	}
-
-	if (fort.associated_with) {
-		content += `## Associated With\n\n${fort.associated_with}\n\n`;
-	}
-
-	if (fort.notes) {
-		content += `## Details\n\n${fort.notes}\n\n`;
-	}
-
-	// Format as markdown
-	let yamlStr = '---\n';
-	for (const [key, value] of Object.entries(frontmatter)) {
-		if (key === 'id') {
-			// ID must always be quoted string
-			yamlStr += `${key}: "${value}"\n`;
-		} else if (key === 'coordinates') {
-			yamlStr += `${key}: [${value[0]}, ${value[1]}]\n`;
-		} else if (typeof value === 'string' && value.includes('\n')) {
-			yamlStr += `${key}: |\n  ${value.replace(/\n/g, '\n  ')}\n`;
-		} else if (value === null) {
-			yamlStr += `${key}: null\n`;
-		} else if (typeof value === 'string') {
-			yamlStr += `${key}: ${value}\n`;
-		} else {
-			yamlStr += `${key}: ${JSON.stringify(value)}\n`;
-		}
-	}
-	yamlStr += '---\n\n';
-
-	return yamlStr + content.trim();
+	const lines = Object.entries(frontmatter).map(([key, value]) => `${key}: ${yamlValue(value)}`);
+	return `---\n${lines.join('\n')}\n---\n`;
 }
 
 async function convertData() {

@@ -1,12 +1,35 @@
+export type FortType = 'Hill Fort' | 'Sea Fort' | 'Coastal Fort' | 'Land Fort';
+
+/** close: pin checked; approx: near the fort; rough: may be some way off; none: not on the map. */
+export type LocationAccuracy = 'close' | 'approx' | 'rough' | 'none';
+
+export interface FortAddress {
+	base: string; // village or town treks start from, e.g. "Velhe"
+	line: string; // e.g. "Velhe Taluka, Pune District, Maharashtra 412212"
+}
+
+export interface NearbyFort {
+	id: string;
+	km: number; // great-circle distance, one decimal
+}
+
 export interface Fort {
 	id: string;
 	name: string;
 	nameMarathi: string;
-	coordinates: [number, number]; // [latitude, longitude]
-	type: 'Hill Fort' | 'Plain Fort' | 'Sea Fort' | 'Island Fort' | 'Underground Fort';
-	district: string;
+	coordinates: [number, number] | null; // [latitude, longitude]; null when locationAccuracy is 'none'
+	locationAccuracy: LocationAccuracy;
+	type: FortType;
+	typeMarathi: string;
+	district: string | null; // null when locationAccuracy is 'none'
+	districtMarathi: string | null;
 	region?: string;
+	regionMarathi?: string | null;
 	altitude?: number;
+	builtByOrEra?: string | null;
+	associatedWith?: string | null;
+	address: FortAddress | null; // nearest settlement, from OpenStreetMap
+	nearby: NearbyFort[]; // five closest located forts, nearest first
 	area?: number;
 	foundedYear?: number;
 	notable?: boolean;
@@ -39,5 +62,5 @@ export interface FortDisplay {
 	type: string;
 	district: string;
 	region: string;
-	coordinates: [number, number];
+	coordinates: [number, number] | null;
 }

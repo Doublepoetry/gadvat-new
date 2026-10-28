@@ -1,15 +1,11 @@
 ---
 id: '145'
-name: Mankigad fort
-nameMarathi: मांकीगड किल्ला
-coordinates: [18.48, 74.22]
-type: Hill Fort
-district: Kolhapur
-region: Western Ghats
+name: 'Mankigad fort'
+nameMarathi: 'मानकीगड'
+locationAccuracy: 'none'
+type: 'Hill Fort'
 notable: false
-shortDescription: Mankigad fort in Kolhapur
+shortDescription: 'Location not confirmed'
+mapsLink: 'https://www.google.com/maps/search/?api=1&query=Mankigad%20fort%20Maharashtra'
+wikipediaLink: 'https://en.wikipedia.org/w/index.php?search=Mankigad%20fort'
 ---
-
-## Location
-
-Fort in Kolhapur.

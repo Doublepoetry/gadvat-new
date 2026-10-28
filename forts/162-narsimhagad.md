@@ -1,15 +1,11 @@
 ---
 id: '162'
-name: Narsimhagad
-nameMarathi: नरसिंहगड
-coordinates: [19.45, 77.28]
-type: Hill Fort
-district: Nanded
-region: Eastern Plateau
+name: 'Narsimhagad'
+nameMarathi: 'नरसिंहगड'
+locationAccuracy: 'none'
+type: 'Hill Fort'
 notable: false
-shortDescription: Narsimhagad in Nanded
+shortDescription: 'Location not confirmed'
+mapsLink: 'https://www.google.com/maps/search/?api=1&query=Narsimhagad%20Maharashtra'
+wikipediaLink: 'https://en.wikipedia.org/w/index.php?search=Narsimhagad'
 ---
-
-## Location
-
-Fort in Nanded.

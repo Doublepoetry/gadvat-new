@@ -1,15 +1,11 @@
 ---
 id: '128'
-name: Mahipalgad
-nameMarathi: महिपालगड
-coordinates: [19.12, 73.45]
-type: Hill Fort
-district: Satara
-region: Western Ghats
+name: 'Mahipalgad'
+nameMarathi: 'महिपालगड'
+locationAccuracy: 'none'
+type: 'Hill Fort'
 notable: false
-shortDescription: Mahipalgad in Satara
+shortDescription: 'May be in Belagavi district, Karnataka — check'
+mapsLink: 'https://www.google.com/maps/search/?api=1&query=Mahipalgad%20Maharashtra'
+wikipediaLink: 'https://en.wikipedia.org/w/index.php?search=Mahipalgad'
 ---
-
-## Location
-
-Fort in Satara.

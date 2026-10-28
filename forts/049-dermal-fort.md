@@ -1,15 +1,11 @@
 ---
 id: '049'
-name: Dermal Fort
-nameMarathi: डर्मल किल्ला
-coordinates: [19.65, 74.8]
-type: Hill Fort
-district: Ratnagiri
-region: Konkan
+name: 'Dermal Fort'
+nameMarathi: 'देरमल किल्ला'
+locationAccuracy: 'none'
+type: 'Hill Fort'
 notable: false
-shortDescription: Dermal Fort in Ratnagiri
+shortDescription: 'Location not confirmed'
+mapsLink: 'https://www.google.com/maps/search/?api=1&query=Dermal%20Fort%20Maharashtra'
+wikipediaLink: 'https://en.wikipedia.org/w/index.php?search=Dermal%20Fort'
 ---
-
-## Location
-
-Fort in Ratnagiri.

@@ -1,0 +1,2300 @@
+{
+  "001": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city": "Ahilyanagar",
+    "country": "India",
+    "country_code": "in",
+    "county": "Nagar Subdistrict",
+    "postcode": "414001",
+    "state": "Maharashtra",
+    "state_district": "Ahilyanagar District",
+    "suburb": "Foi"
+  },
+  "002": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Murbad Subdistrict",
+    "state": "Maharashtra",
+    "state_district": "Thane",
+    "village": "Veluk"
+  },
+  "003": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city": "Satara",
+    "country": "India",
+    "country_code": "in",
+    "county": "Satara",
+    "neighbourhood": "Pratapsing Housing Society",
+    "postcode": "415002",
+    "road": "Ajinkyatara Paschim Darawaja (West Gate) Road",
+    "state": "Maharashtra",
+    "state_district": "Satara",
+    "suburb": "Guruwar Peth"
+  },
+  "004": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Malshiras",
+    "postcode": "413101",
+    "state": "Maharashtra",
+    "state_district": "Solapur District",
+    "town": "Akluj"
+  },
+  "005": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city": "Akola",
+    "city_district": "Akola (M Corp.)",
+    "country": "India",
+    "country_code": "in",
+    "county": "Akola",
+    "postcode": "444001",
+    "road": "Akola Bypass",
+    "state": "Maharashtra",
+    "state_district": "Akola District"
+  },
+  "006": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Akola",
+    "state": "Maharashtra",
+    "state_district": "Ahilyanagar District",
+    "village": "Udadavne"
+  },
+  "007": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Devgad Taluka",
+    "state": "Maharashtra",
+    "state_district": "Sindhudurg",
+    "town": "Vijaydurg"
+  },
+  "008": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Trimbakeshwar Subdistrict",
+    "hamlet": "Pegalwadi Khurd",
+    "postcode": "422212",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Pegalwadi Budruk"
+  },
+  "009": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Guhagar Taluka",
+    "postcode": "415703",
+    "state": "Maharashtra",
+    "state_district": "Ratnagiri",
+    "town": "Guhagar"
+  },
+  "010": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Yeola Taluka",
+    "road": "NH752G",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Ankai"
+  },
+  "011": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Kannad",
+    "hamlet": "Dudhmal",
+    "postcode": "431147",
+    "state": "Maharashtra",
+    "state_district": "Chhatrapati Sambhajinagar District"
+  },
+  "012": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Vasai Subdistrict",
+    "hamlet": "Janjire Arnala",
+    "state": "Maharashtra",
+    "state_district": "Palghar",
+    "village": "Arnala"
+  },
+  "013": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Palghar Subdistrict",
+    "postcode": "401403",
+    "state": "Maharashtra",
+    "state_district": "Palghar",
+    "suburb": "Manor",
+    "village": "Nandgaon"
+  },
+  "014": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Vikramgad Taluka",
+    "postcode": "401605",
+    "state": "Maharashtra",
+    "state_district": "Palghar"
+  },
+  "015": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Igatpuri Subdistrict",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Janori"
+  },
+  "016": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Roha Taluka",
+    "postcode": "402109",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "village": "Usar"
+  },
+  "017": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Shrigonda",
+    "road": "Shrigonda Pedgaon Road",
+    "state": "Maharashtra",
+    "state_district": "Ahilyanagar District",
+    "village": "Pedgaon"
+  },
+  "018": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city_district": "Balapur (M Cl)",
+    "country": "India",
+    "country_code": "in",
+    "county": "Balapur",
+    "postcode": "444302",
+    "state": "Maharashtra",
+    "state_district": "Akola District",
+    "town": "Balapur"
+  },
+  "019": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Ballarpur Taluka",
+    "postcode": "442901",
+    "state": "Maharashtra",
+    "state_district": "Chandrapur",
+    "suburb": "Ballarshah",
+    "town": "Ballarshah"
+  },
+  "020": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mandangad Taluka",
+    "hamlet": "Boudhawadi",
+    "road": "Mandangad Velas road",
+    "state": "Maharashtra",
+    "state_district": "Ratnagiri",
+    "village": "Bankot"
+  },
+  "021": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city": "Navi Mumbai",
+    "country": "India",
+    "country_code": "in",
+    "county": "Thane Subdistrict",
+    "neighbourhood": "Diwale Village",
+    "postcode": "400706",
+    "state": "Maharashtra",
+    "state_district": "Thane",
+    "suburb": "Belapur West"
+  },
+  "022": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Rajapur Taluka",
+    "postcode": "416804",
+    "state": "Maharashtra",
+    "state_district": "Ratnagiri",
+    "village": "Sagwe"
+  },
+  "023": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Junnar",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "village": "Ghatghar"
+  },
+  "024": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Murbad Subdistrict",
+    "hamlet": "Kelawadi",
+    "state": "Maharashtra",
+    "state_district": "Thane"
+  },
+  "025": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Akola",
+    "postcode": "422604",
+    "state": "Maharashtra",
+    "state_district": "Ahilyanagar District",
+    "village": "Ambavchiwadi"
+  },
+  "027": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Sakri Taluka",
+    "state": "Maharashtra",
+    "state_district": "Dhule District",
+    "village": "Dhangai"
+  },
+  "028": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Malvan Taluka",
+    "state": "Maharashtra",
+    "state_district": "Sindhudurg",
+    "village": "Malgaon"
+  },
+  "029": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Trimbakeshwar Subdistrict",
+    "hamlet": "Kalmuste",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Jambhulwadi"
+  },
+  "030": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Palghar Subdistrict",
+    "postcode": "401404",
+    "state": "Maharashtra",
+    "state_district": "Palghar",
+    "town": "Palghar"
+  },
+  "031": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Khalapur Taluka",
+    "hamlet": "Burujwadi",
+    "isolated_dwelling": "Dharhwadi",
+    "postcode": "410102",
+    "state": "Maharashtra",
+    "state_district": "Raigad"
+  },
+  "032": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Khed",
+    "state": "Maharashtra",
+    "state_district": "Pune District"
+  },
+  "033": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Bhudargad",
+    "hamlet": "Palewadi",
+    "postcode": "416223",
+    "state": "Maharashtra",
+    "state_district": "Kolhapur District",
+    "village": "Kolwan"
+  },
+  "035": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Khatav",
+    "state": "Maharashtra",
+    "state_district": "Satara"
+  },
+  "036": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mahad Taluka",
+    "postcode": "402302",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "suburb": "MIDC Mahad"
+  },
+  "037": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Igatpuri Subdistrict",
+    "hamlet": "Pardeshwadi",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Khed"
+  },
+  "038": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city_district": "Mumbai Zone 1",
+    "country": "India",
+    "country_code": "in",
+    "neighbourhood": "Bora Bazaar",
+    "postcode": "400038",
+    "road": "Shahid Bhagat Singh Marg",
+    "state": "Maharashtra",
+    "state_district": "Mumbai City District",
+    "suburb": "Fort"
+  },
+  "039": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city": "Mumbai",
+    "city_district": "Mumbai Zone 3",
+    "country": "India",
+    "country_code": "in",
+    "neighbourhood": "Malla",
+    "postcode": "400035",
+    "road": "Mumbai Coastal Road - Phase II",
+    "state": "Maharashtra",
+    "state_district": "Mumbai Suburban District",
+    "suburb": "Khar"
+  },
+  "040": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city": "Chandrapur",
+    "country": "India",
+    "country_code": "in",
+    "county": "Chandrapur Taluka",
+    "postcode": "442401",
+    "state": "Maharashtra",
+    "state_district": "Chandrapur"
+  },
+  "041": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Koregaon",
+    "postcode": "415011",
+    "state": "Maharashtra",
+    "state_district": "Satara"
+  },
+  "042": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mahabaleshwar",
+    "hamlet": "Shiravli",
+    "state": "Maharashtra",
+    "state_district": "Satara"
+  },
+  "043": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Chandwad Taluka",
+    "postcode": "423101",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "town": "Chandvad"
+  },
+  "044": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Kalwan Taluka",
+    "state": "Maharashtra",
+    "state_district": "Nashik District"
+  },
+  "045": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Junnar",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "village": "Aptale"
+  },
+  "046": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Patan",
+    "state": "Maharashtra",
+    "state_district": "Satara",
+    "town": "Patan"
+  },
+  "047": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Palghar Subdistrict",
+    "state": "Maharashtra",
+    "state_district": "Palghar"
+  },
+  "048": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Chhatrapati Sambhajinagar",
+    "state": "Maharashtra",
+    "state_district": "Chhatrapati Sambhajinagar District",
+    "village": "Daulatabad"
+  },
+  "050": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Devgad Taluka",
+    "postcode": "416613",
+    "state": "Maharashtra",
+    "state_district": "Sindhudurg",
+    "town": "Devgad"
+  },
+  "051": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mawal Subdistrict",
+    "hamlet": "Valvand",
+    "state": "Maharashtra",
+    "state_district": "Pune District"
+  },
+  "052": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Purandhar",
+    "road": "SH63",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "village": "Malshiras"
+  },
+  "053": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Kalwan Taluka",
+    "state": "Maharashtra",
+    "state_district": "Nashik District"
+  },
+  "055": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city_district": "Mumbai Zone 1",
+    "country": "India",
+    "country_code": "in",
+    "neighbourhood": "Wadi Bandar",
+    "postcode": "400009",
+    "road": "Nowroji Hill Road No 11",
+    "state": "Maharashtra",
+    "state_district": "Mumbai City District",
+    "suburb": "Dongri"
+  },
+  "056": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Uran Subdistrict",
+    "postcode": "400702",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "village": "Karanja"
+  },
+  "057": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Sinnar Taluka",
+    "neighbourhood": "Musalgaon Industrial Area",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Musalgaon"
+  },
+  "058": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Bhor",
+    "state": "Maharashtra",
+    "state_district": "Pune District"
+  },
+  "059": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "borough": "Kalyan",
+    "city": "Kalyan-Dombivli",
+    "country": "India",
+    "country_code": "in",
+    "county": "Kalyan Subdistrict",
+    "postcode": "421306",
+    "state": "Maharashtra",
+    "state_district": "Thane",
+    "suburb": "Aadharwadi"
+  },
+  "060": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Dapoli Taluka",
+    "neighbourhood": "Malkhab Peth",
+    "postcode": "415713",
+    "state": "Maharashtra",
+    "state_district": "Ratnagiri",
+    "village": "Harnai"
+  },
+  "061": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city_district": "Mumbai Zone 1",
+    "country": "India",
+    "country_code": "in",
+    "neighbourhood": "Bori Bunder",
+    "postcode": "400020",
+    "road": "Dr Dadabhai Naoroji Road",
+    "state": "Maharashtra",
+    "state_district": "Mumbai City District",
+    "suburb": "Fort"
+  },
+  "062": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Vaibhavwadi Taluka",
+    "hamlet": "Revyachiwad",
+    "road": "NH166G",
+    "state": "Maharashtra",
+    "state_district": "Sindhudurg",
+    "village": "Khokurle"
+  },
+  "063": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Malegaon Taluka",
+    "state": "Maharashtra",
+    "state_district": "Nashik District"
+  },
+  "064": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Dahanu Taluka",
+    "postcode": "104606",
+    "state": "Maharashtra",
+    "state_district": "Palghar",
+    "village": "Raipur"
+  },
+  "065": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Chikhaldara",
+    "postcode": "444717",
+    "state": "Maharashtra",
+    "state_district": "Amravati",
+    "village": "Baglinga"
+  },
+  "066": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mulshi Subdistrict",
+    "hamlet": "Asanwadi",
+    "road": "Ghutake to Hirdi",
+    "state": "Maharashtra",
+    "state_district": "Pune District"
+  },
+  "067": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Igatpuri Subdistrict",
+    "hamlet": "Awli Dumala",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Rayambe"
+  },
+  "068": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city": "Mira-Bhayander",
+    "country": "India",
+    "country_code": "in",
+    "county": "Thane Subdistrict",
+    "postcode": "401107",
+    "road": "Ghodbunder Village Road",
+    "state": "Maharashtra",
+    "state_district": "Thane",
+    "suburb": "Kashimira",
+    "village": "Ghodbunder"
+  },
+  "069": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Roha Taluka",
+    "postcode": "402105",
+    "road": "NH548A",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "town": "Roha"
+  },
+  "070": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Dapoli Taluka",
+    "neighbourhood": "Malkhab Peth",
+    "postcode": "415713",
+    "state": "Maharashtra",
+    "state_district": "Ratnagiri",
+    "village": "Harnai"
+  },
+  "071": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city_district": "Wadi",
+    "country": "India",
+    "country_code": "in",
+    "county": "Khamgaon",
+    "postcode": "444300",
+    "state": "Maharashtra",
+    "state_district": "Buldhana District",
+    "village": "Wadi"
+  },
+  "072": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Guhagar Taluka",
+    "postcode": "415703",
+    "state": "Maharashtra",
+    "state_district": "Ratnagiri",
+    "town": "Guhagar"
+  },
+  "073": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Murbad Subdistrict",
+    "hamlet": "Madwaadi",
+    "state": "Maharashtra",
+    "state_district": "Thane",
+    "village": "Rampur"
+  },
+  "074": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Chiplun Taluka",
+    "postcode": "415600",
+    "state": "Maharashtra",
+    "state_district": "Ratnagiri",
+    "town": "Chiplun"
+  },
+  "075": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Bhiwandi Subdistrict",
+    "postcode": "421101",
+    "state": "Maharashtra",
+    "state_district": "Thane"
+  },
+  "076": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Junnar",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "village": "Pethchiwadi"
+  },
+  "077": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Baglan Taluka",
+    "road": "SH18",
+    "state": "Maharashtra",
+    "state_district": "Nashik District"
+  },
+  "078": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Trimbakeshwar Subdistrict",
+    "hamlet": "Kotmachiwadi",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Take harsha"
+  },
+  "079": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Junnar",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "village": "Khireshwar"
+  },
+  "080": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Kalwan Taluka",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Dalwat"
+  },
+  "081": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mawal Subdistrict",
+    "postcode": "410506",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "village": "Induri"
+  },
+  "082": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Chandwad Taluka",
+    "state": "Maharashtra",
+    "state_district": "Nashik District"
+  },
+  "083": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Khalapur Taluka",
+    "hamlet": "Umbarwadi",
+    "isolated_dwelling": "Tapwadi",
+    "postcode": "410102",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "village": "Ambewadi"
+  },
+  "084": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Haveli Subdistrict",
+    "postcode": "412308",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "village": "Wadki"
+  },
+  "085": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Ratnagiri Taluka",
+    "hamlet": "Kumbharwadi",
+    "postcode": "415614",
+    "state": "Maharashtra",
+    "state_district": "Ratnagiri",
+    "town": "Jaigarh"
+  },
+  "086": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Parner",
+    "postcode": "414300",
+    "state": "Maharashtra",
+    "state_district": "Ahilyanagar District"
+  },
+  "087": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Jamner",
+    "postcode": "424206",
+    "state": "Maharashtra",
+    "state_district": "Jalgaon District",
+    "suburb": "Jamner Pura",
+    "town": "Jamner"
+  },
+  "088": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Patan",
+    "state": "Maharashtra",
+    "state_district": "Satara",
+    "village": "Manachnagar"
+  },
+  "089": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Murud Taluka",
+    "postcode": "402401",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "village": "Rajapuri"
+  },
+  "090": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Chandwad Taluka",
+    "postcode": "423117",
+    "state": "Maharashtra",
+    "state_district": "Nashik District"
+  },
+  "091": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Junnar",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "village": "Ghatghar"
+  },
+  "092": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Akola",
+    "hamlet": "Kalkichiwadi",
+    "state": "Maharashtra",
+    "state_district": "Ahilyanagar District",
+    "village": "Kumshet"
+  },
+  "093": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Chandgad",
+    "state": "Maharashtra",
+    "state_district": "Kolhapur District",
+    "village": "Jambare"
+  },
+  "094": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Panvel Subdistrict",
+    "postcode": "410221",
+    "state": "Maharashtra",
+    "state_district": "Raigad"
+  },
+  "095": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Palghar Subdistrict",
+    "postcode": "401403",
+    "road": "Palghar Rd",
+    "state": "Maharashtra",
+    "state_district": "Palghar",
+    "suburb": "Manor",
+    "village": "Nandgaon"
+  },
+  "096": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Koregaon",
+    "postcode": "415010",
+    "state": "Maharashtra",
+    "state_district": "Satara",
+    "suburb": "Satara Road"
+  },
+  "097": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Jaoli",
+    "postcode": "412805",
+    "state": "Maharashtra",
+    "state_district": "Satara"
+  },
+  "098": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city": "Vasai-Virar",
+    "country": "India",
+    "country_code": "in",
+    "county": "Vasai Subdistrict",
+    "state": "Maharashtra",
+    "state_district": "Palghar"
+  },
+  "099": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Kandhar",
+    "postcode": "431714",
+    "state": "Maharashtra",
+    "state_district": "Nanded District",
+    "village": "Navrangpura"
+  },
+  "100": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Deola Taluka",
+    "state": "Maharashtra",
+    "state_district": "Nashik District"
+  },
+  "101": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Chalisgaon",
+    "state": "Maharashtra",
+    "state_district": "Jalgaon District",
+    "village": "Khadaki Bk"
+  },
+  "103": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Panvel Subdistrict",
+    "postcode": "410207",
+    "road": "NH66",
+    "state": "Maharashtra",
+    "state_district": "Raigad"
+  },
+  "104": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Igatpuri Subdistrict",
+    "postcode": "422402",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "town": "Ghoti"
+  },
+  "105": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Palghar Subdistrict",
+    "postcode": "401401",
+    "state": "Maharashtra",
+    "state_district": "Palghar"
+  },
+  "106": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Wai",
+    "state": "Maharashtra",
+    "state_district": "Satara"
+  },
+  "107": {
+    "country": "India",
+    "country_code": "in"
+  },
+  "108": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Jamkhed",
+    "postcode": "413204",
+    "state": "Maharashtra",
+    "state_district": "Ahilyanagar District",
+    "village": "Kharda"
+  },
+  "109": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Vikramgad Taluka",
+    "state": "Maharashtra",
+    "state_district": "Palghar"
+  },
+  "110": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Alibag Taluka",
+    "neighbourhood": "Koliwada",
+    "postcode": "402200",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "town": "Alibag"
+  },
+  "112": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mahad Taluka",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "village": "Jholichakond"
+  },
+  "113": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mulshi Subdistrict",
+    "hamlet": "Peth Shahpur",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "town": "Aamby Valley"
+  },
+  "114": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Murud Taluka",
+    "postcode": "402201",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "village": "Korlai"
+  },
+  "115": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Karjat Taluka",
+    "postcode": "410201",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "village": "Kadav"
+  },
+  "116": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Igatpuri Subdistrict",
+    "road": "MDR56",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Ambewadi"
+  },
+  "117": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Junnar",
+    "hamlet": "Patilwadi",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "village": "Khireshwar"
+  },
+  "118": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mangaon Taluka",
+    "postcode": "402308",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "village": "Umbardi"
+  },
+  "119": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Dhule Taluka",
+    "postcode": "424006",
+    "state": "Maharashtra",
+    "state_district": "Dhule District",
+    "village": "Junnar"
+  },
+  "120": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mahad Taluka",
+    "hamlet": "Shendurmali",
+    "postcode": "402306",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "village": "Padvi"
+  },
+  "121": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mawal Subdistrict",
+    "hamlet": "Lohagadwadi",
+    "postcode": "410401",
+    "road": "Lohagadwadi road",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "village": "Aundholi"
+  },
+  "122": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Walwa",
+    "hamlet": "Malimala",
+    "postcode": "415409",
+    "residential": "Swami Vivekanand Colony",
+    "road": "Kapuskhed Islampur Road",
+    "state": "Maharashtra",
+    "state_district": "Sangli District",
+    "village": "Kapuskhed"
+  },
+  "123": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Solapur South",
+    "state": "Maharashtra",
+    "state_district": "Solapur District",
+    "village": "Vadapur"
+  },
+  "124": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Akola",
+    "state": "Maharashtra",
+    "state_district": "Ahilyanagar District"
+  },
+  "125": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city": "Mumbai",
+    "city_district": "Mumbai Zone 3",
+    "country": "India",
+    "country_code": "in",
+    "neighbourhood": "Christian Wada",
+    "postcode": "400061",
+    "state": "Maharashtra",
+    "state_district": "Mumbai Suburban District",
+    "suburb": "Madh"
+  },
+  "126": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city_district": "Mumbai Zone 2",
+    "country": "India",
+    "country_code": "in",
+    "neighbourhood": "Mahim Parsi Colony",
+    "postcode": "400016",
+    "state": "Maharashtra",
+    "state_district": "Mumbai City District",
+    "suburb": "Mahim"
+  },
+  "127": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Khatav",
+    "postcode": "415503",
+    "state": "Maharashtra",
+    "state_district": "Satara"
+  },
+  "129": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Poladpur Taluka",
+    "hamlet": "Kudpan Khurd",
+    "state": "Maharashtra",
+    "state_district": "Raigad"
+  },
+  "130": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Shahapur Subdistrict",
+    "postcode": "421601",
+    "state": "Maharashtra",
+    "state_district": "Thane",
+    "town": "Shahapur"
+  },
+  "131": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mahoor",
+    "postcode": "431721",
+    "state": "Maharashtra",
+    "state_district": "Nanded District",
+    "village": "Mahur"
+  },
+  "132": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city_district": "Berala",
+    "country": "India",
+    "country_code": "in",
+    "county": "Chikhli",
+    "road": "NH753A",
+    "state": "Maharashtra",
+    "state_district": "Buldhana District",
+    "village": "Bhankhed"
+  },
+  "133": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mahabaleshwar",
+    "hamlet": "Kasrut",
+    "postcode": "412806",
+    "state": "Maharashtra",
+    "state_district": "Satara",
+    "town": "Mahabaleshwar"
+  },
+  "134": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city": "Kulgaon Badlapur",
+    "country": "India",
+    "country_code": "in",
+    "county": "Ambernath Subdistrict",
+    "postcode": "421503",
+    "state": "Maharashtra",
+    "state_district": "Thane",
+    "town": "Badlapur"
+  },
+  "135": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city": "Malegaon",
+    "country": "India",
+    "country_code": "in",
+    "county": "Malegaon Taluka",
+    "postcode": "423200",
+    "state": "Maharashtra",
+    "state_district": "Nashik District"
+  },
+  "136": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Purandhar",
+    "postcode": "412300",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "town": "Saswad"
+  },
+  "137": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mawal Subdistrict",
+    "hamlet": "Valvand",
+    "road": "Rajmachi Trail",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "village": "Rajmachi village"
+  },
+  "138": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mandangad Taluka",
+    "postcode": "415203",
+    "road": "NH965DD",
+    "state": "Maharashtra",
+    "state_district": "Ratnagiri",
+    "town": "Mandangad"
+  },
+  "139": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mangaon Taluka",
+    "hamlet": "Kavle",
+    "postcode": "402305",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "village": "Pachad"
+  },
+  "140": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mahad Taluka",
+    "state": "Maharashtra",
+    "state_district": "Raigad"
+  },
+  "141": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Baglan Taluka",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Maliwade"
+  },
+  "142": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Jiwati Taluka",
+    "state": "Maharashtra",
+    "state_district": "Chandrapur",
+    "village": "Markal"
+  },
+  "143": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Pen Taluka",
+    "state": "Maharashtra",
+    "state_district": "Raigad"
+  },
+  "144": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Nagar Subdistrict",
+    "postcode": "414111",
+    "state": "Maharashtra",
+    "state_district": "Ahilyanagar District",
+    "village": "Wadgaon Gupta"
+  },
+  "146": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Kudal Taluka",
+    "hamlet": "Tergalwadi",
+    "state": "Maharashtra",
+    "state_district": "Sindhudurg"
+  },
+  "147": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Kudal Taluka",
+    "hamlet": "Tergalwadi",
+    "state": "Maharashtra",
+    "state_district": "Sindhudurg"
+  },
+  "148": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Kalwan Taluka",
+    "state": "Maharashtra",
+    "state_district": "Nashik District"
+  },
+  "149": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city_district": "Mumbai Zone 1",
+    "country": "India",
+    "country_code": "in",
+    "neighbourhood": "Wadi Bunder",
+    "postcode": "200008",
+    "state": "Maharashtra",
+    "state_district": "Mumbai City District",
+    "suburb": "Chinch Bunder"
+  },
+  "150": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Trimbakeshwar Subdistrict",
+    "postcode": "422212",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "town": "Trimbak"
+  },
+  "151": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Kalwan Taluka",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Abhona"
+  },
+  "152": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Bhor",
+    "state": "Maharashtra",
+    "state_district": "Pune District"
+  },
+  "153": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Uran Subdistrict",
+    "postcode": "400702",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "town": "Uran"
+  },
+  "154": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mawal Subdistrict",
+    "state": "Maharashtra",
+    "state_district": "Pune District"
+  },
+  "155": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Sudhagad Taluka",
+    "postcode": "410205",
+    "state": "Maharashtra",
+    "state_district": "Raigad"
+  },
+  "156": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Baglan Taluka",
+    "road": "SH19",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Kandhane"
+  },
+  "157": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Tuljapur",
+    "postcode": "413602",
+    "state": "Maharashtra",
+    "state_district": "Dharashiv District",
+    "town": "Naldurg"
+  },
+  "158": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city": "Nanded",
+    "country": "India",
+    "country_code": "in",
+    "county": "Nanded",
+    "postcode": "431600",
+    "state": "Maharashtra",
+    "state_district": "Nanded District"
+  },
+  "160": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Junnar",
+    "postcode": "410504",
+    "state": "Maharashtra",
+    "state_district": "Pune District"
+  },
+  "161": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city_district": "Gularghat",
+    "country": "India",
+    "country_code": "in",
+    "county": "Chikhaldara",
+    "isolated_dwelling": "Gularghat",
+    "state": "Maharashtra",
+    "state_district": "Amravati"
+  },
+  "163": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Baglan Taluka",
+    "road": "ODR7",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Dasane"
+  },
+  "164": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Junnar",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "village": "Aptale"
+  },
+  "165": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Kudal Taluka",
+    "hamlet": "Kille Nivati",
+    "state": "Maharashtra",
+    "state_district": "Sindhudurg"
+  },
+  "166": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Akola",
+    "postcode": "422604",
+    "state": "Maharashtra",
+    "state_district": "Ahilyanagar District",
+    "village": "Shirpunje Budruk"
+  },
+  "167": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Karjat Taluka",
+    "hamlet": "Thakunwadi",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "village": "Jambrung"
+  },
+  "168": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Shrivardhan Taluka",
+    "postcode": "402401",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "village": "Nanavali"
+  },
+  "170": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Parner",
+    "postcode": "414303",
+    "state": "Maharashtra",
+    "state_district": "Ahilyanagar District"
+  },
+  "171": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Dapoli Taluka",
+    "postcode": "415712",
+    "state": "Maharashtra",
+    "state_district": "Ratnagiri",
+    "town": "Dapoli"
+  },
+  "172": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Wai",
+    "postcode": "412803",
+    "state": "Maharashtra",
+    "state_district": "Satara",
+    "town": "Wai"
+  },
+  "173": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Panhala",
+    "postcode": "415416",
+    "state": "Maharashtra",
+    "state_district": "Kolhapur District",
+    "village": "Panhala"
+  },
+  "174": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Paranda",
+    "postcode": "413502",
+    "residential": "Paranda",
+    "state": "Maharashtra",
+    "state_district": "Dharashiv District",
+    "town": "Paranda"
+  },
+  "175": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Chandgad",
+    "state": "Maharashtra",
+    "state_district": "Kolhapur District",
+    "village": "Jambare"
+  },
+  "176": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Parola",
+    "postcode": "425111",
+    "state": "Maharashtra",
+    "state_district": "Jalgaon District",
+    "town": "Parola"
+  },
+  "177": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Igatpuri Subdistrict",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Belgaon Tarhale"
+  },
+  "178": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Panhala",
+    "hamlet": "Waghbeel",
+    "postcode": "415416",
+    "road": "NH166",
+    "state": "Maharashtra",
+    "state_district": "Kolhapur District",
+    "village": "Navali"
+  },
+  "179": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Sangamner",
+    "postcode": "422603",
+    "state": "Maharashtra",
+    "state_district": "Ahilyanagar District",
+    "village": "Dhandharphal"
+  },
+  "180": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city_district": "Bhendi",
+    "country": "India",
+    "country_code": "in",
+    "county": "Khamgaon",
+    "hamlet": "Bhendi",
+    "state": "Maharashtra",
+    "state_district": "Buldhana District",
+    "village": "Belkhed"
+  },
+  "181": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city_district": "Yelgaon",
+    "country": "India",
+    "country_code": "in",
+    "county": "Buldhana",
+    "postcode": "443001",
+    "road": "Chikhali Road",
+    "state": "Maharashtra",
+    "state_district": "Buldhana District",
+    "village": "Yelgaon Dam"
+  },
+  "182": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Baglan Taluka",
+    "road": "MDR16",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Nitane"
+  },
+  "183": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Panvel Subdistrict",
+    "state": "Maharashtra",
+    "state_district": "Raigad"
+  },
+  "184": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Sangameshwar Taluka",
+    "state": "Maharashtra",
+    "state_district": "Ratnagiri"
+  },
+  "185": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mahabaleshwar",
+    "hamlet": "Vada Kumbhroshi",
+    "road": "Pratapghad Fort Road",
+    "state": "Maharashtra",
+    "state_district": "Satara"
+  },
+  "186": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Purandhar",
+    "postcode": "412302",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "village": "Narayanpur"
+  },
+  "187": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Ratnagiri Taluka",
+    "postcode": "415616",
+    "state": "Maharashtra",
+    "state_district": "Ratnagiri",
+    "village": "Mervi"
+  },
+  "188": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Mahad Taluka",
+    "postcode": "402305",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "village": "Hirkaniwadi"
+  },
+  "189": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Bhor",
+    "hamlet": "Wadtumbi",
+    "state": "Maharashtra",
+    "state_district": "Pune District",
+    "village": "Titeghar"
+  },
+  "190": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Velhe",
+    "hamlet": "Pali",
+    "state": "Maharashtra",
+    "state_district": "Pune District"
+  },
+  "191": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Chandwad Taluka",
+    "road": "NH752G",
+    "state": "Maharashtra",
+    "state_district": "Nashik District"
+  },
+  "192": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "city": "Nashik",
+    "country": "India",
+    "country_code": "in",
+    "county": "Nashik Subdistrict",
+    "postcode": "422001",
+    "road": "NH848;SH22",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "suburb": "Makhamalabad"
+  },
+  "193": {
+    "county": "Ramtek Taluka",
+    "postcode": "441401",
+    "src": "photon",
+    "village": "Ramtek"
+  },
+  "194": {
+    "county": "Kudal Taluka",
+    "src": "photon",
+    "village": "Manohargarh Fort"
+  },
+  "195": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Khed Taluka",
+    "postcode": "415730",
+    "state": "Maharashtra",
+    "state_district": "Ratnagiri",
+    "village": "Mandwe"
+  },
+  "196": {
+    "county": "Ratnagiri Taluka",
+    "postcode": "415612",
+    "src": "photon",
+    "state_district": "Pethkilla",
+    "village": "Pethkilla"
+  },
+  "197": {
+    "county": "Akola",
+    "src": "photon",
+    "village": "Ratanwadi"
+  },
+  "198": {
+    "county": "Ratnagiri Taluka",
+    "postcode": "415612",
+    "src": "photon",
+    "state_district": "Pethkilla",
+    "village": "Pethkilla"
+  },
+  "199": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Chandwad Taluka",
+    "postcode": "423117",
+    "state": "Maharashtra",
+    "state_district": "Nashik District"
+  },
+  "200": {
+    "county": "Alibag Taluka",
+    "postcode": "402203",
+    "src": "photon",
+    "village": "Revadanda"
+  },
+  "201": {
+    "county": "Mumbai City District",
+    "postcode": "400022",
+    "src": "photon",
+    "state_district": "F/N Ward",
+    "village": "Agarwada Colony"
+  },
+  "202": {
+    "county": "Bhor",
+    "postcode": "412206",
+    "src": "photon",
+    "village": "Hathnoshi"
+  },
+  "203": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Alibag Taluka",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "village": "Tinvira"
+  },
+  "204": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Satara",
+    "road": "Thoseghar Road",
+    "state": "Maharashtra",
+    "state_district": "Satara",
+    "village": "New Banghar"
+  },
+  "205": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Sindkhed Raja",
+    "postcode": "443308",
+    "road": "NH753C",
+    "state": "Maharashtra",
+    "state_district": "Buldhana District",
+    "village": "Dusarbid"
+  },
+  "207": {
+    "county": "Baglan Taluka",
+    "src": "photon",
+    "village": "Salher"
+  },
+  "208": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Baglan Taluka",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "village": "Waghambe"
+  },
+  "209": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Gadhinglaj",
+    "hamlet": "Basarge kK",
+    "postcode": "416506",
+    "state": "Maharashtra",
+    "state_district": "Kolhapur District",
+    "village": "Basarge Bk"
+  },
+  "210": {
+    "county": "Khed",
+    "postcode": "410501",
+    "src": "photon",
+    "village": "Chakan"
+  },
+  "211": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Khatav",
+    "postcode": "415504",
+    "state": "Maharashtra",
+    "state_district": "Satara",
+    "village": "Mol"
+  },
+  "212": {
+    "county": "Sudhagad Taluka",
+    "postcode": "410205",
+    "src": "photon",
+    "village": "Pali"
+  },
+  "213": {
+    "county": "Malvan Taluka",
+    "postcode": "415612",
+    "src": "photon",
+    "state_district": "Kolamb",
+    "village": "Kolamb"
+  },
+  "214": {
+    "county": "Mumbai City District",
+    "postcode": "400001",
+    "src": "photon",
+    "state_district": "F/S Ward",
+    "village": "Rajiv Gandhi Nagar"
+  },
+  "215": {
+    "county": "Pune City Subdistrict",
+    "postcode": "411001",
+    "src": "photon",
+    "state_district": "Shaniwar Peth",
+    "village": "Pune"
+  },
+  "216": {
+    "county": "Palghar Subdistrict",
+    "postcode": "401407",
+    "src": "photon",
+    "village": "Shirgaon"
+  },
+  "217": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Kankavli Taluka",
+    "state": "Maharashtra",
+    "state_district": "Sindhudurg"
+  },
+  "218": {
+    "county": "Junnar",
+    "postcode": "410502",
+    "src": "photon",
+    "village": "Junnar"
+  },
+  "219": {
+    "county": "Mawal Subdistrict",
+    "src": "photon",
+    "village": "Rajmachi Fort"
+  },
+  "220": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Murbad Subdistrict",
+    "state": "Maharashtra",
+    "state_district": "Thane",
+    "village": "Thadachapada"
+  },
+  "221": {
+    "county": "Malvan Taluka",
+    "postcode": "416606",
+    "src": "photon",
+    "state_district": "Kolamb",
+    "village": "Padamged Island"
+  },
+  "223": {
+    "county": "Haveli Subdistrict",
+    "postcode": "415115",
+    "src": "photon",
+    "village": "Kalyan Gaon"
+  },
+  "224": {
+    "county": "Mumbai City District",
+    "postcode": "400022",
+    "src": "photon",
+    "state_district": "F/N Ward",
+    "village": "Sion East"
+  },
+  "225": {
+    "county": "Nagpur Urban Taluka",
+    "postcode": "440001",
+    "src": "photon",
+    "state_district": "Ramdaspeth",
+    "village": "Nagpur"
+  },
+  "226": {
+    "county": "Solapur North",
+    "postcode": "413001",
+    "src": "photon",
+    "village": "Sidheshwar Peth"
+  },
+  "227": {
+    "county": "Khalapur Taluka",
+    "postcode": "410102",
+    "src": "photon",
+    "state_district": "Wagheshwar",
+    "village": "Bhagatwadi"
+  },
+  "228": {
+    "county": "Dhule Taluka",
+    "postcode": "424309",
+    "src": "photon",
+    "village": "Songvir"
+  },
+  "229": {
+    "county": "Karjat Taluka",
+    "postcode": "410201",
+    "src": "photon",
+    "state_district": "Halavali",
+    "village": "Karjat"
+  },
+  "230": {
+    "county": "Sudhagad Taluka",
+    "src": "photon",
+    "state_district": "Buddhawada",
+    "village": "Pachchapur"
+  },
+  "231": {
+    "county": "Khed Taluka",
+    "src": "photon",
+    "village": "Vadgaon"
+  },
+  "232": {
+    "county": "Roha Taluka",
+    "postcode": "402116",
+    "src": "photon",
+    "village": "Sangade"
+  },
+  "233": {
+    "county": "Dapoli Taluka",
+    "postcode": "415713",
+    "src": "photon",
+    "village": "Malkhab Peth"
+  },
+  "234": {
+    "county": "Mulshi Subdistrict",
+    "src": "photon",
+    "village": "Bapre Khurd"
+  },
+  "235": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Palghar Subdistrict",
+    "state": "Maharashtra",
+    "state_district": "Palghar"
+  },
+  "236": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Roha Taluka",
+    "postcode": "402105",
+    "state": "Maharashtra",
+    "state_district": "Raigad",
+    "town": "Roha"
+  },
+  "237": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Palghar Subdistrict",
+    "state": "Maharashtra",
+    "state_district": "Palghar"
+  },
+  "238": {
+    "county": "Yeola Taluka",
+    "postcode": "423403",
+    "src": "photon",
+    "village": "Ankai"
+  },
+  "239": {
+    "county": "Palghar Subdistrict",
+    "postcode": "401503",
+    "src": "photon",
+    "village": "Tarapur Village Main Road"
+  },
+  "240": {
+    "county": "Pernem",
+    "postcode": "403524",
+    "src": "photon",
+    "village": "Querim"
+  },
+  "241": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Shirpur Taluka",
+    "postcode": "425421",
+    "road": "MDR34",
+    "state": "Maharashtra",
+    "state_district": "Dhule District",
+    "village": "Manjarod"
+  },
+  "242": {
+    "county": "Mawal Subdistrict",
+    "src": "photon",
+    "state_district": "Kale Colony",
+    "village": "Tikona Fort Lake"
+  },
+  "243": {
+    "county": "Gadchiroli",
+    "src": "photon",
+    "village": "Metejangada"
+  },
+  "244": {
+    "county": "Velhe",
+    "postcode": "412212",
+    "src": "photon",
+    "state_district": "Met Pilavare",
+    "village": "Torna"
+  },
+  "245": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Igatpuri Subdistrict",
+    "postcode": "422403",
+    "state": "Maharashtra",
+    "state_district": "Nashik District",
+    "town": "Igatpuri"
+  },
+  "246": {
+    "county": "Trimbakeshwar Subdistrict",
+    "postcode": "422212",
+    "src": "photon",
+    "state_district": "Metghar",
+    "village": "Trimbak"
+  },
+  "247": {
+    "county": "Mawal Subdistrict",
+    "src": "photon",
+    "village": "Lake Pavna Club Mahindra"
+  },
+  "248": {
+    "county": "Udgir",
+    "postcode": "413517",
+    "src": "photon",
+    "village": "Udgir"
+  },
+  "249": {
+    "county": "Raigad",
+    "src": "photon",
+    "village": "Underi Island"
+  },
+  "250": {
+    "county": "Trimbakeshwar Subdistrict",
+    "postcode": "422203",
+    "src": "photon",
+    "village": "Rohile, PHC"
+  },
+  "251": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Armori Taluka",
+    "postcode": "441208",
+    "state": "Maharashtra",
+    "state_district": "Gadchiroli",
+    "village": "Dongargaon"
+  },
+  "252": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Wai",
+    "postcode": "415513",
+    "state": "Maharashtra",
+    "state_district": "Satara"
+  },
+  "253": {
+    "county": "Purandhar",
+    "postcode": "412102",
+    "src": "photon",
+    "village": "Narayanpur"
+  },
+  "254": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Koregaon",
+    "postcode": "415011",
+    "road": "NH965D",
+    "state": "Maharashtra",
+    "state_district": "Satara"
+  },
+  "255": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Koregaon",
+    "postcode": "415500",
+    "state": "Maharashtra",
+    "state_district": "Satara",
+    "town": "Koregaon"
+  },
+  "256": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Phaltan",
+    "state": "Maharashtra",
+    "state_district": "Satara"
+  },
+  "257": {
+    "county": "Vasai Subdistrict",
+    "postcode": "401200",
+    "src": "photon",
+    "state_district": "Vasai",
+    "village": "Vasai-Virar"
+  },
+  "258": {
+    "county": "Karad",
+    "postcode": "415100",
+    "src": "photon",
+    "village": "Karad"
+  },
+  "259": {
+    "county": "Jaoli",
+    "src": "photon",
+    "village": "Takvali"
+  },
+  "260": {
+    "county": "Devgad Taluka",
+    "src": "photon",
+    "village": "Vijaydurg"
+  },
+  "261": {
+    "county": "Guhagar Taluka",
+    "postcode": "415614",
+    "src": "photon",
+    "state_district": "Tavsal",
+    "village": "Tavsal"
+  },
+  "262": {
+    "county": "Khalapur Taluka",
+    "postcode": "410102",
+    "src": "photon",
+    "state_district": "Dhangarwada",
+    "village": "Holy Cross Church"
+  },
+  "264": {
+    "county": "Mawal Subdistrict",
+    "postcode": "410401",
+    "src": "photon",
+    "village": "Malavli"
+  },
+  "265": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Shahuwadi",
+    "state": "Maharashtra",
+    "state_district": "Kolhapur District",
+    "village": "Vishalgad"
+  },
+  "266": {
+    "county": "Mumbai City District",
+    "postcode": "400030",
+    "src": "photon",
+    "state_district": "G/S Ward",
+    "village": "Worli Koliwada"
+  },
+  "267": {
+    "ISO3166-2-lvl4": "IN-MH",
+    "country": "India",
+    "country_code": "in",
+    "county": "Vengurla Taluka",
+    "postcode": "416517",
+    "state": "Maharashtra",
+    "state_district": "Sindhudurg",
+    "village": "Redi"
+  }
+}

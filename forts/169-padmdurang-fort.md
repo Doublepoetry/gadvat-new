@@ -1,15 +1,11 @@
 ---
 id: '169'
-name: Padmdurang fort
-nameMarathi: पद्मदुरंग किल्ला
-coordinates: [17.95, 73.62]
-type: Hill Fort
-district: Satara
-region: Western Ghats
+name: 'Padmdurang fort'
+nameMarathi: 'पद्मदुरंग'
+locationAccuracy: 'none'
+type: 'Hill Fort'
 notable: false
-shortDescription: Padmdurang fort in Satara
+shortDescription: 'Location not confirmed'
+mapsLink: 'https://www.google.com/maps/search/?api=1&query=Padmdurang%20fort%20Maharashtra'
+wikipediaLink: 'https://en.wikipedia.org/w/index.php?search=Padmdurang%20fort'
 ---
-
-## Location
-
-Fort in Satara.

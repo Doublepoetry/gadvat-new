@@ -6,7 +6,7 @@
 	const { data }: { data: PageData } = $props();
 
 	const display = $derived(getFortDisplay(data.fort, $language));
-	const mapsUrl = $derived(getMapsUrl(data.fort.coordinates));
+	const mapsUrl = $derived(getMapsUrl(data.fort));
 </script>
 
 <div class="fort-detail">
@@ -19,7 +19,9 @@
 		<p class="marathi-name">{data.fort.nameMarathi}</p>
 		<div class="badges">
 			<span class="badge badge-primary">{display.type}</span>
-			<span class="badge badge-secondary">{display.district}</span>
+			{#if display.district}
+				<span class="badge badge-secondary">{display.district}</span>
+			{/if}
 			{#if display.region}
 				<span class="badge badge-tertiary">{display.region}</span>
 			{/if}
@@ -47,15 +49,31 @@
 					<span class="detail-value">{display.type}</span>
 				</div>
 
-				<div class="detail-item">
-					<span class="detail-label">{translations[$language]['coordinates']}</span>
-					<span class="detail-value">{formatCoordinates(data.fort.coordinates)}</span>
-				</div>
+				{#if data.fort.coordinates}
+					<div class="detail-item">
+						<span class="detail-label">{translations[$language]['coordinates']}</span>
+						<span class="detail-value">{formatCoordinates(data.fort.coordinates)}</span>
+					</div>
+				{/if}
 
 				{#if data.fort.altitude}
 					<div class="detail-item">
 						<span class="detail-label">{translations[$language]['altitude']}</span>
 						<span class="detail-value">{data.fort.altitude} m</span>
+					</div>
+				{/if}
+
+				{#if data.fort.builtByOrEra}
+					<div class="detail-item">
+						<span class="detail-label">{translations[$language]['builtByOrEra']}</span>
+						<span class="detail-value">{data.fort.builtByOrEra}</span>
+					</div>
+				{/if}
+
+				{#if data.fort.associatedWith}
+					<div class="detail-item">
+						<span class="detail-label">{translations[$language]['associatedWith']}</span>
+						<span class="detail-value">{data.fort.associatedWith}</span>
 					</div>
 				{/if}
 
