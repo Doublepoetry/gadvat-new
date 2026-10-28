@@ -11,6 +11,5 @@ You may share and adapt them for any purpose, as long as you:
 Some data comes from other sources under their own terms:
 
 - Addresses in `src/data/addresses.json` are from [OpenStreetMap](https://www.openstreetmap.org/copyright), © OpenStreetMap contributors, available under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
-- Photos are hosted on [Wikimedia Commons](https://commons.wikimedia.org) and keep the author and licence shown on each photo.
 
 Full licence: https://creativecommons.org/licenses/by-sa/4.0/
