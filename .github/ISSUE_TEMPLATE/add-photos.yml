@@ -1,0 +1,30 @@
+name: Add photos
+description: Suggest photos from Wikimedia Commons for a fort's gallery
+title: '[Photos] '
+labels: [photos]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gadvat shows photos from [Wikimedia Commons](https://commons.wikimedia.org); it doesn't store image files. If the photo is your own, upload it to Commons first with the [Upload Wizard](https://commons.wikimedia.org/wiki/Special:UploadWizard) (free account, keep the default CC BY-SA 4.0 licence), then link it here.
+  - type: input
+    id: fort
+    attributes:
+      label: Fort
+      description: Name, and the ID if you know it. The ID is the number at the end of the fort's page address (e.g. Raigad, 188).
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Commons photos
+      description: One per line. The Commons link, then what the photo shows (e.g. "Mahadarwaja gate seen from the lower steps").
+    validations:
+      required: true
+  - type: checkboxes
+    id: licence
+    attributes:
+      label: Licence
+      options:
+        - label: Each photo is under a Creative Commons licence or in the public domain on Commons
+          required: true
