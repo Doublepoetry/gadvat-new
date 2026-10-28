@@ -28,6 +28,11 @@ export async function getAllForts(): Promise<Fort[]> {
 	return data.forts;
 }
 
+export async function getDistrictNames(): Promise<Record<string, string>> {
+	const data = await loadForts();
+	return data.districts;
+}
+
 export function getFortDisplay(fort: Fort, language: Language): FortDisplay {
 	return {
 		id: fort.id,

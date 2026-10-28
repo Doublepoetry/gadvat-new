@@ -192,6 +192,7 @@ async function buildData() {
 
 	const output = {
 		forts,
+		districts: DISTRICTS, // English → Marathi, for map labels of districts with no forts
 		meta: {
 			total: forts.length,
 			updated: new Date().toISOString(),

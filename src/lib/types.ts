@@ -47,6 +47,7 @@ export interface Fort {
 
 export interface FortData {
 	forts: Fort[];
+	districts: Record<string, string>; // English district name → Marathi
 	meta: {
 		total: number;
 		updated: string;
